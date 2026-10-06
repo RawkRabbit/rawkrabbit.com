@@ -24,10 +24,3 @@ The text below the `---` lines is the page body (What it does, What's next).
 ## Add a log entry
 
 One file in `src/content/log/`, named `YYYY-MM-DD-short-title.md`. Set `project:` to a project's file name (without `.md`) to link them.
-
-## Run it locally
-
-```
-npm install
-npm run dev
-```
