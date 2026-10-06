@@ -71,6 +71,7 @@ const fmt = (d: Date) => d.toLocaleDateString('en-US', { year: 'numeric', month:
 <style>
   .hero { padding: clamp(3.5rem, 10vw, 7.5rem) var(--gutter) clamp(3rem, 7vw, 5rem); }
   .hero h1 { max-width: 15ch; }
+  @media (max-width: 480px) { .hero h1 { max-width: none; } }
   .nowrap { white-space: nowrap; }
   .peak { display: inline-block; width: 0.22em; height: 0.22em; margin-left: 0.06em; border-radius: 0.07em; background: var(--amp); vertical-align: baseline; }
   .lede { font-size: clamp(1.125rem, 2.2vw, 1.375rem); color: var(--muted); max-width: 34rem; margin: 1.5rem 0 2rem; line-height: 1.5; }

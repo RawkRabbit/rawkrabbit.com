@@ -83,5 +83,5 @@ h3 { font-weight: 800; font-size: 1.25rem; line-height: 1.2; }
 .prose code { font-family: var(--font-mono); font-size: 0.875em; background: var(--line); padding: 0.1em 0.35em; border-radius: 4px; }
 .prose img { border-radius: 12px; border: 1px solid var(--line); margin: 1.5rem 0; }
 
-.section { padding: clamp(3rem, 7vw, 5rem) 0; border-top: 1px solid var(--line); }
+.section { padding-block: clamp(3rem, 7vw, 5rem); border-top: 1px solid var(--line); }
 .section-head { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; margin-bottom: 1.75rem; flex-wrap: wrap; }
