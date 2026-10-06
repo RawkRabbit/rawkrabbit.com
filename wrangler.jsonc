@@ -5,5 +5,7 @@
   "assets": {
     "directory": "./dist",
     "not_found_handling": "404-page"
-  }
+  },
+  // Required for per-branch and PR preview deploys (npx wrangler preview).
+  "previews": {}
 }
