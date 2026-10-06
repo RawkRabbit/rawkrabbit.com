@@ -1,0 +1,11 @@
+---
+import Base from '../layouts/Base.astro';
+import StatusMeter from '../components/StatusMeter.astro';
+---
+<Base title="Not found">
+  <section class="wrap" style="padding: clamp(4rem,10vw,8rem) var(--gutter);">
+    <StatusMeter status="retired" showLabel={false} />
+    <h1 style="margin-top:1.5rem;">No signal.</h1>
+    <p class="muted" style="font-size:1.2rem;max-width:30rem;">That page doesn't exist, or it moved. Try the <a href="/projects/">projects</a> or the <a href="/">home page</a>.</p>
+  </section>
+</Base>

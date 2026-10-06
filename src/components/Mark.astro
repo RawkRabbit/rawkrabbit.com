@@ -1,0 +1,12 @@
+---
+// The level-bar rabbit. Colors follow the theme; the orange cap never changes.
+interface Props { size?: number; class?: string; title?: string }
+const { size = 32, class: cls = '', title } = Astro.props;
+---
+<svg class={`mark ${cls}`} width={size} height={size} viewBox="0 0 64 64" role={title ? 'img' : undefined} aria-hidden={title ? undefined : 'true'} aria-label={title}>
+  <rect class="cap" x="17" y="3" width="11" height="8" rx="4"/>
+  <rect class="body" x="17" y="13" width="11" height="26" rx="5.5"/>
+  <rect class="body" x="36" y="17" width="11" height="22" rx="5.5"/>
+  <circle class="body" cx="32" cy="44" r="17"/>
+  <circle class="eye" cx="39" cy="42" r="2.6"/>
+</svg>

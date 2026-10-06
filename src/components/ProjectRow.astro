@@ -1,0 +1,40 @@
+---
+import StatusMeter from './StatusMeter.astro';
+import type { CollectionEntry } from 'astro:content';
+interface Props { project: CollectionEntry<'projects'>; index: number }
+const { project, index } = Astro.props;
+const p = project.data;
+---
+<li class="row">
+  <a href={`/projects/${project.id}/`}>
+    <span class="num mono">{String(index + 1).padStart(2, '0')}</span>
+    <span class="main">
+      <span class="name">{p.name}</span>
+      <span class="tag">{p.tagline}</span>
+    </span>
+    <span class="kind mono">{p.kind}</span>
+    <StatusMeter status={p.status} />
+    <span class="arrow" aria-hidden="true">→</span>
+  </a>
+</li>
+<style>
+  .row { border-top: 1px solid var(--line); }
+  .row:last-child { border-bottom: 1px solid var(--line); }
+  a {
+    display: grid; grid-template-columns: 2.5rem 1fr 11rem 7.5rem 1.5rem; gap: 1rem; align-items: center;
+    padding: 1.35rem 0.25rem; color: var(--fg); text-decoration: none;
+  }
+  a:hover { background: color-mix(in srgb, var(--line) 45%, transparent); }
+  a:hover .arrow { transform: translateX(3px); color: var(--amp); }
+  .num { color: var(--muted); }
+  .main { display: grid; gap: 0.2rem; min-width: 0; }
+  .name { font-family: var(--font-display); font-stretch: 112%; font-variation-settings: "wdth" 112; font-weight: 800; font-size: 1.35rem; letter-spacing: -0.02em; line-height: 1.15; }
+  .tag { color: var(--muted); font-size: 0.975rem; }
+  .kind { color: var(--muted); }
+  .arrow { transition: transform 0.15s; text-align: right; }
+  @media (max-width: 760px) {
+    a { grid-template-columns: 2rem 1fr; row-gap: 0.6rem; }
+    .kind, .arrow { display: none; }
+    a > :global(.meter) { grid-column: 2; }
+  }
+</style>

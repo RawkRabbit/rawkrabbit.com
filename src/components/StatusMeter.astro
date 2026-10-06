@@ -1,0 +1,23 @@
+---
+// Status shown as a level meter, echoing the logo. Live = the meter peaks orange.
+interface Props { status: 'idea' | 'building' | 'beta' | 'live' | 'retired'; showLabel?: boolean }
+const { status, showLabel = true } = Astro.props;
+const levels = { idea: 1, building: 2, beta: 3, live: 4, retired: 0 } as const;
+const labels = { idea: 'Idea', building: 'Building', beta: 'Beta', live: 'Live', retired: 'Retired' } as const;
+const lit = levels[status];
+---
+<span class={`meter ${status}`} title={labels[status]}>
+  <span class="bars" aria-hidden="true">
+    {[1, 2, 3, 4].map((n) => <i class={n <= lit ? (status === 'live' && n === 4 ? 'on peak' : 'on') : ''} style={`height:${4 + n * 3}px`}></i>)}
+  </span>
+  {showLabel ? <span class="label">{labels[status]}</span> : <span class="sr">{labels[status]}</span>}
+</span>
+<style>
+  .meter { display: inline-flex; align-items: center; gap: 0.5rem; font-family: var(--font-mono); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; }
+  .bars { display: inline-flex; align-items: flex-end; gap: 2px; height: 16px; }
+  .bars i { display: block; width: 4px; border-radius: 2px; background: var(--line); }
+  .bars i.on { background: var(--fg); }
+  .bars i.peak { background: var(--amp); }
+  .retired .label { text-decoration: line-through; color: var(--muted); }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+</style>

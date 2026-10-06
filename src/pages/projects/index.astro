@@ -1,0 +1,32 @@
+---
+import Base from '../../layouts/Base.astro';
+import ProjectRow from '../../components/ProjectRow.astro';
+import { getCollection } from 'astro:content';
+const all = (await getCollection('projects', ({ data }) => !data.draft))
+  .sort((a, b) => a.data.order - b.data.order || +b.data.updated - +a.data.updated);
+const active = all.filter((p) => p.data.status !== 'retired');
+const retired = all.filter((p) => p.data.status === 'retired');
+---
+<Base title="Projects" description="Everything RawkRabbit has built or is building.">
+  <section class="wrap head">
+    <p class="eyebrow">Projects</p>
+    <h1>Everything on the bench</h1>
+    <p class="lede muted">No theme, no roadmap. Each one exists because it should.</p>
+  </section>
+  <section class="wrap">
+    <ol class="rows">{active.map((p, i) => <ProjectRow project={p} index={i} />)}</ol>
+  </section>
+  {retired.length > 0 && (
+    <section class="wrap section">
+      <h2>Retired</h2>
+      <ol class="rows">{retired.map((p, i) => <ProjectRow project={p} index={active.length + i} />)}</ol>
+    </section>
+  )}
+</Base>
+<style>
+  .head { padding-top: clamp(3rem, 8vw, 5rem); padding-bottom: 2.5rem; }
+  .lede { font-size: 1.2rem; margin: 1rem 0 0; }
+  .rows { list-style: none; margin: 0; padding: 0; }
+  .section { margin-top: 3rem; }
+  .section h2 { margin-bottom: 1.5rem; }
+</style>

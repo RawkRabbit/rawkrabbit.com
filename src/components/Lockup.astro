@@ -1,0 +1,13 @@
+---
+import Mark from './Mark.astro';
+interface Props { size?: number }
+const { size = 30 } = Astro.props;
+---
+<span class="lockup" style={`--s:${size}px`}>
+  <Mark size={size} />
+  <span class="wordmark"><b>Rawk</b><span>Rabbit</span></span>
+</span>
+<style>
+  .lockup { display: inline-flex; align-items: center; gap: calc(var(--s) * 0.28); }
+  .wordmark { font-size: calc(var(--s) * 0.78); line-height: 1; }
+</style>

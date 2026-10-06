@@ -1,0 +1,87 @@
+/* RawkRabbit visual system. Tokens come from the approved brand basics. */
+:root {
+  --ink: #16181D; --paper: #F6F6F3; --graphite: #5A5F6A; --mist: #E3E5E8;
+  --amp: #FF5A1F; --amp-deep: #C2410C;
+
+  --bg: var(--paper); --fg: var(--ink); --muted: var(--graphite); --line: var(--mist);
+  --surface: #FFFFFF; --link: var(--amp-deep);
+  --mark-body: var(--ink); --mark-eye: var(--paper);
+
+  --font-display: "Archivo", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+
+  --wrap: 68rem;
+  --gutter: clamp(1rem, 4vw, 2rem);
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0F1114; --fg: #F6F6F3; --muted: #9AA0AA; --line: #262A31;
+    --surface: #16181D; --link: #FF7A45;
+    --mark-body: #F6F6F3; --mark-eye: #16181D;
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg);
+  font: 400 1.0625rem/1.6 var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+img, svg { display: block; max-width: 100%; }
+a { color: var(--link); text-underline-offset: 0.18em; text-decoration-thickness: 1px; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 2px solid var(--amp); outline-offset: 3px; border-radius: 2px; }
+
+.wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gutter); }
+.mono { font-family: var(--font-mono); font-size: 0.8125rem; letter-spacing: 0; }
+.muted { color: var(--muted); }
+.eyebrow {
+  font-family: var(--font-mono); font-size: 0.75rem; text-transform: uppercase;
+  letter-spacing: 0.08em; color: var(--muted); margin: 0 0 1rem;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display); font-stretch: 112%;
+  font-variation-settings: "wdth" 112; letter-spacing: -0.02em; margin: 0;
+}
+h1 { font-weight: 900; font-size: clamp(2.5rem, 7vw, 5rem); line-height: 0.98; }
+h2 { font-weight: 800; font-size: clamp(1.5rem, 3vw, 2rem); line-height: 1.1; }
+h3 { font-weight: 800; font-size: 1.25rem; line-height: 1.2; }
+
+/* Wordmark: Rawk 900, Rabbit 400, width 112 */
+.wordmark {
+  font-family: var(--font-display); font-stretch: 112%; font-variation-settings: "wdth" 112;
+  letter-spacing: -0.02em; white-space: nowrap; color: var(--fg);
+}
+.wordmark b { font-weight: 900; }
+.wordmark span { font-weight: 400; }
+
+.mark .body { fill: var(--mark-body); }
+.mark .eye { fill: var(--mark-eye); }
+.mark .cap { fill: var(--amp); }
+
+/* Buttons */
+.btn {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.7rem 1.1rem; border-radius: 999px; border: 1.5px solid var(--fg);
+  font: 600 0.95rem/1 var(--font-body); color: var(--fg); text-decoration: none;
+}
+.btn:hover { background: var(--fg); color: var(--bg); }
+.btn.primary { background: var(--amp); border-color: var(--amp); color: #16181D; }
+.btn.primary:hover { background: var(--fg); border-color: var(--fg); color: var(--bg); }
+.btns { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+
+/* Prose (markdown bodies) */
+.prose { max-width: 40rem; }
+.prose h2 { font-size: 1.5rem; margin: 2.5rem 0 0.75rem; }
+.prose h3 { margin: 2rem 0 0.5rem; }
+.prose p, .prose ul, .prose ol { margin: 0 0 1rem; }
+.prose li { margin-bottom: 0.35rem; }
+.prose code { font-family: var(--font-mono); font-size: 0.875em; background: var(--line); padding: 0.1em 0.35em; border-radius: 4px; }
+.prose img { border-radius: 12px; border: 1px solid var(--line); margin: 1.5rem 0; }
+
+.section { padding: clamp(3rem, 7vw, 5rem) 0; border-top: 1px solid var(--line); }
+.section-head { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; margin-bottom: 1.75rem; flex-wrap: wrap; }

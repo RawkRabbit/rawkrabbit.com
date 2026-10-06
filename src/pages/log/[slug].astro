@@ -1,0 +1,28 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection, render } from 'astro:content';
+export async function getStaticPaths() {
+  const entries = await getCollection('log', ({ data }) => !data.draft);
+  return entries.map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const projects = await getCollection('projects');
+const project = projects.find((p) => p.id === entry.data.project);
+const fmt = (d: Date) => d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+---
+<Base title={entry.data.title} description={entry.data.summary}>
+  <article class="wrap">
+    <header class="head">
+      <p class="eyebrow"><a href="/log/">Log</a> <span aria-hidden="true">/</span> <time datetime={entry.data.date.toISOString()}>{fmt(entry.data.date)}</time></p>
+      <h1>{entry.data.title}</h1>
+      {project && <p class="mono">About <a href={`/projects/${project.id}/`}>{project.data.name}</a></p>}
+    </header>
+    <div class="prose"><Content /></div>
+  </article>
+</Base>
+<style>
+  .head { padding-top: clamp(3rem, 8vw, 5rem); padding-bottom: 2rem; }
+  .head h1 { font-size: clamp(2rem, 5vw, 3.25rem); max-width: 20ch; }
+  .eyebrow a { color: inherit; }
+</style>

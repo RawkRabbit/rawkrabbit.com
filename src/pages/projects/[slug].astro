@@ -1,0 +1,86 @@
+---
+import Base from '../../layouts/Base.astro';
+import StatusMeter from '../../components/StatusMeter.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const projects = await getCollection('projects', ({ data }) => !data.draft);
+  return projects.map((project) => ({ params: { slug: project.id }, props: { project } }));
+}
+const { project } = Astro.props;
+const p = project.data;
+const { Content } = await render(project);
+const related = (await getCollection('log', ({ data }) => !data.draft && data.project === project.id))
+  .sort((a, b) => +b.data.date - +a.data.date);
+const fmt = (d: Date) => d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' });
+const primary = p.links.filter((l) => l.primary);
+const secondary = p.links.filter((l) => !l.primary);
+---
+<Base title={p.name} description={`${p.tagline} ${p.problem}`}>
+  <article>
+    <header class="wrap head">
+      <p class="eyebrow"><a href="/projects/">Projects</a> <span aria-hidden="true">/</span> {p.kind}</p>
+      <h1>{p.name}</h1>
+      <p class="by mono">by RawkRabbit</p>
+      <p class="tagline">{p.tagline}</p>
+      {p.links.length > 0 && (
+        <div class="btns">
+          {primary.map((l) => <a class="btn primary" href={l.url}>{l.label}</a>)}
+          {secondary.map((l) => <a class="btn" href={l.url}>{l.label}</a>)}
+        </div>
+      )}
+    </header>
+
+    <div class="wrap">
+      <dl class="spec">
+        <div><dt>Status</dt><dd><StatusMeter status={p.status} />{p.statusNote && <span class="note muted">{p.statusNote}</span>}</dd></div>
+        <div><dt>Platform</dt><dd>{p.platform}</dd></div>
+        {p.price && <div><dt>Price</dt><dd>{p.price}</dd></div>}
+        {p.license && <div><dt>License</dt><dd>{p.license}</dd></div>}
+        <div><dt>Updated</dt><dd><time datetime={p.updated.toISOString()}>{fmt(p.updated)}</time></dd></div>
+      </dl>
+    </div>
+
+    <div class="wrap body">
+      <div class="prose">
+        <h2>The problem</h2>
+        <p>{p.problem}</p>
+        <h2>Who it's for</h2>
+        <p>{p.forWho}</p>
+        <Content />
+        <h2>Support it</h2>
+        {p.support
+          ? <p>It's free and stays ad-free. If it earns a spot in your routine, <a href={p.support.url}>{p.support.label}</a>.</p>
+          : <p>No ads and nothing to buy. The best support is telling someone who'd use it.</p>}
+      </div>
+
+      {related.length > 0 && (
+        <aside class="related">
+          <h2 class="eyebrow">Log</h2>
+          <ul>
+            {related.map((e) => (
+              <li><time class="mono muted" datetime={e.data.date.toISOString()}>{fmt(e.data.date)}</time><a href={`/log/${e.id}/`}>{e.data.title}</a></li>
+            ))}
+          </ul>
+        </aside>
+      )}
+    </div>
+  </article>
+</Base>
+<style>
+  .head { padding-top: clamp(3rem, 8vw, 5rem); padding-bottom: 2.5rem; }
+  .eyebrow a { color: inherit; }
+  .by { color: var(--muted); margin: 0.85rem 0 0; }
+  .tagline { font-size: clamp(1.15rem, 2.4vw, 1.4rem); max-width: 36rem; margin: 1.25rem 0 2rem; line-height: 1.45; }
+  .spec { display: grid; grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr)); margin: 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .spec div { padding: 1.1rem 1rem 1.1rem 0; }
+  .spec dt { font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 0.4rem; }
+  .spec dd { margin: 0; font-weight: 500; display: grid; gap: 0.3rem; }
+  .note { font-size: 0.85rem; font-weight: 400; }
+  .body { display: grid; grid-template-columns: minmax(0, 1fr) 16rem; gap: 4rem; padding-top: 1rem; }
+  .related { padding-top: 2.6rem; }
+  .related ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 1rem; }
+  .related li { display: grid; gap: 0.2rem; }
+  .related a { color: var(--fg); font-weight: 500; }
+  @media (max-width: 860px) { .body { grid-template-columns: 1fr; gap: 1rem; } }
+</style>

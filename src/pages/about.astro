@@ -1,0 +1,47 @@
+---
+import Base from '../layouts/Base.astro';
+import StatusMeter from '../components/StatusMeter.astro';
+import Mark from '../components/Mark.astro';
+---
+<Base title="About" description="What RawkRabbit is, how projects get made, and how to say the name.">
+  <section class="wrap head">
+    <p class="eyebrow">About</p>
+    <h1>A workshop, not a company</h1>
+  </section>
+  <section class="wrap grid">
+    <div class="prose">
+      <p class="big">RawkRabbit is a workshop for small, useful things. Random projects, built because they should exist, shipped without the ad junk.</p>
+      <p>There's no theme tying the projects together. One might be an Apple Watch app, the next a website, the next something else entirely. What stays the same is how they're made and presented: one clear problem, plain-language descriptions, and an honest status on every page.</p>
+
+      <h2>How a project gets here</h2>
+      <p>Something is annoying, or missing, or buried under ads. It gets built small enough to finish. It goes on the bench with a status, and it moves up the meter as it gets real.</p>
+      <ul class="legend">
+        <li><StatusMeter status="idea" /> <span>Worth building. Not started.</span></li>
+        <li><StatusMeter status="building" /> <span>In progress. Works for the builder, not for you yet.</span></li>
+        <li><StatusMeter status="beta" /> <span>You can try it. Expect rough edges.</span></li>
+        <li><StatusMeter status="live" /> <span>Released and maintained.</span></li>
+        <li><StatusMeter status="retired" /> <span>Done or shelved. Kept here for the record.</span></li>
+      </ul>
+
+      <h2>Say it right</h2>
+      <p><strong>RawkRabbit</strong> is said "rock rabbit." One word, two capital Rs, two Bs. Not to be confused with RawRabbit, the .NET library.</p>
+
+      <h2>Get in touch</h2>
+      <p>Ideas, bug reports and "you should build this" are all welcome at <a href="mailto:hello@rawkrabbit.com">hello@rawkrabbit.com</a>. Code lives at <a href="https://github.com/RawkRabbit">github.com/RawkRabbit</a>.</p>
+    </div>
+    <aside class="badge" aria-hidden="true">
+      <Mark size={160} />
+      <p class="mono muted">The mark is a rabbit built from audio level bars. The tall ear is peaking.</p>
+    </aside>
+  </section>
+</Base>
+<style>
+  .head { padding-top: clamp(3rem, 8vw, 5rem); padding-bottom: 2rem; }
+  .grid { display: grid; grid-template-columns: minmax(0, 1fr) 16rem; gap: 4rem; }
+  .big { font-size: 1.3rem; line-height: 1.5; }
+  .legend { list-style: none; padding: 0; display: grid; gap: 0.75rem; }
+  .legend li { display: grid; grid-template-columns: 8.5rem 1fr; align-items: center; gap: 1rem; margin: 0; }
+  .badge { padding-top: 0.5rem; }
+  .badge p { margin-top: 1rem; font-size: 0.75rem; }
+  @media (max-width: 860px) { .grid { grid-template-columns: 1fr; } .badge { display: none; } .legend li { grid-template-columns: 1fr; gap: 0.2rem; } }
+</style>

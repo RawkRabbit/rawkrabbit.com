@@ -1,0 +1,91 @@
+---
+import Base from '../layouts/Base.astro';
+import ProjectRow from '../components/ProjectRow.astro';
+import StatusMeter from '../components/StatusMeter.astro';
+import { getCollection } from 'astro:content';
+
+const projects = (await getCollection('projects', ({ data }) => !data.draft && data.status !== 'retired'))
+  .sort((a, b) => a.data.order - b.data.order || +b.data.updated - +a.data.updated);
+const log = (await getCollection('log', ({ data }) => !data.draft))
+  .sort((a, b) => +b.data.date - +a.data.date)
+  .slice(0, 3);
+const fmt = (d: Date) => d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' });
+---
+<Base>
+  <section class="hero wrap">
+    <p class="eyebrow">RawkRabbit <span aria-hidden="true">/</span> say it: rock rabbit</p>
+    <h1>A workshop for small, <span class="nowrap">useful things<span class="peak" aria-hidden="true"></span></span></h1>
+    <p class="lede">Random projects, built because they should exist, shipped without the ad junk.</p>
+    <div class="btns">
+      <a class="btn primary" href="#bench">See what's on the bench</a>
+      <a class="btn" href="/about/">How it works</a>
+    </div>
+  </section>
+
+  <section class="section wrap" id="bench">
+    <div class="section-head">
+      <h2>On the bench</h2>
+      <a class="mono" href="/projects/">All projects →</a>
+    </div>
+    <ol class="rows">
+      {projects.map((p, i) => <ProjectRow project={p} index={i} />)}
+    </ol>
+  </section>
+
+  <section class="section wrap rules">
+    <h2>House rules</h2>
+    <ul>
+      <li><h3>No ad junk</h3><p>No banner ads, no pop-ups, no selling your attention. If a project ever costs money, the price is on its page.</p></li>
+      <li><h3>Built to be used</h3><p>Each project fixes one specific annoyance. Small on purpose, so it can be finished and kept working.</p></li>
+      <li>
+        <h3>Honest status</h3>
+        <p>Every project shows where it stands.</p>
+        <ul class="legend">
+          <li><StatusMeter status="idea" /></li>
+          <li><StatusMeter status="building" /></li>
+          <li><StatusMeter status="beta" /></li>
+          <li><StatusMeter status="live" /></li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  {log.length > 0 && (
+    <section class="section wrap">
+      <div class="section-head">
+        <h2>From the log</h2>
+        <a class="mono" href="/log/">Full log →</a>
+      </div>
+      <ul class="log">
+        {log.map((e) => (
+          <li>
+            <time class="mono muted" datetime={e.data.date.toISOString()}>{fmt(e.data.date)}</time>
+            <a href={`/log/${e.id}/`}>{e.data.title}</a>
+            <p class="muted">{e.data.summary}</p>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+</Base>
+<style>
+  .hero { padding: clamp(3.5rem, 10vw, 7.5rem) var(--gutter) clamp(3rem, 7vw, 5rem); }
+  .hero h1 { max-width: 15ch; }
+  .nowrap { white-space: nowrap; }
+  .peak { display: inline-block; width: 0.22em; height: 0.22em; margin-left: 0.06em; border-radius: 0.07em; background: var(--amp); vertical-align: baseline; }
+  .lede { font-size: clamp(1.125rem, 2.2vw, 1.375rem); color: var(--muted); max-width: 34rem; margin: 1.5rem 0 2rem; line-height: 1.5; }
+  .rows { list-style: none; margin: 0; padding: 0; }
+  .rules > ul { list-style: none; padding: 0; margin: 2rem 0 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(1.5rem, 4vw, 3rem); }
+  .rules h3 { margin-bottom: 0.5rem; }
+  .rules p { margin: 0; color: var(--muted); }
+  .legend { list-style: none; padding: 0; margin: 0.9rem 0 0; display: grid; gap: 0.45rem; }
+  .log { list-style: none; padding: 0; margin: 0; display: grid; gap: 1.5rem; }
+  .log li { display: grid; grid-template-columns: 8rem 1fr; column-gap: 1.5rem; }
+  .log a { font-weight: 600; color: var(--fg); }
+  .log p { grid-column: 2; margin: 0.2rem 0 0; }
+  @media (max-width: 760px) {
+    .rules > ul { grid-template-columns: 1fr; }
+    .log li { grid-template-columns: 1fr; }
+    .log p { grid-column: 1; }
+  }
+</style>
