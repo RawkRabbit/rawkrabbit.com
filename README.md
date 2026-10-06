@@ -1,6 +1,6 @@
 # rawkrabbit.com
 
-The site for **RawkRabbit**, a workshop for small, useful things.
+The site for **RawkRabbit**, a workshop for small, interesting things.
 
 Built with [Astro](https://astro.build) and hosted on Cloudflare. Every merge to `main` deploys automatically. Pull requests get a preview link.
 

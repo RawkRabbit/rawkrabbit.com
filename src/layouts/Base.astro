@@ -6,10 +6,10 @@ import Mark from '../components/Mark.astro';
 interface Props { title?: string; description?: string; image?: string }
 const {
   title,
-  description = 'A workshop for small, useful things. Random projects, built because they should exist, shipped without the ad junk.',
+  description = 'A workshop for small, interesting things. Random projects, built for the fun of solving something, shipped without the ad junk.',
   image = '/rawkrabbit-avatar-1024.png',
 } = Astro.props;
-const fullTitle = title ? `${title} · RawkRabbit` : 'RawkRabbit · A workshop for small, useful things';
+const fullTitle = title ? `${title} · RawkRabbit` : 'RawkRabbit · A workshop for small, interesting things';
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const ogImage = new URL(image, Astro.site);
 const path = Astro.url.pathname;
