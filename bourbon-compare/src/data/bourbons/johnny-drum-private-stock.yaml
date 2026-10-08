@@ -1,0 +1,44 @@
+name: Johnny Drum Private Stock
+brand: Johnny Drum
+distillery: Willett Distillery
+bottler: Willett Distillery
+category: bourbon
+producerType: heritage
+style: traditional
+mashbill:
+  provenance: unknown
+  note: Not disclosed.
+age:
+  years: null
+  stated: false
+  note: No age statement; older bottles carried a 15-year statement.
+proof: 101
+price: { low: 35, high: 45, asOf: "2026-10" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: null
+flavor:
+  sweetness: 6
+  spice: 6
+  oak: 5
+  fruit: 6
+  heat: 5
+  nuttiness: 4
+notes:
+  nose: [custard, red berries, caramel, baked apple]
+  palate: [almond, apple dessert, cinnamon, cardamom]
+  finish: [mint, baked apple, cinnamon, tobacco]
+blurb: >
+  An old-school Willett label at 101 proof. Oily and dessert-like, with baked apple, almond and
+  custard, and rye-like mint and spice on the finish.
+verdict: >
+  an oily, dessert-like 101-proof pour with old-school Willett character
+bestFor: [neat, rocks, old-fashioned]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Bourbon Culture review", url: "https://thebourbonculture.com/whiskey-reviews/johnny-drum-private-stock-review/" }
+  - { label: "NC ABC price list", url: "https://abc2.nc.gov/Pricing/ViewItemDetails/149777" }

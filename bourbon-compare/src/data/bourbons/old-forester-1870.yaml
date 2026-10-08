@@ -1,0 +1,47 @@
+name: Old Forester 1870 Original Batch
+brand: Old Forester
+distillery: Brown-Forman
+bottler: Brown-Forman
+category: bourbon
+producerType: heritage
+style: high-rye
+mashbill:
+  provenance: published
+  corn: 72
+  rye: 18
+  wheat: 0
+  maltedBarley: 10
+age:
+  years: null
+  stated: false
+  note: Batched from barrels of three different ages, entry proofs and warehouses.
+proof: 90
+price: { low: 45, high: 55, asOf: "2026-10" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 7
+  spice: 4
+  oak: 5
+  fruit: 6
+  heat: 3
+  nuttiness: 2
+notes:
+  nose: [caramel, vanilla, light spice]
+  palate: [caramel, orange, cinnamon]
+  finish: [smooth, medium, sweet oak]
+blurb: >
+  The first bottle in Old Forester's Whiskey Row Series, recreating the founder's habit of
+  blending barrels from three warehouses. It is the lightest of the series, caramel sweet and easy.
+verdict: >
+  the gentlest, most easygoing pour in the Whiskey Row Series
+bestFor: [neat, rocks, highball]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Wooden Cork product notes", url: "https://woodencork.com/collections/best-seller-internal-use-1/products/old-forester-1870" }
+  - { label: "Old Forester: Whiskey Row Series" }

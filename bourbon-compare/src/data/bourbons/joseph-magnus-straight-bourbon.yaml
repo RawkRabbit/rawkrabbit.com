@@ -1,0 +1,43 @@
+name: Joseph Magnus Straight Bourbon
+brand: Joseph Magnus
+distillery: MGP of Indiana (reported)
+bottler: Jos. A. Magnus & Co.
+category: bourbon
+producerType: sourced
+style: traditional
+mashbill:
+  provenance: unknown
+  note: Sourced bourbon; the recipe is not disclosed.
+age:
+  years: null
+  stated: false
+  note: No age statement.
+proof: 100
+price: { low: 85, high: 100, asOf: "2026-10" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: null
+flavor:
+  sweetness: 8
+  spice: 5
+  oak: 6
+  fruit: 8
+  heat: 5
+  nuttiness: 5
+notes:
+  nose: [cooked fruit, dark chocolate, orange, nuts]
+  palate: [dark chocolate, caramel, orange, clove]
+  finish: [long, clove, caramel, cherry]
+blurb: >
+  Finished in Oloroso sherry, Pedro Ximenez sherry and Cognac casks. The casks layer dried fruit,
+  orange and dark chocolate over the bourbon and leave a long, clove-spiced finish.
+verdict: >
+  a sherry-and-Cognac-finished bourbon full of dried fruit and dark chocolate
+bestFor: [neat]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Bourbon Banter review", url: "https://www.bourbonbanter.com/joseph-magnus-straight-bourbon-whiskey-review/" }

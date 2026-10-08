@@ -1,0 +1,46 @@
+name: Horse Soldier Barrel Strength
+brand: Horse Soldier
+distillery: Undisclosed (sourced)
+bottler: Horse Soldier Bourbon
+category: bourbon
+producerType: sourced
+style: wheated
+mashbill:
+  provenance: reported
+  corn: 70
+  rye: 0
+  wheat: 20
+  maltedBarley: 10
+age:
+  years: null
+  stated: false
+  note: No age statement on current bottles; early batches were reported at about eight years.
+proof: 111
+price: { low: 78, high: 85, asOf: "2026-10" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: true
+  bottledInBond: false
+  chillFiltered: false
+flavor:
+  sweetness: 7
+  spice: 5
+  oak: 6
+  fruit: 5
+  heat: 7
+  nuttiness: 3
+notes:
+  nose: [brown sugar, toasted oak, alcohol]
+  palate: [rich caramel, baking spice, molasses]
+  finish: [long, warming, dark fruit with water]
+blurb: >
+  A barrel-strength wheater from the veteran-founded Horse Soldier brand. Brown sugar and toasted
+  oak lead, baking spice and heat follow, and a splash of water pulls out darker fruit.
+verdict: >
+  a big, barrel-strength wheated bourbon with plenty of brown sugar and warmth
+bestFor: [neat, old-fashioned]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "The Whiskey Wash review", url: "https://thewhiskeywash.com/reviews/whiskey-review-horse-soldier-barrel-strength-bourbon/" }

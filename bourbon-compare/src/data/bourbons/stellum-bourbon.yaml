@@ -1,0 +1,43 @@
+name: Stellum Bourbon
+brand: Stellum
+distillery: Undisclosed (blend of sourced)
+bottler: Barrell Craft Spirits
+category: bourbon
+producerType: sourced
+style: traditional
+mashbill:
+  provenance: unknown
+  note: Blend of bourbons from Indiana, Tennessee and Kentucky; component recipes are not disclosed.
+age:
+  years: null
+  stated: false
+  note: No age statement.
+proof: 115
+price: { low: 45, high: 55, asOf: "2026-10" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: true
+  bottledInBond: false
+  chillFiltered: false
+flavor:
+  sweetness: 6
+  spice: 7
+  oak: 6
+  fruit: 4
+  heat: 7
+  nuttiness: 3
+notes:
+  nose: [vanilla, caramel, baking spice, anise]
+  palate: [cinnamon, clove, vanilla, seasoned oak]
+  finish: [long, rye spice, brown sugar, dry tobacco]
+blurb: >
+  Barrell's lower-priced, cask-strength line. It drinks gentler than its proof, with vanilla and
+  caramel on top of cinnamon, clove and a long, spicy finish.
+verdict: >
+  a cask-strength, multi-state blend that drinks easier than its proof
+bestFor: [neat, old-fashioned]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Breaking Bourbon review", url: "https://breakingbourbon.com/review/stellum-bourbon" }

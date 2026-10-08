@@ -1,0 +1,46 @@
+name: Penelope Architect
+brand: Penelope
+distillery: MGP of Indiana
+bottler: Penelope Bourbon
+category: bourbon
+producerType: sourced
+style: four-grain
+mashbill:
+  provenance: published
+  corn: 75
+  rye: 7
+  wheat: 15
+  maltedBarley: 3
+age:
+  years: null
+  stated: false
+  note: Blend of bourbons about 4 to 5.5 years old.
+proof: 104
+price: { low: 60, high: 70, asOf: "2026-10" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: null
+flavor:
+  sweetness: 7
+  spice: 6
+  oak: 5
+  fruit: 6
+  heat: 6
+  nuttiness: 3
+notes:
+  nose: [vanilla, caramel, light baking spice]
+  palate: [berries, cherry, cinnamon, ginger, clove]
+  finish: [long, vanilla, slightly dry]
+blurb: >
+  Penelope's four-grain blend finished with French oak staves chosen for their tannin. The
+  French oak adds berry, cherry and warm spice to a vanilla-heavy base.
+verdict: >
+  a four-grain bourbon with a French oak finish that adds berries and warm spice
+bestFor: [neat, old-fashioned]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Nice Sipper review", url: "https://nicesipper.substack.com/p/nice-sippers-review-of-penelope-architect" }

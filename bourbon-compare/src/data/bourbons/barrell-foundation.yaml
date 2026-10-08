@@ -1,0 +1,47 @@
+name: Barrell Foundation Bourbon
+brand: Barrell Craft Spirits
+distillery: Undisclosed (blend of sourced)
+bottler: Barrell Craft Spirits
+category: bourbon
+producerType: sourced
+style: high-rye
+mashbill:
+  provenance: estimated
+  corn: 73
+  rye: 23
+  wheat: 0
+  maltedBarley: 4
+  note: Blend of seven bourbons from Indiana, Maryland, Tennessee and Kentucky; overall mash bill derived from the components.
+age:
+  years: 5
+  stated: true
+  note: Components are 5 to 9 years old.
+proof: 100
+price: { low: 50, high: 60, asOf: "2026-10" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: false
+flavor:
+  sweetness: 6
+  spice: 6
+  oak: 6
+  fruit: 5
+  heat: 5
+  nuttiness: 3
+notes:
+  nose: [vanilla, oak, nougat, dark berries]
+  palate: [rye spice, yellow cake, vanilla cream, white pepper]
+  finish: [dry, peppery, oak, light leather]
+blurb: >
+  Barrell's everyday bottle: a multi-state blend proofed down to 100 instead of bottled at cask
+  strength. Creamy cake and vanilla up front, then a dry, rye-driven peppery finish.
+verdict: >
+  an approachable, 100-proof Barrell blend that still shows off multi-state blending
+bestFor: [neat, rocks, old-fashioned]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Breaking Bourbon review", url: "https://breakingbourbon.com/review/barrell-foundation-bourbon" }

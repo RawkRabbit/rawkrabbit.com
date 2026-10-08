@@ -1,0 +1,45 @@
+name: New Riff 8 Year
+brand: New Riff
+distillery: New Riff Distilling
+bottler: New Riff Distilling
+category: bourbon
+producerType: modern-craft
+style: high-rye
+mashbill:
+  provenance: published
+  corn: 65
+  rye: 30
+  wheat: 0
+  maltedBarley: 5
+age:
+  years: 8
+  stated: true
+proof: 100
+price: { low: 65, high: 70, asOf: "2026-10" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: false
+flavor:
+  sweetness: 6
+  spice: 8
+  oak: 7
+  fruit: 5
+  heat: 5
+  nuttiness: 3
+notes:
+  nose: [rye spice, caramel, rich oak]
+  palate: [savory spice, dark sugar, cocoa, oak]
+  finish: [long, spicy, not drying]
+blurb: >
+  The older, deeper version of New Riff's bonded bourbon. Same 30% rye recipe, but eight years
+  add richer oak and darker sugar while keeping the spice front and center.
+verdict: >
+  an older, deeper take on New Riff's spicy high-rye recipe
+bestFor: [neat, old-fashioned]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "New Riff 8 Year announcement", url: "https://breakingbourbon.com/bourbon-whiskey-press-releases/new-riff-distilling-unveils-eight-year-old-bourbon-whiskey" }

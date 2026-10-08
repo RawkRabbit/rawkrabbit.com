@@ -1,0 +1,44 @@
+name: Jefferson's Ocean Aged at Sea
+brand: Jefferson's
+distillery: Undisclosed (sourced)
+bottler: McLain & Kyne
+category: bourbon
+producerType: sourced
+style: traditional
+mashbill:
+  provenance: unknown
+  note: Sourced Kentucky bourbon; the recipe varies by voyage and is not disclosed.
+age:
+  years: null
+  stated: false
+  note: Barrels finish their aging on a ship that crosses the equator and calls at ports on several continents.
+proof: 90
+price: { low: 70, high: 85, asOf: "2026-10" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: null
+flavor:
+  sweetness: 6
+  spice: 4
+  oak: 6
+  fruit: 5
+  heat: 3
+  nuttiness: 3
+notes:
+  nose: [creme brulee, tobacco, light brine]
+  palate: [caramel, dried fruit, savory salinity]
+  finish: [medium, oak, a touch of salt]
+blurb: >
+  Bourbon that spends months rocking in a ship's hold. Each voyage tastes a little different,
+  but expect caramel and dark sugar with a savory, faintly salty edge from the trip.
+verdict: >
+  a conversation-piece bourbon with a savory, slightly briny twist from aging at sea
+bestFor: [neat, rocks]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Tasting Table: Jefferson's Ocean", url: "https://www.tastingtable.com/1926172/jeffersons-ocean-aged-at-sea-bourbon-worth-price" }
+  - { label: "NC ABC price list", url: "https://abc2.nc.gov/Pricing/ViewItemDetails/133940" }

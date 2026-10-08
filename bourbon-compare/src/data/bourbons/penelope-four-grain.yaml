@@ -1,0 +1,47 @@
+name: Penelope Four Grain
+brand: Penelope
+distillery: MGP of Indiana
+bottler: Penelope Bourbon
+category: bourbon
+producerType: sourced
+style: four-grain
+mashbill:
+  provenance: reported
+  corn: 74
+  rye: 7
+  wheat: 16
+  maltedBarley: 3
+  note: Blend of three MGP mash bills.
+age:
+  years: null
+  stated: false
+  note: No age statement; generally described as young.
+proof: 80
+price: { low: 30, high: 40, asOf: "2026-10" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: false
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: null
+flavor:
+  sweetness: 6
+  spice: 3
+  oak: 3
+  fruit: 5
+  heat: 2
+  nuttiness: 4
+notes:
+  nose: [pear, apple, fresh bread]
+  palate: [honey, almond, toffee, vanilla]
+  finish: [short, cream, honey]
+blurb: >
+  A light, low-proof blend of corn, wheat, rye and barley. Honey, almond and orchard fruit keep it
+  sweet and easy, though it reads young and thin when sipped neat.
+verdict: >
+  an easy, light, honeyed bourbon that mixes well
+bestFor: [highball, cocktails]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "The Daily Pour review", url: "https://thedailypour.com/?p=2116" }

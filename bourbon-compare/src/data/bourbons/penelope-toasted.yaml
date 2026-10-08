@@ -1,0 +1,46 @@
+name: Penelope Toasted Series
+brand: Penelope
+distillery: MGP of Indiana
+bottler: Penelope Bourbon
+category: bourbon
+producerType: sourced
+style: high-rye
+mashbill:
+  provenance: published
+  corn: 75
+  rye: 21
+  wheat: 0
+  maltedBarley: 4
+age:
+  years: null
+  stated: false
+  note: No age statement; batches have ranged from about four to six years.
+proof: 100
+price: { low: 55, high: 70, asOf: "2026-10" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: false
+flavor:
+  sweetness: 7
+  spice: 5
+  oak: 7
+  fruit: 4
+  heat: 5
+  nuttiness: 3
+notes:
+  nose: [toffee, black coffee, toasted oak]
+  palate: [burnt toffee, coffee, citrus pith]
+  finish: [peppery, dry]
+blurb: >
+  Finished in a second, freshly toasted barrel, which pushes it toward toffee, roasted coffee and
+  darker oak. The toast level changes from batch to batch.
+verdict: >
+  a toasty, coffee-and-toffee bourbon from a second-barrel finish
+bestFor: [neat, old-fashioned]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Thirty One Whiskey review", url: "https://www.thirtyonewhiskey.com/whiskey-review-penelope-toasted-series-bourbon/" }

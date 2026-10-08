@@ -1,0 +1,44 @@
+name: Rowan's Creek
+brand: Rowan's Creek
+distillery: Willett Distillery
+bottler: Willett Distillery
+category: bourbon
+producerType: heritage
+style: traditional
+mashbill:
+  provenance: unknown
+  note: Willett does not publish the recipe; reviewers suspect one of its higher-rye bills.
+age:
+  years: null
+  stated: false
+  note: No age statement; older bottles carried a 12-year statement.
+proof: 100.1
+price: { low: 40, high: 50, asOf: "2026-10" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: null
+flavor:
+  sweetness: 6
+  spice: 7
+  oak: 4
+  fruit: 4
+  heat: 5
+  nuttiness: 2
+notes:
+  nose: [caramel, honey, mint, hay]
+  palate: [honey, cinnamon, cardamom, ginger tea]
+  finish: [cinnamon, peppermint, vanilla]
+blurb: >
+  A small-batch Willett bottling that tastes rye-forward and herbal. Honey and caramel sit under
+  mint, hay and warm spice, with a peppermint lift on the finish.
+verdict: >
+  an herbal, minty, rye-forward Willett bottling
+bestFor: [neat, old-fashioned, cocktails]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Bourbon Culture review", url: "https://thebourbonculture.com/whiskey-reviews/rowans-creek-bourbon-review/" }
+  - { label: "NC ABC price list", url: "https://abc2.nc.gov/Pricing/ViewItemDetails/149780" }

@@ -1,0 +1,43 @@
+name: Yellowstone Select
+brand: Yellowstone
+distillery: Limestone Branch Distillery (with sourced Kentucky bourbon)
+bottler: Limestone Branch Distillery
+category: bourbon
+producerType: sourced
+style: traditional
+mashbill:
+  provenance: unknown
+  note: Blend of Kentucky bourbons; the recipe is not disclosed.
+age:
+  years: null
+  stated: false
+  note: Blend of 4 to 7 year old barrels.
+proof: 93
+price: { low: 40, high: 50, asOf: "2026-10" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: null
+flavor:
+  sweetness: 6
+  spice: 4
+  oak: 5
+  fruit: 5
+  heat: 3
+  nuttiness: 2
+notes:
+  nose: [toasted oak, vanilla, caramel, marshmallow]
+  palate: [peach, leather, brown sugar, light caramel]
+  finish: [short, oak, white pepper]
+blurb: >
+  A revived historic brand from Limestone Branch. Light and creamy, with toasted oak, vanilla and
+  peach and a short, peppery finish. Part of the proceeds support Yellowstone National Park.
+verdict: >
+  a light, creamy everyday sipper with a historic name
+bestFor: [rocks, highball, old-fashioned]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Breaking Bourbon review", url: "https://www.breakingbourbon.com/review/yellowstone-select-bourbon" }

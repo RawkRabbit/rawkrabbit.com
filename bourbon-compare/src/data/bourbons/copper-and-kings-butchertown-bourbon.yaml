@@ -1,0 +1,46 @@
+name: Copper & Kings Butchertown Bourbon
+brand: Copper & Kings
+distillery: Undisclosed Kentucky distilleries (sourced)
+bottler: Copper & Kings (Louisville, Kentucky)
+category: bourbon
+producerType: sourced
+style: traditional
+mashbill:
+  provenance: unknown
+  note: >-
+    Retailer notes describe a blend of 5-year and 10-year Barton bourbon with 15-year Heaven Hill,
+    finished for a year in Copper & Kings apple brandy barrels.
+age:
+  years: null
+  stated: false
+  note: No age statement; the blend is reported to average about 7.5 years.
+proof: 111
+price: { low: 40, high: 70, asOf: "2026-10" }
+availability: limited
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: null
+flavor:
+  sweetness: 7
+  spice: 6
+  oak: 6
+  fruit: 8
+  heat: 6
+  nuttiness: 3
+notes:
+  nose: [caramel, baked apple, cinnamon, oak]
+  palate: [caramel apple pie, nutmeg, cardamom, white pepper]
+  finish: [medium-long, baking spice, apple sweetness]
+blurb: >
+  Kentucky bourbon finished in the Louisville brandy maker's apple brandy barrels. The finish
+  reads like caramel apple pie: baked apple and cinnamon over a sturdy oak base.
+verdict: >
+  an apple-brandy-finished bourbon that tastes like caramel apple pie
+bestFor: [neat, old-fashioned]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Bourbon Veach tasting", url: "https://bourbonveach.com/2023/10/11/mike-and-matt-taste-copper-kings-butchertown-bourbon-finished-in-apple-brandy-casks/" }
+  - { label: "Retailer shelf notes (SavWay), Oct 2026" }

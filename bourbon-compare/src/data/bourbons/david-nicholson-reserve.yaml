@@ -1,0 +1,43 @@
+name: David Nicholson Reserve
+brand: David Nicholson
+distillery: Undisclosed Kentucky distillery
+bottler: Lux Row Distillers
+category: bourbon
+producerType: sourced
+style: traditional
+mashbill:
+  provenance: unknown
+  note: Rye recipe; percentages are not published.
+age:
+  years: null
+  stated: false
+  note: No age statement; aged longer than the 1843.
+proof: 100
+price: { low: 30, high: 40, asOf: "2026-10" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: false
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 5
+  spice: 6
+  oak: 6
+  fruit: 3
+  heat: 5
+  nuttiness: 3
+notes:
+  nose: [toasted oak, caramel, spice]
+  palate: [rich caramel, rye spice, toasted oak]
+  finish: [long, spicy, warm]
+blurb: >
+  The rye-recipe sibling to the 1843, with extra age. Toasty oak and rye spice give it more
+  backbone, and the spice stays put through a long, warm finish.
+verdict: >
+  a toasty, spicy, 100-proof value bourbon that stands up in cocktails
+bestFor: [old-fashioned, cocktails, rocks]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "BevNET: David Nicholson 1843 and Reserve", url: "https://www.bevnet.com/spirits/2016/david-nicholson-1843-launches-new-variant-updates-packaging" }

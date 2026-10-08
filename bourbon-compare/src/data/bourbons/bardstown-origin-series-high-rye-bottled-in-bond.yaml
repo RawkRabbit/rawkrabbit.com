@@ -1,0 +1,46 @@
+name: Bardstown Bourbon Company Origin Series High Rye Bottled-in-Bond
+brand: Bardstown Bourbon Company
+distillery: Bardstown Bourbon Company
+bottler: Bardstown Bourbon Company
+category: bourbon
+producerType: modern-craft
+style: high-rye
+mashbill:
+  provenance: published
+  corn: 60
+  rye: 36
+  wheat: 0
+  maltedBarley: 4
+age:
+  years: 6
+  stated: true
+proof: 100
+price: { low: 45, high: 50, asOf: "2026-10" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: true
+  chillFiltered: null
+flavor:
+  sweetness: 6
+  spice: 8
+  oak: 5
+  fruit: 7
+  heat: 5
+  nuttiness: 2
+notes:
+  nose: [apricot, orange blossom, mint, caramel]
+  palate: [cinnamon, vanilla, apple butter, pepper]
+  finish: [spicy, oak, lingering rye]
+blurb: >
+  Bardstown's own high-rye recipe, distilled on site rather than sourced. More than a third rye
+  gives it a bright, minty, fruit-and-pepper profile over caramel and light oak.
+verdict: >
+  a spicy, fruit-forward high-rye bourbon with the guarantees of a bonded label
+bestFor: [neat, old-fashioned, cocktails]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Bardstown Bourbon Co. Origin Series announcement", url: "https://bevinfogroup.com/2022/12/05/bardstown-bourbon-announces-the-origin-series/" }
+  - { label: "Retailer shelf notes (SavWay), Oct 2026" }

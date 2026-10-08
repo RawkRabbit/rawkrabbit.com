@@ -1,0 +1,43 @@
+name: Jefferson's Tropics Aged in Humidity
+brand: Jefferson's
+distillery: Undisclosed (sourced)
+bottler: McLain & Kyne
+category: bourbon
+producerType: sourced
+style: traditional
+mashbill:
+  provenance: unknown
+  note: Sourced Kentucky bourbon; recipe not disclosed.
+age:
+  years: null
+  stated: false
+  note: Barrels spent about 18 months in shipping containers in Singapore's heat and humidity before returning to Kentucky.
+proof: 104
+price: { low: 100, high: 110, asOf: "2026-10" }
+availability: limited
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: null
+flavor:
+  sweetness: 7
+  spice: 6
+  oak: 6
+  fruit: 7
+  heat: 6
+  nuttiness: 2
+notes:
+  nose: [caramel, vanilla, leather, ripe fruit]
+  palate: [tobacco, baking spice, summer fruit, cream]
+  finish: [cinnamon, nutmeg, leather, brown sugar]
+blurb: >
+  Jefferson's sent barrels to the Singapore jungle for a year and a half, and the humidity shows.
+  It is creamy and fruit-heavy, with tobacco, leather and baking spice running underneath.
+verdict: >
+  an unusual, tropical-aged bourbon with creamy fruit and tobacco
+bestFor: [neat]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Breaking Bourbon review", url: "https://breakingbourbon.com/review/jeffersons-tropics-aged-in-humidity" }
