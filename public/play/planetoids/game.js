@@ -77,12 +77,18 @@ class Ship {
         this.lastInputTime = Date.now();
         
         // Path/polygon points for custom rendering
+        // Stingray hull: wide swept wings, notched tail
         this.shape = [
-            { x: 18, y: 0 },
-            { x: -14, y: -11 },
-            { x: -7, y: -5 },
-            { x: -7, y: 5 },
-            { x: -14, y: 11 }
+            { x: 16, y: 0 },
+            { x: 6, y: -5 },
+            { x: -4, y: -15 },
+            { x: -12, y: -13 },
+            { x: -8, y: -5 },
+            { x: -13, y: 0 },
+            { x: -8, y: 5 },
+            { x: -12, y: 13 },
+            { x: -4, y: 15 },
+            { x: 6, y: 5 }
         ];
 
         // AI variables
@@ -197,8 +203,8 @@ class Ship {
             this.vy += Math.sin(this.angle) * this.thrustForce;
             
             // Spawn thrust particles
-            const tailX = this.x - Math.cos(this.angle) * 12;
-            const tailY = this.y - Math.sin(this.angle) * 12;
+            const tailX = this.x - Math.cos(this.angle) * 14;
+            const tailY = this.y - Math.sin(this.angle) * 14;
             particles.push(new Particle(
                 tailX, tailY,
                 -Math.cos(this.angle) * 1.5 + (Math.random() - 0.5),
@@ -352,9 +358,9 @@ class Ship {
         const thrustActive = (this.id === 1) ? (keys['KeyW'] || keys['ArrowUp'] || mobileControlsState.thrust) : (this.id === 2 ? keys['KeyI'] : false);
         if ((thrustActive || this.isAI) && Math.random() > 0.3) {
             ctx.beginPath();
-            ctx.moveTo(-7, -3);
-            ctx.lineTo(-18 - Math.random() * 8, 0);
-            ctx.lineTo(-7, 3);
+            ctx.moveTo(-10, -3);
+            ctx.lineTo(-20 - Math.random() * 8, 0);
+            ctx.lineTo(-10, 3);
             ctx.strokeStyle = '#ffaa00';
             ctx.shadowColor = '#ffaa00';
             ctx.stroke();
