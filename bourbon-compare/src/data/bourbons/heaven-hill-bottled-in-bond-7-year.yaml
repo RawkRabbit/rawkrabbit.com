@@ -1,0 +1,46 @@
+name: Heaven Hill Bottled-in-Bond 7 Year
+brand: Heaven Hill
+distillery: Heaven Hill
+bottler: Heaven Hill
+category: bourbon
+producerType: heritage
+style: traditional
+mashbill:
+  provenance: published
+  corn: 78
+  rye: 10
+  wheat: 0
+  maltedBarley: 12
+  note: Heaven Hill publishes its standard bourbon mash bill.
+age:
+  years: 7
+  stated: true
+proof: 100
+price: { low: 35, high: 45, asOf: "2026-08" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: false
+  barrelProof: false
+  bottledInBond: true
+  chillFiltered: true
+flavor:
+  sweetness: 6
+  spice: 5
+  oak: 7
+  fruit: 4
+  heat: 5
+  nuttiness: 5
+notes:
+  nose: [toasted oak, caramel, baked pear, vanilla]
+  palate: [brown sugar, cinnamon, dry oak, grain]
+  finish: [long, balanced, drying]
+blurb: >
+  Seven years, bonded, and priced sensibly — the specification sheet reads like something from
+  twenty years ago. Balanced and oak-leaning without ever getting heavy.
+verdict: >
+  a bonded, age-stated Kentucky bourbon that gets the fundamentals right for under forty dollars
+bestFor: [neat, rocks, old-fashioned]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Heaven Hill Distillery official }

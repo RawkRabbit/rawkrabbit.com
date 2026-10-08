@@ -1,0 +1,47 @@
+name: Knob Creek 12 Year
+brand: Knob Creek
+distillery: Jim Beam
+bottler: Jim Beam
+category: bourbon
+producerType: heritage
+style: high-rye
+mashbill:
+  provenance: reported
+  corn: 75
+  rye: 13
+  wheat: 0
+  maltedBarley: 12
+  note: Beam has never published an official mash bill; 75/13/12 is the long-standing reported figure.
+age:
+  years: 12
+  stated: true
+proof: 100
+price: { low: 55, high: 70, asOf: "2026-08" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 6
+  spice: 6
+  oak: 9
+  fruit: 3
+  heat: 5
+  nuttiness: 7
+notes:
+  nose: [deep oak, dark caramel, roasted nuts, leather]
+  palate: [fudge, peanut brittle, clove, dry wood]
+  finish: [long, tannic, oak-driven]
+blurb: >
+  Three more years in the barrel than the standard Knob Creek, and the wood does all the
+  talking. Deep oak and leather over the familiar Beam peanut note, drying toward genuinely
+  tannic on the finish.
+verdict: >
+  the Beam house profile pushed as far into oak as it goes while staying balanced
+bestFor: [neat, rocks]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Jim Beam official product information }

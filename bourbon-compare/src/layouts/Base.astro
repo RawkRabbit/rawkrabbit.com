@@ -1,0 +1,107 @@
+---
+import '../styles/global.css';
+import { loadCatalogue, seededPairUrl } from '../lib/catalogue.ts';
+import { BASE, url } from '../lib/url.ts';
+
+interface Props {
+  title: string;
+  description?: string;
+  current?: 'compare' | 'bourbons';
+  /** Set on pages that exist under more than one URL (reversed pair orderings). */
+  canonical?: string;
+}
+const {
+  title,
+  description = 'Side-by-side bourbon comparisons built from mash bill, proof, age and price.',
+  current,
+  canonical,
+} = Astro.props;
+
+/* The Random link is enhanced by JS into a true random pick. Its href is a
+   real pre-rendered comparison so it still works without JS — seeded from this
+   page's own path, so the destination at least varies from page to page. */
+const catalogue = await loadCatalogue();
+const slugs = catalogue.map((b) => b.slug);
+const randomFallback = seededPairUrl(catalogue, Astro.url.pathname);
+---
+<!doctype html>
+<html lang="en" data-base={BASE}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    {canonical && <link rel="canonical" href={canonical} />}
+    <script is:inline>
+      // Applied before first paint so the chosen theme never flashes.
+      try {
+        const t = localStorage.getItem('theme');
+        if (t) document.documentElement.dataset.theme = t;
+      } catch {}
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href={url('/')}>Bourbon<span>Compare</span></a>
+        <nav>
+          <a href={url('/')} class="nav-home" aria-current={current === 'compare' ? 'page' : undefined}>Compare</a>
+          <a href={url('/bourbons/')} aria-current={current === 'bourbons' ? 'page' : undefined}>All Bourbons</a>
+          <a href={randomFallback} data-random rel="nofollow">Random</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Toggle light and dark theme">◑</button>
+      </div>
+    </header>
+
+    <script type="application/json" id="bottle-slugs" set:html={JSON.stringify(slugs)}></script>
+
+    <main><div class="wrap"><slot /></div></main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        Mash bills, ages and proofs are compiled from distillery publications and
+        established secondary sources; anything not officially published is marked as such.
+        Prices are US shelf estimates and vary by market. Please drink responsibly.
+      </div>
+    </footer>
+
+    <script is:inline>
+      // Pick a random pair, avoiding the comparison already on screen.
+      for (const trigger of document.querySelectorAll('[data-random]')) {
+        trigger.addEventListener('click', (event) => {
+          let slugs;
+          try {
+            slugs = JSON.parse(document.getElementById('bottle-slugs').textContent);
+          } catch {
+            return; // Leave the href as the no-JS fallback.
+          }
+          if (!Array.isArray(slugs) || slugs.length < 2) return;
+          event.preventDefault();
+
+          const draw = () => slugs[Math.floor(Math.random() * slugs.length)];
+          let url;
+          do {
+            const a = draw();
+            let b = draw();
+            while (b === a) b = draw();
+            url = `${document.documentElement.dataset.base || ''}/compare/${a}-vs-${b}/`;
+          } while (url === location.pathname && slugs.length > 2);
+
+          location.href = url;
+        });
+      }
+
+      document.querySelector('.theme-toggle')?.addEventListener('click', () => {
+        const root = document.documentElement;
+        const dark = root.dataset.theme
+          ? root.dataset.theme === 'dark'
+          : matchMedia('(prefers-color-scheme: dark)').matches;
+        root.dataset.theme = dark ? 'light' : 'dark';
+        try { localStorage.setItem('theme', root.dataset.theme); } catch {}
+      });
+    </script>
+  </body>
+</html>

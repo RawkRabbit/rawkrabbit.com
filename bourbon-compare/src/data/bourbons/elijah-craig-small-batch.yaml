@@ -1,0 +1,46 @@
+name: Elijah Craig Small Batch
+brand: Elijah Craig
+distillery: Heaven Hill
+bottler: Heaven Hill
+category: bourbon
+producerType: heritage
+style: traditional
+mashbill:
+  provenance: published
+  corn: 78
+  rye: 10
+  wheat: 0
+  maltedBarley: 12
+age:
+  years: null
+  stated: false
+  note: Dropped its 12-year statement in 2016; batches generally run 8-12 years.
+proof: 94
+price: { low: 28, high: 35, asOf: "2026-08" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 6
+  spice: 5
+  oak: 7
+  fruit: 4
+  heat: 4
+  nuttiness: 4
+notes:
+  nose: [vanilla bean, brown sugar, charred oak]
+  palate: [caramel, baking spice, toasted wood, smoke]
+  finish: [warm, sweet oak, lingering vanilla]
+blurb: >
+  A heavily oak-driven pour for the money, with vanilla bean and brown sugar riding on top of real
+  char and smoke. The extra age shows up as wood depth rather than harshness.
+verdict: >
+  the best oak-forward value on the shelf, with more wood character than its price suggests
+bestFor: [neat, rocks, old-fashioned]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Heaven Hill — Elijah Craig" }

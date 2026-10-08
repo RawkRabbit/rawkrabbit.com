@@ -1,0 +1,47 @@
+name: Baker’s 7 Year
+brand: Baker’s
+distillery: Jim Beam
+bottler: Jim Beam
+category: bourbon
+producerType: heritage
+style: high-rye
+mashbill:
+  provenance: reported
+  corn: 75
+  rye: 13
+  wheat: 0
+  maltedBarley: 12
+  note: Beam has never published an official mash bill; 75/13/12 is the long-standing reported figure.
+age:
+  years: 7
+  stated: true
+proof: 107
+price: { low: 55, high: 70, asOf: "2026-08" }
+availability: shelf
+bottling:
+  singleBarrel: true
+  smallBatch: false
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 6
+  spice: 5
+  oak: 7
+  fruit: 5
+  heat: 6
+  nuttiness: 7
+notes:
+  nose: [vanilla, toasted nut, caramel, light fruit]
+  palate: [creamy caramel, peanut, soft spice, oak]
+  finish: [medium-long, smooth, nutty]
+blurb: >
+  The gentlest of the Beam small-batch collection despite its 107 proof, thanks to an unusually
+  creamy texture. The peanut note is present but softened, sitting under vanilla and light
+  fruit.
+verdict: >
+  the Beam character in its smoothest, creamiest form at a real proof point
+bestFor: [neat, rocks]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Jim Beam official product information }

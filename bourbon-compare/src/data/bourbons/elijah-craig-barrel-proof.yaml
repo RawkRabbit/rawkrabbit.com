@@ -1,0 +1,47 @@
+name: Elijah Craig Barrel Proof
+brand: Elijah Craig
+distillery: Heaven Hill
+bottler: Heaven Hill
+category: bourbon
+producerType: heritage
+style: traditional
+mashbill:
+  provenance: published
+  corn: 78
+  rye: 10
+  wheat: 0
+  maltedBarley: 12
+age:
+  years: 12
+  stated: true
+  note: Age and proof vary by batch; 12 years is the typical release.
+proof: 124
+price: { low: 70, high: 100, asOf: "2026-08" }
+availability: limited
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: true
+  bottledInBond: false
+  chillFiltered: false
+flavor:
+  sweetness: 7
+  spice: 7
+  oak: 9
+  fruit: 4
+  heat: 9
+  nuttiness: 4
+notes:
+  nose: [dark caramel, toasted oak, cherry, cinnamon]
+  palate: [thick fudge, char, cinnamon red-hots, dark chocolate]
+  finish: [very long, hot, oak and cocoa]
+blurb: >
+  The uncut, unfiltered version of the same 12-year Heaven Hill juice, and the intensity is the
+  whole point. Thick fudge and char with cinnamon heat, a genuinely long finish, and enough proof
+  that water meaningfully changes the glass.
+verdict: >
+  maximum intensity and oak depth, and you want to control the dilution yourself
+bestFor: [neat]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Heaven Hill — Elijah Craig Barrel Proof" }

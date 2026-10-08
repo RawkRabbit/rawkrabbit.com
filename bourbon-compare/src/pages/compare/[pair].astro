@@ -1,0 +1,86 @@
+---
+import Base from '../../layouts/Base.astro';
+import BottlePicker from '../../components/BottlePicker.astro';
+import SpecTable from '../../components/SpecTable.astro';
+import FlavorRadar from '../../components/FlavorRadar.astro';
+import { loadCatalogue, allOrderedPairs } from '../../lib/catalogue.ts';
+import { compare, pairSlug } from '../../lib/compare.ts';
+import { renderInline } from '../../lib/inline.ts';
+import { url } from '../../lib/url.ts';
+
+/* Every ordered pair is pre-rendered — plain HTML, trivial to host, and each one
+   is a linkable, indexable URL if the site goes public. */
+export async function getStaticPaths() {
+  const all = await loadCatalogue();
+  return allOrderedPairs(all).map(([a, b]) => ({
+    params: { pair: pairSlug(a.slug, b.slug) },
+    props: { a, b },
+  }));
+}
+
+const { a, b } = Astro.props;
+const all = await loadCatalogue();
+const c = compare(a, b);
+const title = `${a.name} vs ${b.name}`;
+const canonical = new URL(url(`/compare/${c.canonicalSlug}/`), Astro.site).href;
+---
+<Base
+  title={`${title} — BourbonCompare`}
+  description={`Side-by-side comparison of ${a.name} and ${b.name}: mash bill, age, proof, price and flavor profile.`}
+  current="compare"
+  canonical={canonical}
+>
+  <div class="stack">
+    <div>
+      <p class="eyebrow">Compare</p>
+      <h1>{title}</h1>
+    </div>
+
+    <div class="panel">
+      <BottlePicker all={all} selectedA={a.slug} selectedB={b.slug} />
+    </div>
+
+    <p class="lede" set:html={renderInline(c.opening)} />
+
+    <section class="panel">
+      <h2>Key Specifications</h2>
+      <SpecTable a={a} b={b} />
+    </section>
+
+    <section class="panel">
+      <h2>Flavor Profile</h2>
+      <div class="legend" style="margin-bottom:18px">
+        <span class="legend-item"><span class="swatch a"></span>{a.name}</span>
+        <span class="legend-item"><span class="swatch b"></span>{b.name}</span>
+      </div>
+      <FlavorRadar a={a} b={b} />
+    </section>
+
+    <section class="panel">
+      <h2>Flavor Profile Differences</h2>
+      <p style="color:var(--text-secondary)">{c.flavorLead}</p>
+      <ul class="compare-list">
+        <li class="side-a"><strong>{a.name}:</strong> {a.blurb}</li>
+        <li class="side-b"><strong>{b.name}:</strong> {b.blurb}</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>Which One Should You Choose?</h2>
+      <ul class="compare-list">
+        {c.recommendations.map((r) => (
+          <li class={`side-${r.side}`} set:html={renderInline(r.text)} />
+        ))}
+      </ul>
+      <p class="footnote" style="margin-top:14px">
+        Best enjoyed {a.bestFor.join(', ')} ({a.name}); {b.bestFor.join(', ')} ({b.name}).
+      </p>
+    </section>
+
+    <div class="pill-row">
+      <a class="pill" href={url(`/bourbons/${a.slug}/`)}>More on {a.name}</a>
+      <a class="pill" href={url(`/bourbons/${b.slug}/`)}>More on {b.name}</a>
+      <a class="pill" href={url('/bourbons/')}>Browse all bourbons</a>
+    </div>
+  </div>
+</Base>

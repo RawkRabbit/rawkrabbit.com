@@ -1,0 +1,47 @@
+name: Woodford Reserve
+brand: Woodford Reserve
+distillery: Brown-Forman
+bottler: Brown-Forman
+category: bourbon
+producerType: heritage
+style: high-rye
+mashbill:
+  provenance: published
+  corn: 72
+  rye: 18
+  wheat: 0
+  maltedBarley: 10
+  note: Brown-Forman publishes the shared Old Forester and Woodford Reserve mash bill.
+age:
+  years: null
+  stated: false
+  note: No age statement; generally reported between six and seven years.
+proof: 90.4
+price: { low: 35, high: 42, asOf: "2026-08" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 6
+  spice: 6
+  oak: 6
+  fruit: 6
+  heat: 4
+  nuttiness: 3
+notes:
+  nose: [dried fruit, vanilla, toasted oak, mint]
+  palate: [caramel, cocoa, baking spice, orange]
+  finish: [medium-long, smooth, balanced]
+blurb: >
+  The most widely poured premium bourbon in America, and a genuinely well-made one. Dried fruit
+  and cocoa over a balanced 18% rye mash, finished smooth enough to please almost anyone.
+verdict: >
+  a polished, widely available crowd-pleaser that never puts a foot wrong
+bestFor: [neat, rocks, old-fashioned, cocktails]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Brown-Forman official product information }

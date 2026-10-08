@@ -1,0 +1,47 @@
+name: Old Forester 1897 Bottled-in-Bond
+brand: Old Forester
+distillery: Brown-Forman
+bottler: Brown-Forman
+category: bourbon
+producerType: heritage
+style: high-rye
+mashbill:
+  provenance: published
+  corn: 72
+  rye: 18
+  wheat: 0
+  maltedBarley: 10
+  note: Brown-Forman publishes the shared Old Forester and Woodford Reserve mash bill.
+age:
+  years: 4
+  stated: true
+proof: 100
+price: { low: 45, high: 55, asOf: "2026-08" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: false
+  barrelProof: false
+  bottledInBond: true
+  chillFiltered: true
+flavor:
+  sweetness: 7
+  spice: 6
+  oak: 7
+  fruit: 5
+  heat: 5
+  nuttiness: 3
+notes:
+  nose: [dark caramel, banana bread, toasted oak, clove]
+  palate: [rich toffee, cinnamon, dry oak, char]
+  finish: [long, warm, oak and spice]
+blurb: >
+  The bonded entry in the Whiskey Row series and a noticeable step up in density from the
+  standard 100. More oak and more weight, though the price gap to the 100 proof is harder to
+  justify than the flavour gap suggests.
+verdict: >
+  a bonded, denser take on the Old Forester profile with more barrel behind it
+bestFor: [neat, old-fashioned]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Brown-Forman official product information }

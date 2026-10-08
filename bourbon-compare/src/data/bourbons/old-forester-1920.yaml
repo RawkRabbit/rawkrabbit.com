@@ -1,0 +1,46 @@
+name: Old Forester 1920 Prohibition Style
+brand: Old Forester
+distillery: Brown-Forman
+bottler: Brown-Forman
+category: bourbon
+producerType: heritage
+style: high-rye
+mashbill:
+  provenance: published
+  corn: 72
+  rye: 18
+  wheat: 0
+  maltedBarley: 10
+age:
+  years: null
+  stated: false
+  note: No age statement; generally reported around 5-6 years.
+proof: 115
+price: { low: 55, high: 70, asOf: "2026-08" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 8
+  spice: 7
+  oak: 7
+  fruit: 5
+  heat: 7
+  nuttiness: 3
+notes:
+  nose: [dark caramel, banana, cinnamon, oak]
+  palate: [thick molasses, dark chocolate, baking spice, char]
+  finish: [long, sweet, warming]
+blurb: >
+  Dense and syrupy for its age, with molasses and dark chocolate carrying a serious 115-proof
+  punch. The high rye reads as baking spice rather than sharpness, and the body is unusually thick.
+verdict: >
+  a rich, high-proof, dessert-leaning bourbon with real weight in the glass
+bestFor: [neat, old-fashioned]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Old Forester — Whiskey Row Series" }

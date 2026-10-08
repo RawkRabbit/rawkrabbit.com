@@ -1,0 +1,47 @@
+name: Henry McKenna 10 Year Single Barrel
+brand: Henry McKenna
+distillery: Heaven Hill
+bottler: Heaven Hill
+category: bourbon
+producerType: heritage
+style: traditional
+mashbill:
+  provenance: published
+  corn: 78
+  rye: 10
+  wheat: 0
+  maltedBarley: 12
+  note: Heaven Hill publishes its standard bourbon mash bill.
+age:
+  years: 10
+  stated: true
+proof: 100
+price: { low: 40, high: 70, asOf: "2026-08" }
+availability: limited
+bottling:
+  singleBarrel: true
+  smallBatch: false
+  barrelProof: false
+  bottledInBond: true
+  chillFiltered: true
+flavor:
+  sweetness: 6
+  spice: 5
+  oak: 8
+  fruit: 4
+  heat: 5
+  nuttiness: 5
+notes:
+  nose: [oak, caramel, apple, vanilla]
+  palate: [dry oak, toffee, cinnamon, grain]
+  finish: [long, dry, oak-forward]
+blurb: >
+  A ten-year bonded single barrel, which is a specification almost nothing else on the shelf
+  matches. Dry and oak-forward with real age showing, though barrel variation means bottles
+  differ more than most.
+verdict: >
+  a bonded, ten-year single barrel with genuine age at a sane price
+bestFor: [neat, rocks]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Heaven Hill Distillery official }

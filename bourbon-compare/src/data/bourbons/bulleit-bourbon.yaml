@@ -1,0 +1,48 @@
+name: Bulleit Bourbon
+brand: Bulleit
+distillery: Undisclosed (sourced)
+bottler: Bulleit
+category: bourbon
+producerType: sourced
+style: high-rye
+mashbill:
+  provenance: published
+  corn: 68
+  rye: 28
+  wheat: 0
+  maltedBarley: 4
+  note: Bulleit publishes a 68/28/4 mash bill; production has shifted between sourced and Diageo-owned distilleries over time.
+age:
+  years: null
+  stated: false
+  note: No age statement; generally reported between four and six years.
+proof: 90
+price: { low: 25, high: 32, asOf: "2026-08" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: false
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 5
+  spice: 7
+  oak: 5
+  fruit: 5
+  heat: 4
+  nuttiness: 3
+notes:
+  nose: [rye spice, oak, vanilla, dried herbs]
+  palate: [pepper, caramel, dill, light oak]
+  finish: [medium, dry, spicy]
+blurb: >
+  The bottle that put high-rye bourbon in every cocktail bar in the country. Peppery and dry
+  with the familiar MGP dill note, and it earns its place behind the bar more than in a glass on
+  its own.
+verdict: >
+  a dry, peppery, high-rye bourbon built for cocktails and available absolutely everywhere
+bestFor: [old-fashioned, cocktails, highball]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Bulleit official }

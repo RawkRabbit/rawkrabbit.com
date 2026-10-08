@@ -1,0 +1,48 @@
+name: Stagg
+brand: Stagg
+distillery: Buffalo Trace
+bottler: Buffalo Trace
+category: bourbon
+producerType: heritage
+style: traditional
+mashbill:
+  provenance: estimated
+  corn: 78
+  rye: 10
+  wheat: 0
+  maltedBarley: 12
+  note: "Buffalo Trace does not disclose Mash Bill #1; figures are a widely used estimate of a low-rye recipe."
+age:
+  years: null
+  stated: false
+  note: No age statement; batch ages are typically reported around 8 years.
+proof: 130
+price: { low: 70, high: 120, asOf: "2026-08" }
+availability: limited
+bottling:
+  singleBarrel: false
+  smallBatch: false
+  barrelProof: true
+  bottledInBond: false
+  chillFiltered: false
+flavor:
+  sweetness: 7
+  spice: 7
+  oak: 9
+  fruit: 5
+  heat: 10
+  nuttiness: 4
+notes:
+  nose: [dark chocolate, charred oak, cherry, espresso]
+  palate: [fudge, leather, dark fruit, searing spice]
+  finish: [enormous, hot, oak and cocoa]
+blurb: >
+  Uncut and unfiltered Buffalo Trace at a proof that demands respect. Dark chocolate, espresso
+  and charred oak arrive with genuine heat, and a few drops of water unlock a surprising amount
+  of fruit.
+verdict: >
+  the biggest, hottest, most concentrated expression of the Buffalo Trace profile
+bestFor: [neat]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Buffalo Trace Distillery official }

@@ -1,0 +1,48 @@
+name: Larceny Barrel Proof
+brand: Larceny
+distillery: Heaven Hill
+bottler: Heaven Hill
+category: bourbon
+producerType: heritage
+style: wheated
+mashbill:
+  provenance: published
+  corn: 68
+  rye: 0
+  wheat: 20
+  maltedBarley: 12
+  note: Heaven Hill publishes its standard bourbon mash bill.
+age:
+  years: null
+  stated: false
+  note: Age varies by batch; typically six to eight years.
+proof: 124
+price: { low: 55, high: 70, asOf: "2026-08" }
+availability: limited
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: true
+  bottledInBond: false
+  chillFiltered: false
+flavor:
+  sweetness: 9
+  spice: 3
+  oak: 6
+  fruit: 6
+  heat: 9
+  nuttiness: 3
+notes:
+  nose: [thick caramel, baked apple, vanilla, cinnamon]
+  palate: [dense toffee, soft wheat, stone fruit, heat]
+  finish: [long, sweet, warming]
+blurb: >
+  The wheated recipe at full barrel strength, and a genuinely dense pour. Thick caramel and
+  baked fruit carry the heat well, and it takes water more gracefully than most bottles at this
+  proof.
+verdict: >
+  wheated sweetness with barrel-proof concentration, without the Weller price or hunt
+bestFor: [neat]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Heaven Hill Distillery official }

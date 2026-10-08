@@ -1,0 +1,47 @@
+name: Knob Creek 9 Year
+brand: Knob Creek
+distillery: Jim Beam
+bottler: Jim Beam
+category: bourbon
+producerType: heritage
+style: high-rye
+mashbill:
+  provenance: reported
+  corn: 75
+  rye: 13
+  wheat: 0
+  maltedBarley: 12
+  note: Beam has never published an official mash bill; 75/13/12 is the long-standing reported figure.
+age:
+  years: 9
+  stated: true
+proof: 100
+price: { low: 35, high: 40, asOf: "2026-08" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 5
+  spice: 6
+  oak: 8
+  fruit: 3
+  heat: 5
+  nuttiness: 7
+notes:
+  nose: [toasted oak, caramel, vanilla, roasted nuts]
+  palate: [rich caramel, peanut, black pepper, char]
+  finish: [citrus zest, mint, drying oak]
+blurb: >
+  This classic Jim Beam offering leans heavily into traditional oak, rich caramel, vanilla, and the
+  signature Beam peanut-funk nuttiness. At 100 proof it delivers a bolder, more structural
+  wood-and-spice influence with a touch of citrus zest and mint on the finish.
+verdict: >
+  a classic peanut-and-oak-forward Kentucky bourbon with an older age statement
+bestFor: [neat, rocks, old-fashioned]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Knob Creek official product page" }

@@ -1,0 +1,93 @@
+---
+import type { BourbonEntry } from '../lib/schema.ts';
+import { FLAVOR_AXES } from '../lib/schema.ts';
+import { flavorDeltas } from '../lib/compare.ts';
+
+interface Props { a: BourbonEntry; b: BourbonEntry }
+const { a, b } = Astro.props;
+
+/* Radar geometry, computed at build time — no chart library, no client JS.
+   The hexagon gives the gestalt ("what shape is this whiskey"); the dumbbell
+   rows underneath give the precise per-axis reading, sorted by how much the two
+   actually differ. Both are direct-labeled, so identity is never color-alone. */
+const SIZE = 300;
+const C = SIZE / 2;
+const R = 118;
+const RINGS = [2, 4, 6, 8, 10];
+/* Axis labels are drawn outside the plot radius, so the viewBox is padded
+   horizontally — otherwise the left-hand labels ("nuttiness") get clipped. */
+const PAD_X = 34;
+const PAD_Y = 10;
+
+const point = (i: number, value: number, radius = R) => {
+  const angle = -Math.PI / 2 + (i * 2 * Math.PI) / FLAVOR_AXES.length;
+  const r = (radius * value) / 10;
+  return [C + r * Math.cos(angle), C + r * Math.sin(angle)] as const;
+};
+const polygon = (values: number[], radius = R) =>
+  values.map((v, i) => point(i, v, radius).join(',')).join(' ');
+
+const ringPolys = RINGS.map((ring) => polygon(FLAVOR_AXES.map(() => ring)));
+const polyA = polygon(FLAVOR_AXES.map((ax) => a.flavor[ax]));
+const polyB = polygon(FLAVOR_AXES.map((ax) => b.flavor[ax]));
+
+const labels = FLAVOR_AXES.map((axis, i) => {
+  const [x, y] = point(i, 10, R + 22);
+  const anchor = Math.abs(x - C) < 6 ? 'middle' : x > C ? 'start' : 'end';
+  return { axis, x, y: y + 4, anchor };
+});
+
+const deltas = flavorDeltas(a, b);
+const pct = (v: number) => (v / 10) * 100;
+---
+
+<div class="viz">
+  <svg
+    class="radar"
+    viewBox={`${-PAD_X} ${-PAD_Y} ${SIZE + PAD_X * 2} ${SIZE + PAD_Y * 2}`}
+    role="img"
+    aria-label={`Flavor profile radar comparing ${a.name} and ${b.name} across ${FLAVOR_AXES.join(', ')}`}
+  >
+    {ringPolys.map((pts) => <polygon class="grid-line" points={pts} />)}
+    {FLAVOR_AXES.map((_, i) => {
+      const [x, y] = point(i, 10);
+      return <line class="spoke" x1={C} y1={C} x2={x} y2={y} />;
+    })}
+    <polygon class="poly-a" points={polyA} />
+    <polygon class="poly-b" points={polyB} />
+    {labels.map((l) => (
+      <text class="axis-label" x={l.x} y={l.y} text-anchor={l.anchor}>{l.axis}</text>
+    ))}
+  </svg>
+
+  <div>
+    <p class="eyebrow">Axis by axis, biggest gap first</p>
+    <div class="deltas">
+      {deltas.map((d) => (
+        <div class="delta-row">
+          <span class="axis-name">{d.axis}</span>
+          <div class="dumbbell" aria-hidden="true">
+            <span class="track"></span>
+            <span
+              class="connector"
+              style={`left:${Math.min(pct(d.a), pct(d.b))}%;width:${Math.abs(pct(d.a) - pct(d.b))}%`}
+            ></span>
+            <span class="dot dot-a" style={`left:${pct(d.a)}%`}></span>
+            <span class="dot dot-b" style={`left:${pct(d.b)}%`}></span>
+          </div>
+          <span class="readout">
+            <span class="v-a">{d.a}</span><span class="sep">/</span><span class="v-b">{d.b}</span>
+          </span>
+          <span class="sr-only">{`${d.axis}: ${a.name} ${d.a} out of 10, ${b.name} ${d.b} out of 10`}</span>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+
+<style>
+  .sr-only {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+  }
+</style>

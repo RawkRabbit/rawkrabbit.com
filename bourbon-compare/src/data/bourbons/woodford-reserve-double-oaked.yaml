@@ -1,0 +1,48 @@
+name: Woodford Reserve Double Oaked
+brand: Woodford Reserve
+distillery: Brown-Forman
+bottler: Brown-Forman
+category: bourbon
+producerType: heritage
+style: high-rye
+mashbill:
+  provenance: published
+  corn: 72
+  rye: 18
+  wheat: 0
+  maltedBarley: 10
+  note: Brown-Forman publishes the shared Old Forester and Woodford Reserve mash bill.
+age:
+  years: null
+  stated: false
+  note: No age statement; finished in a second toasted barrel.
+proof: 90.4
+price: { low: 50, high: 62, asOf: "2026-08" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 8
+  spice: 5
+  oak: 9
+  fruit: 5
+  heat: 4
+  nuttiness: 3
+notes:
+  nose: [maple, toasted oak, dark caramel, vanilla]
+  palate: [syrupy sweetness, caramelised sugar, cocoa, heavy oak]
+  finish: [long, sweet, wood-driven]
+blurb: >
+  A second barrel, deeply toasted, and the result is unashamedly dessert-like. Maple and
+  caramelised sugar with heavy wood — polarising if you want restraint, excellent if you want
+  sweetness.
+verdict: >
+  an overtly sweet, heavily oaked, dessert-leaning bourbon
+bestFor: [neat, rocks]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Brown-Forman official product information }

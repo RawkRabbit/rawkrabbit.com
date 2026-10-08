@@ -1,0 +1,43 @@
+name: W.L. Weller 12 Year
+brand: Weller
+distillery: Buffalo Trace
+bottler: Buffalo Trace
+category: bourbon
+producerType: heritage
+style: wheated
+mashbill:
+  provenance: unknown
+  note: Buffalo Trace does not disclose its wheated recipe beyond wheat replacing rye.
+age:
+  years: 12
+  stated: true
+proof: 90
+price: { low: 70, high: 180, asOf: "2026-08" }
+availability: allocated
+bottling:
+  singleBarrel: false
+  smallBatch: false
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 8
+  spice: 2
+  oak: 7
+  fruit: 6
+  heat: 3
+  nuttiness: 3
+notes:
+  nose: [dark caramel, baked apple, vanilla, polished oak]
+  palate: [rich toffee, soft wheat, stone fruit, cocoa]
+  finish: [long, elegant, gently oaked]
+blurb: >
+  Twelve years on a wheated mash at a modest 90 proof, which is the combination that made this
+  bottle famous. Deep caramel and baked fruit with polished rather than aggressive oak — the
+  closest widely-discussed analogue to the Pappy profile.
+verdict: >
+  age and elegance on a wheated mash, and you are willing to chase it
+bestFor: [neat]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Buffalo Trace Distillery official }

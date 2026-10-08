@@ -1,0 +1,48 @@
+name: Ancient Age
+brand: Ancient Age
+distillery: Buffalo Trace
+bottler: Buffalo Trace
+category: bourbon
+producerType: heritage
+style: high-rye
+mashbill:
+  provenance: estimated
+  corn: 75
+  rye: 15
+  wheat: 0
+  maltedBarley: 10
+  note: "Buffalo Trace does not disclose Mash Bill #2; it is understood to carry noticeably more rye than Mash Bill #1."
+age:
+  years: null
+  stated: false
+  note: No age statement; generally reported at around three years.
+proof: 80
+price: { low: 14, high: 18, asOf: "2026-08" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: false
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 5
+  spice: 4
+  oak: 3
+  fruit: 4
+  heat: 2
+  nuttiness: 4
+notes:
+  nose: [light corn, vanilla, faint grain]
+  palate: [thin caramel, mild spice, cereal]
+  finish: [short, simple, clean]
+blurb: >
+  The bottom rung of the Buffalo Trace ladder and priced accordingly. Thin and simple at 80
+  proof, but it is recognisably the Mash Bill #2 recipe and it does its job in a highball
+  without complaint.
+verdict: >
+  the cheapest honest mixer in the lineup and you are not drinking it neat
+bestFor: [cocktails, highball]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Buffalo Trace Distillery official }

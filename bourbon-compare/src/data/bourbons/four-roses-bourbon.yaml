@@ -1,0 +1,47 @@
+name: Four Roses Bourbon
+brand: Four Roses
+distillery: Four Roses
+bottler: Four Roses
+category: bourbon
+producerType: heritage
+style: high-rye
+mashbill:
+  provenance: published
+  corn: 75
+  rye: 20
+  wheat: 0
+  maltedBarley: 5
+  note: Blends all ten Four Roses recipes; figures shown are the high-rye 'B' mash bill.
+age:
+  years: null
+  stated: false
+proof: 80
+price: { low: 22, high: 28, asOf: "2026-08" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: false
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 6
+  spice: 5
+  oak: 3
+  fruit: 6
+  heat: 2
+  nuttiness: 3
+notes:
+  nose: [pear, light floral, honey]
+  palate: [soft fruit, mild spice, thin caramel]
+  finish: [short, clean, fruity]
+blurb: >
+  The yellow label entry point, blending all ten Four Roses recipes at a gentle 80 proof. Light
+  and fruity to a fault, but the house floral character is already recognisable and it mixes
+  beautifully.
+verdict: >
+  the Four Roses fruit-and-floral signature at its lightest and cheapest
+bestFor: [cocktails, highball, rocks]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Four Roses Distillery official }

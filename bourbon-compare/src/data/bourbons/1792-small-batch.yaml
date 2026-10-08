@@ -1,0 +1,44 @@
+name: 1792 Small Batch
+brand: "1792"
+distillery: Barton 1792
+bottler: Barton 1792
+category: bourbon
+producerType: heritage
+style: high-rye
+mashbill:
+  provenance: unknown
+  note: Barton does not publish the 1792 mash bill; it is widely described as high-rye.
+age:
+  years: null
+  stated: false
+  note: No age statement; generally reported around eight years.
+proof: 93.7
+price: { low: 26, high: 34, asOf: "2026-08" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 6
+  spice: 7
+  oak: 6
+  fruit: 5
+  heat: 5
+  nuttiness: 4
+notes:
+  nose: [rye spice, caramel, orange peel, vanilla]
+  palate: [brown sugar, pepper, cocoa, oak]
+  finish: [medium-long, spicy, dry]
+blurb: >
+  Barton's flagship and one of the most under-discussed bottles at its price. A high-rye
+  character with cocoa and orange peel, and considerably more going on than the shelf position
+  suggests.
+verdict: >
+  an overlooked, spice-forward Kentucky bourbon that punches above its price
+bestFor: [neat, rocks, old-fashioned]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Barton 1792 Distillery official }

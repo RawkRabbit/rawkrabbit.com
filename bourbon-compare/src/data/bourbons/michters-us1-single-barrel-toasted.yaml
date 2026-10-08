@@ -1,0 +1,44 @@
+name: "Michter’s US*1 Toasted Barrel Finish"
+brand: Michter’s
+distillery: Undisclosed (sourced)
+bottler: Michter's
+category: bourbon
+producerType: sourced
+style: traditional
+mashbill:
+  provenance: unknown
+  note: Michter's does not disclose its mash bill or source distillery.
+age:
+  years: null
+  stated: false
+  note: No age statement; finished in a second toasted barrel.
+proof: 91.4
+price: { low: 90, high: 130, asOf: "2026-08" }
+availability: limited
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: false
+flavor:
+  sweetness: 8
+  spice: 4
+  oak: 8
+  fruit: 5
+  heat: 4
+  nuttiness: 4
+notes:
+  nose: [toasted oak, vanilla, marshmallow, caramel]
+  palate: [butterscotch, toasted wood, soft spice, cream]
+  finish: [long, sweet, smooth]
+blurb: >
+  The standard Michter's bourbon given a second toasted barrel, which adds sweetness and wood to
+  an already polished pour. Genuinely good, though the price has drifted well past what the
+  liquid alone justifies.
+verdict: >
+  the smoothest, most polished toasted-barrel pour here and price is not the deciding factor
+bestFor: [neat]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Michter's official }

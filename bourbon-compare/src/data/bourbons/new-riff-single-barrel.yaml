@@ -1,0 +1,47 @@
+name: New Riff Single Barrel
+brand: New Riff
+distillery: New Riff
+bottler: New Riff
+category: bourbon
+producerType: modern-craft
+style: high-rye
+mashbill:
+  provenance: published
+  corn: 65
+  rye: 30
+  wheat: 0
+  maltedBarley: 5
+  note: New Riff publishes its mash bill in full.
+age:
+  years: 5
+  stated: true
+proof: 105
+price: { low: 55, high: 70, asOf: "2026-08" }
+availability: shelf
+bottling:
+  singleBarrel: true
+  smallBatch: false
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: false
+flavor:
+  sweetness: 4
+  spice: 9
+  oak: 6
+  fruit: 5
+  heat: 7
+  nuttiness: 3
+notes:
+  nose: [rye spice, mint, green apple, oak]
+  palate: [black pepper, clove, dill, dry oak]
+  finish: [very long, dry, intensely peppery]
+blurb: >
+  The single-barrel expression of New Riff's 30% rye mash, non-chill-filtered and at higher
+  proof than the bonded version. As dry and peppery as bourbon gets before it stops being
+  bourbon.
+verdict: >
+  the most aggressively spice-driven bourbon in this list, with single-barrel variation on top
+bestFor: [neat, old-fashioned]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: New Riff Distilling official }

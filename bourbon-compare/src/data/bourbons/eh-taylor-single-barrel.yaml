@@ -1,0 +1,49 @@
+name: E.H. Taylor Jr. Single Barrel
+brand: E.H. Taylor Jr.
+distillery: Buffalo Trace
+bottler: Buffalo Trace
+category: bourbon
+producerType: heritage
+style: traditional
+mashbill:
+  provenance: estimated
+  corn: 78
+  rye: 10
+  wheat: 0
+  maltedBarley: 12
+  note: "Buffalo Trace does not disclose Mash Bill #1; figures are a widely used estimate of a low-rye recipe."
+age:
+  years: null
+  stated: false
+  note: Bottled-in-bond, so a minimum of four years; barrels are generally reported older.
+proof: 100
+price: { low: 70, high: 140, asOf: "2026-08" }
+availability: allocated
+bottling:
+  singleBarrel: true
+  smallBatch: false
+  barrelProof: false
+  bottledInBond: true
+  chillFiltered: true
+flavor:
+  sweetness: 6
+  spice: 5
+  oak: 8
+  fruit: 5
+  heat: 5
+  nuttiness: 4
+notes:
+  nose: [caramel, tobacco, dark fruit, oak]
+  palate: [butterscotch, leather, pepper, dry wood]
+  finish: [very long, drying, oak-led]
+blurb: >
+  Single barrels from the warehouse Colonel Taylor built, bonded at 100 proof. More oak and more
+  concentration than the small batch, and one of the most sought-after regular releases Buffalo
+  Trace makes.
+verdict: >
+  the most concentrated bonded expression of the Buffalo Trace profile, and the hunt does not
+  deter you
+bestFor: [neat]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Buffalo Trace Distillery official }

@@ -1,0 +1,45 @@
+name: Bardstown Bourbon Company Fusion Series
+brand: Bardstown Bourbon Company
+distillery: Bardstown Bourbon Company
+bottler: Bardstown Bourbon Company
+category: bourbon
+producerType: modern-craft
+style: traditional
+mashbill:
+  provenance: unknown
+  note: A blend of Bardstown's own distillate and sourced Kentucky bourbon; component mash bills vary by release.
+age:
+  years: null
+  stated: false
+  note: Age varies by release; blends young in-house distillate with older sourced stock.
+proof: 98.9
+price: { low: 55, high: 70, asOf: "2026-08" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 7
+  spice: 5
+  oak: 6
+  fruit: 6
+  heat: 5
+  nuttiness: 3
+notes:
+  nose: [caramel, cherry, vanilla, light oak]
+  palate: [brown sugar, stone fruit, soft spice, cream]
+  finish: [medium-long, smooth, sweet]
+blurb: >
+  A blend of Bardstown's own young distillate with older sourced Kentucky whiskey, which is
+  exactly what the name describes. Polished and fruit-leaning, and a clear demonstration that
+  the blending is the skill on show.
+verdict: >
+  a well-built modern blend that shows what careful blending does rather than what age alone
+  does
+bestFor: [neat, rocks]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Bardstown Bourbon Company — Fusion Series }

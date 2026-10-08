@@ -1,0 +1,46 @@
+name: Maker’s Mark 46
+brand: Maker’s Mark
+distillery: Maker’s Mark
+bottler: Maker’s Mark
+category: bourbon
+producerType: heritage
+style: wheated
+mashbill:
+  provenance: published
+  corn: 70
+  rye: 0
+  wheat: 16
+  maltedBarley: 14
+age:
+  years: null
+  stated: false
+  note: No age statement; finished with French oak staves after initial maturation.
+proof: 94
+price: { low: 38, high: 45, asOf: "2026-08" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 8
+  spice: 4
+  oak: 7
+  fruit: 4
+  heat: 4
+  nuttiness: 3
+notes:
+  nose: [vanilla, caramel, toasted oak, baking spice]
+  palate: [rich caramel, seared oak, soft wheat, cinnamon]
+  finish: [long, sweet, oak-driven]
+blurb: >
+  Finished with seared French oak staves inside the barrel, which adds the spice and wood that
+  the standard bottling deliberately lacks. The most useful upgrade in the Maker's range.
+verdict: >
+  the softness of Maker's Mark with real oak and spice layered over it
+bestFor: [neat, rocks, old-fashioned]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Maker's Mark official }

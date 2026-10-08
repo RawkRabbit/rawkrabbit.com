@@ -1,0 +1,47 @@
+name: Four Roses Small Batch Select
+brand: Four Roses
+distillery: Four Roses
+bottler: Four Roses
+category: bourbon
+producerType: heritage
+style: high-rye
+mashbill:
+  provenance: published
+  corn: 60
+  rye: 35
+  wheat: 0
+  maltedBarley: 5
+  note: Blends six of the ten Four Roses recipes; figures shown are the high-rye 'B' mash bill.
+age:
+  years: 6
+  stated: true
+proof: 104
+price: { low: 55, high: 65, asOf: "2026-08" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: false
+flavor:
+  sweetness: 6
+  spice: 7
+  oak: 6
+  fruit: 8
+  heat: 6
+  nuttiness: 3
+notes:
+  nose: [red berry, floral, cinnamon, vanilla]
+  palate: [ripe cherry, baking spice, honey, light oak]
+  finish: [long, fruity, gently spiced]
+blurb: >
+  Six recipes, non-chill-filtered, at 104 proof, and the most complete thing Four Roses makes at
+  a normal price. The house fruit character with enough proof and texture to carry it.
+verdict: >
+  the fullest expression of the Four Roses fruit-forward style without chasing an allocated
+  bottle
+bestFor: [neat, rocks]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Four Roses Distillery official }

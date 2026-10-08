@@ -1,0 +1,48 @@
+name: Jack Daniel’s Single Barrel Select
+brand: Jack Daniel’s
+distillery: Jack Daniel’s
+bottler: Jack Daniel’s
+category: tennessee
+producerType: heritage
+style: traditional
+mashbill:
+  provenance: published
+  corn: 80
+  rye: 8
+  wheat: 0
+  maltedBarley: 12
+  note: Charcoal-mellowed before barrelling, which is what makes it Tennessee whiskey rather than bourbon by label.
+age:
+  years: null
+  stated: false
+  note: No age statement; upper-rickhouse barrels generally reported around five to seven years.
+proof: 94
+price: { low: 45, high: 55, asOf: "2026-08" }
+availability: limited
+bottling:
+  singleBarrel: true
+  smallBatch: false
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 6
+  spice: 5
+  oak: 7
+  fruit: 4
+  heat: 5
+  nuttiness: 4
+notes:
+  nose: [toasted oak, banana, vanilla, light char]
+  palate: [caramel, spice, oak, soft smoke]
+  finish: [long, oaky, smooth]
+blurb: >
+  Barrels pulled from the top of the rickhouse, where the temperature swings are hardest, and it
+  shows as considerably more oak than any standard Jack. A genuinely different proposition from
+  the black label.
+verdict: >
+  a distinctly oakier, more concentrated Tennessee whiskey with barrel-to-barrel character
+bestFor: [neat, rocks]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Jack Daniel's official }

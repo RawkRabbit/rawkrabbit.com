@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview"
+    "build": "astro build && npm run build:bourbon",
+    "preview": "astro preview",
+    "build:bourbon": "npm ci --prefix bourbon-compare && npm run build --prefix bourbon-compare && cp -R bourbon-compare/dist dist/bourbon"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.19",

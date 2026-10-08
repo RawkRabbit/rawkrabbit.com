@@ -1,0 +1,48 @@
+name: Angel’s Envy
+brand: Angel’s Envy
+distillery: Louisville Distilling Co.
+bottler: Louisville Distilling Co.
+category: bourbon
+producerType: modern-craft
+style: traditional
+mashbill:
+  provenance: estimated
+  corn: 72
+  rye: 18
+  wheat: 0
+  maltedBarley: 10
+  note: Angel's Envy does not publish exact figures; the base is a sourced Kentucky bourbon finished in port barrels.
+age:
+  years: null
+  stated: false
+  note: No age statement; four to six years, then three to six months in port barrels.
+proof: 86.6
+price: { low: 45, high: 55, asOf: "2026-08" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 8
+  spice: 4
+  oak: 5
+  fruit: 7
+  heat: 3
+  nuttiness: 3
+notes:
+  nose: [ripe berry, maple, vanilla, raisin]
+  palate: [port sweetness, dark fruit, caramel, soft oak]
+  finish: [medium, sweet, fruit-driven]
+blurb: >
+  Finished in port barrels, which pushes it well away from the traditional bourbon template
+  toward berry and raisin sweetness. Divisive among purists and extremely popular with everyone
+  else.
+verdict: >
+  an overtly fruity, port-finished bourbon that breaks from the traditional profile on purpose
+bestFor: [neat, rocks]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Angel's Envy official }

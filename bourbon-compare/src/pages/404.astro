@@ -1,0 +1,23 @@
+---
+import Base from '../layouts/Base.astro';
+import { loadCatalogue } from '../lib/catalogue.ts';
+import { url } from '../lib/url.ts';
+
+const all = await loadCatalogue();
+---
+<Base title="Not found — BourbonCompare">
+  <div class="stack">
+    <div>
+      <p class="eyebrow">404</p>
+      <h1>That page isn't here.</h1>
+      <p class="lede" style="max-width:56ch">
+        Comparison pages only exist for bottles in the master list. Pick two from
+        the catalogue, or start a fresh comparison.
+      </p>
+    </div>
+    <div class="pill-row">
+      <a class="pill" href={url('/')}>Start a comparison</a>
+      <a class="pill" href={url('/bourbons/')}>Browse all {all.length} bourbons</a>
+    </div>
+  </div>
+</Base>

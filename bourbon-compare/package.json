@@ -1,0 +1,21 @@
+{
+  "name": "bourbon-comparison",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "test": "node --test test/*.test.ts",
+    "spotcheck": "node test/spotcheck.ts"
+  },
+  "dependencies": {
+    "astro": "^5.6.1",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "yaml": "^2.9.0"
+  }
+}

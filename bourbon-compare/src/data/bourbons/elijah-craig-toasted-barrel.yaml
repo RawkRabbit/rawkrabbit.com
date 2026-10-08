@@ -1,0 +1,48 @@
+name: Elijah Craig Toasted Barrel
+brand: Elijah Craig
+distillery: Heaven Hill
+bottler: Heaven Hill
+category: bourbon
+producerType: heritage
+style: traditional
+mashbill:
+  provenance: published
+  corn: 78
+  rye: 10
+  wheat: 0
+  maltedBarley: 12
+  note: Heaven Hill publishes its standard bourbon mash bill.
+age:
+  years: null
+  stated: false
+  note: No age statement; fully matured, then finished in a second toasted barrel.
+proof: 94
+price: { low: 60, high: 80, asOf: "2026-08" }
+availability: limited
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 8
+  spice: 5
+  oak: 9
+  fruit: 4
+  heat: 4
+  nuttiness: 5
+notes:
+  nose: [toasted marshmallow, vanilla, dark caramel, oak]
+  palate: [s’mores, brown sugar, coffee, heavy wood]
+  finish: [long, sweet, wood-driven]
+blurb: >
+  Finished in a second toasted (not charred) barrel, which produces an unmistakable
+  toasted-marshmallow note. Sweet and heavily wooded, and one of the more distinctive finishes
+  any major producer makes.
+verdict: >
+  a distinctive toasted-oak, marshmallow-sweet finish you will not find in a standard bourbon
+bestFor: [neat, rocks]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Heaven Hill — Elijah Craig }

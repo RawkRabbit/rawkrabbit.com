@@ -1,0 +1,47 @@
+name: Evan Williams Black Label
+brand: Evan Williams
+distillery: Heaven Hill
+bottler: Heaven Hill
+category: bourbon
+producerType: heritage
+style: traditional
+mashbill:
+  provenance: published
+  corn: 78
+  rye: 10
+  wheat: 0
+  maltedBarley: 12
+  note: Heaven Hill publishes its standard bourbon mash bill.
+age:
+  years: null
+  stated: false
+  note: No age statement; generally reported between four and five years.
+proof: 86
+price: { low: 14, high: 18, asOf: "2026-08" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: false
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 6
+  spice: 4
+  oak: 5
+  fruit: 4
+  heat: 3
+  nuttiness: 4
+notes:
+  nose: [vanilla, caramel, light corn]
+  palate: [sweet caramel, soft spice, mild oak]
+  finish: [short, sweet, easy]
+blurb: >
+  The everyday black label, and a perfectly competent well bourbon. Softer and sweeter than the
+  bonded version, with less to say but nothing objectionable.
+verdict: >
+  a dependable, inexpensive mixing bourbon and nothing more complicated than that
+bestFor: [cocktails, highball, rocks]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Heaven Hill Distillery official }

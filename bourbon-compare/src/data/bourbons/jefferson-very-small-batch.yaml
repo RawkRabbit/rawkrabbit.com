@@ -1,0 +1,43 @@
+name: Jefferson’s Very Small Batch
+brand: Jefferson’s
+distillery: Undisclosed (sourced)
+bottler: Jefferson's
+category: bourbon
+producerType: sourced
+style: traditional
+mashbill:
+  provenance: unknown
+  note: Blended from sourced barrels; mash bills and source distilleries are not disclosed.
+age:
+  years: null
+  stated: false
+  note: No age statement; described as a blend of barrels of differing ages.
+proof: 82.3
+price: { low: 28, high: 36, asOf: "2026-08" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 6
+  spice: 4
+  oak: 4
+  fruit: 5
+  heat: 2
+  nuttiness: 3
+notes:
+  nose: [caramel, apple, vanilla]
+  palate: [light toffee, soft spice, cream]
+  finish: [short, soft, mild]
+blurb: >
+  A blend of sourced barrels bottled at a very gentle 82.3 proof. Easy and inoffensive, but thin
+  enough that it is hard to recommend over bonded bottles costing less.
+verdict: >
+  an especially soft, low-proof pour and gentleness matters more than intensity
+bestFor: [rocks, cocktails, highball]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Jefferson's official }

@@ -1,0 +1,47 @@
+name: Jim Beam Black
+brand: Jim Beam
+distillery: Jim Beam
+bottler: Jim Beam
+category: bourbon
+producerType: heritage
+style: high-rye
+mashbill:
+  provenance: reported
+  corn: 75
+  rye: 13
+  wheat: 0
+  maltedBarley: 12
+  note: Beam has never published an official mash bill; 75/13/12 is the long-standing reported figure.
+age:
+  years: 7
+  stated: true
+proof: 86
+price: { low: 22, high: 28, asOf: "2026-08" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: false
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 6
+  spice: 4
+  oak: 6
+  fruit: 3
+  heat: 3
+  nuttiness: 6
+notes:
+  nose: [caramel, vanilla, toasted nut]
+  palate: [soft caramel, peanut, light oak]
+  finish: [medium, smooth, sweet]
+blurb: >
+  The extra-aged version of the white label and a considerable step up for a few dollars more.
+  Softer and rounder than Knob Creek with the same family peanut note, at a proof that keeps
+  everything gentle.
+verdict: >
+  the Beam house character at its most affordable and easy-going
+bestFor: [neat, rocks, cocktails]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Jim Beam official product information }

@@ -1,0 +1,47 @@
+name: Maker’s Mark Cask Strength
+brand: Maker’s Mark
+distillery: Maker’s Mark
+bottler: Maker’s Mark
+category: bourbon
+producerType: heritage
+style: wheated
+mashbill:
+  provenance: published
+  corn: 70
+  rye: 0
+  wheat: 16
+  maltedBarley: 14
+age:
+  years: null
+  stated: false
+  note: No age statement; bottled from the barrel at natural strength.
+proof: 110
+price: { low: 40, high: 50, asOf: "2026-08" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: false
+  barrelProof: true
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 9
+  spice: 3
+  oak: 5
+  fruit: 5
+  heat: 7
+  nuttiness: 3
+notes:
+  nose: [thick caramel, vanilla, baked bread, cherry]
+  palate: [dense toffee, soft wheat, warm spice, honey]
+  finish: [long, sweet, warming]
+blurb: >
+  Undiluted Maker's, and the version that finally gives the wheated recipe some weight. Dense
+  caramel and honey with real warmth, and one of the more affordable cask-strength bottles
+  anywhere.
+verdict: >
+  wheated sweetness at full strength for well under what most cask-strength bourbons cost
+bestFor: [neat, rocks]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Maker's Mark official }

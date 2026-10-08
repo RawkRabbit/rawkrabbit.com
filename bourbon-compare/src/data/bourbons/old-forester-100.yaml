@@ -1,0 +1,48 @@
+name: Old Forester 100 Proof
+brand: Old Forester
+distillery: Brown-Forman
+bottler: Brown-Forman
+category: bourbon
+producerType: heritage
+style: high-rye
+mashbill:
+  provenance: published
+  corn: 72
+  rye: 18
+  wheat: 0
+  maltedBarley: 10
+  note: Brown-Forman publishes the shared Old Forester and Woodford Reserve mash bill.
+age:
+  years: null
+  stated: false
+  note: No age statement; generally reported around four to five years.
+proof: 100
+price: { low: 26, high: 32, asOf: "2026-08" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: false
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 7
+  spice: 6
+  oak: 6
+  fruit: 5
+  heat: 5
+  nuttiness: 3
+notes:
+  nose: [banana, dark caramel, cinnamon, oak]
+  palate: [brown sugar, baking spice, vanilla, char]
+  finish: [medium-long, warm, sweet]
+blurb: >
+  The bottle most people should buy from this range: the same recipe as the 86 with enough proof
+  to actually taste it. One of the strongest arguments on the shelf for spending six dollars
+  more.
+verdict: >
+  the best value in the Old Forester range and a superb old-fashioned base
+bestFor: [neat, rocks, old-fashioned, cocktails]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Brown-Forman official product information }
