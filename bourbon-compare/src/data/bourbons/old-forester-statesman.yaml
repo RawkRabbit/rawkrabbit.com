@@ -1,0 +1,46 @@
+name: Old Forester Statesman
+brand: Old Forester
+distillery: Brown-Forman
+bottler: Brown-Forman
+category: bourbon
+producerType: heritage
+style: high-rye
+mashbill:
+  provenance: published
+  corn: 72
+  rye: 18
+  wheat: 0
+  maltedBarley: 10
+age:
+  years: null
+  stated: false
+  note: No age statement.
+proof: 95
+price: { low: 50, high: 55, asOf: "2026-10" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 8
+  spice: 5
+  oak: 5
+  fruit: 7
+  heat: 4
+  nuttiness: 2
+notes:
+  nose: [cherry, brown sugar, vanilla, sugar cookie]
+  palate: [cherry, cocoa, light banana, caramel]
+  finish: [gentle heat, cinnamon, oak]
+blurb: >
+  Old Forester's fruit-forward middle child, first made for a spy movie tie-in. Bright cherry and
+  brown sugar lead, with cocoa and a touch of the house banana note.
+verdict: >
+  a bright, cherry-sweet Old Forester that sits between the 100 and 1920 in weight
+bestFor: [neat, rocks, old-fashioned]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Breaking Bourbon review", url: "https://www.breakingbourbon.com/review/old-forester-statesman-bourbon" }

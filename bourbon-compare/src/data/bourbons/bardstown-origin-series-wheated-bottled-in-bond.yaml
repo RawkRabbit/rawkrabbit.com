@@ -1,0 +1,46 @@
+name: Bardstown Bourbon Company Origin Series Wheated Bottled-in-Bond
+brand: Bardstown Bourbon Company
+distillery: Bardstown Bourbon Company
+bottler: Bardstown Bourbon Company
+category: bourbon
+producerType: modern-craft
+style: wheated
+mashbill:
+  provenance: published
+  corn: 68
+  rye: 0
+  wheat: 20
+  maltedBarley: 12
+age:
+  years: 6
+  stated: true
+proof: 100
+price: { low: 45, high: 50, asOf: "2026-10" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: true
+  chillFiltered: null
+flavor:
+  sweetness: 7
+  spice: 3
+  oak: 4
+  fruit: 6
+  heat: 4
+  nuttiness: 3
+notes:
+  nose: [fresh bread, cream, light honey, coffee cake]
+  palate: [baked peach, vanilla cream, mild cinnamon, white pepper]
+  finish: [wheat bread, light oak, sweet cream]
+blurb: >
+  A gentle, bakery-like wheater from Bardstown's own stills. Fresh bread and cream on the nose
+  turn into baked peach and vanilla, with a soft, creamy texture and only a light pepper bite.
+verdict: >
+  a soft, creamy, bakery-sweet wheater with bonded credentials
+bestFor: [neat, rocks, old-fashioned]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Breaking Bourbon review", url: "https://breakingbourbon.com/review/bardstown-bourbon-company-origin-series-bottled-in-bond-bourbon" }
+  - { label: "Bardstown Bourbon Co. Origin Series announcement", url: "https://bevinfogroup.com/2022/12/05/bardstown-bourbon-announces-the-origin-series/" }

@@ -1,0 +1,45 @@
+name: Bulleit Bourbon 10 Year
+brand: Bulleit
+distillery: Undisclosed (sourced)
+bottler: Diageo
+category: bourbon
+producerType: sourced
+style: high-rye
+mashbill:
+  provenance: reported
+  corn: 68
+  rye: 28
+  wheat: 0
+  maltedBarley: 4
+age:
+  years: 10
+  stated: true
+proof: 91.2
+price: { low: 45, high: 55, asOf: "2026-10" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 5
+  spice: 7
+  oak: 8
+  fruit: 5
+  heat: 4
+  nuttiness: 2
+notes:
+  nose: [caramel, vanilla, toasted oak, cherry]
+  palate: [spice, oak, cherry, leather]
+  finish: [long, dry, oaky]
+blurb: >
+  The older version of Bulleit's high-rye bourbon. Ten years add a lot of oak and leather to the
+  usual rye spice, and the finish turns dry and woody.
+verdict: >
+  an oak-forward, ten-year high-rye bourbon at a gentle proof
+bestFor: [neat, rocks]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Breaking Bourbon review", url: "https://breakingbourbon.com/review/bulleit-10-year-bourbon" }

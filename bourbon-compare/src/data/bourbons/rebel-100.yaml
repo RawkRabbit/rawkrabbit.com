@@ -1,0 +1,48 @@
+name: Rebel 100
+brand: Rebel
+distillery: Undisclosed Kentucky distillery
+bottler: Lux Row Distillers
+category: bourbon
+producerType: sourced
+style: wheated
+mashbill:
+  provenance: reported
+  corn: 68
+  rye: 0
+  wheat: 20
+  maltedBarley: 12
+  note: Commonly reported figures for the Rebel wheated recipe; not published by the brand.
+age:
+  years: null
+  stated: false
+  note: No age statement. A separate Rebel 100 6 Year also exists.
+proof: 100
+price: { low: 20, high: 25, asOf: "2026-10" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: false
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 7
+  spice: 2
+  oak: 4
+  fruit: 4
+  heat: 5
+  nuttiness: 3
+notes:
+  nose: [vanilla, honey, caramel]
+  palate: [caramel, bread, dark fruit]
+  finish: [short, sweet, light spice]
+blurb: >
+  A budget wheater at a useful proof. Sweet vanilla, honey and caramel with soft bread notes and
+  very little rye bite.
+verdict: >
+  a sweet, 100-proof wheater for mixing and easy sipping
+bestFor: [rocks, old-fashioned, cocktails]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Lux Row: Rebel 100 6-Year announcement", url: "https://www.luxco.com/?p=433598" }
+  - { label: "Distiller: Rebel 100", url: "https://distiller.com/spirits/rebel-100-kentucky-straight-bourbon" }

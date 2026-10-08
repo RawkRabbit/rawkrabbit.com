@@ -1,0 +1,48 @@
+name: Journeyman Featherbone Bourbon
+brand: Journeyman Distillery
+distillery: Journeyman Distillery (Three Oaks, Michigan)
+bottler: Journeyman Distillery
+category: bourbon
+producerType: modern-craft
+style: wheated
+mashbill:
+  provenance: published
+  corn: 70
+  rye: 5
+  wheat: 25
+  maltedBarley: 0
+  note: Certified organic grains. Journeyman lists only corn, wheat and rye for this recipe.
+age:
+  years: null
+  stated: false
+  note: No age statement; blended to a house profile for each batch.
+proof: 90
+price: { low: 45, high: 55, asOf: "2026-10" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: null
+flavor:
+  sweetness: 6
+  spice: 4
+  oak: 4
+  fruit: 4
+  heat: 5
+  nuttiness: 2
+notes:
+  nose: [corn, light vanilla, alcohol]
+  palate: [caramel, vanilla, pepper, a hint of tobacco]
+  finish: [medium, spice, stone fruit]
+blurb: >
+  An organic, wheat-heavy bourbon from a Michigan craft distillery. It stays round and caramel
+  sweet on the palate with a peppery edge, while the nose is quiet and still a little young.
+verdict: >
+  an organic, Midwest craft wheater with a round, caramel-forward body
+bestFor: [rocks, old-fashioned, cocktails]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Journeyman Distillery: Featherbone Bourbon", url: "https://www.journeyman.com/spirits/featherbone-bourbon/" }
+  - { label: "Paste Magazine review", url: "https://www.pastemagazine.com/drink/bourbon/journeyman-featherbone-bourbon-review" }

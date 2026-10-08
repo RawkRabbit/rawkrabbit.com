@@ -1,0 +1,43 @@
+name: Noah's Mill
+brand: Noah's Mill
+distillery: Willett Distillery
+bottler: Willett Distillery
+category: bourbon
+producerType: heritage
+style: traditional
+mashbill:
+  provenance: unknown
+  note: Willett treats the recipe as proprietary.
+age:
+  years: null
+  stated: false
+  note: No age statement; early bottles carried a 15-year statement.
+proof: 114.3
+price: { low: 60, high: 70, asOf: "2026-10" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: null
+flavor:
+  sweetness: 7
+  spice: 6
+  oak: 6
+  fruit: 7
+  heat: 7
+  nuttiness: 7
+notes:
+  nose: [white grape, peanut, apricot, milk chocolate]
+  palate: [golden raisin, mixed nuts, rich jam]
+  finish: [very dry, spice, oak]
+blurb: >
+  A high-proof Willett blend with a lot of nutty and fruity character. Peanut, golden raisin and
+  jam make it taste like peanut butter and jelly, and it finishes very dry.
+verdict: >
+  a high-proof, nutty, jammy Willett bourbon with a bone-dry finish
+bestFor: [neat]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Thirty One Whiskey review", url: "https://www.thirtyonewhiskey.com/whiskey-review-noahs-mill-kentucky-straight-bourbon-whiskey" }

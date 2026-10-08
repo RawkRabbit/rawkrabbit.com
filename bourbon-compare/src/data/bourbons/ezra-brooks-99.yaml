@@ -1,0 +1,46 @@
+name: Ezra Brooks 99
+brand: Ezra Brooks
+distillery: Undisclosed Kentucky distillery
+bottler: Lux Row Distillers
+category: bourbon
+producerType: sourced
+style: traditional
+mashbill:
+  provenance: reported
+  corn: 78
+  rye: 10
+  wheat: 0
+  maltedBarley: 12
+age:
+  years: null
+  stated: false
+  note: No age statement.
+proof: 99
+price: { low: 22, high: 28, asOf: "2026-10" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: false
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 6
+  spice: 4
+  oak: 5
+  fruit: 2
+  heat: 5
+  nuttiness: 5
+notes:
+  nose: [oak char, vanilla, caramel, peanut]
+  palate: [creamy caramel, brown sugar, white pepper, peanut]
+  finish: [short, dry oak, leather, peanut shell]
+blurb: >
+  A high-proof value bottle from Lux Row. The nose is quiet, but the palate is bolder, with
+  creamy caramel, brown sugar and a nutty, peanut-like edge.
+verdict: >
+  a high-proof, nutty, caramel-forward everyday bourbon
+bestFor: [rocks, old-fashioned, cocktails]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Breaking Bourbon review", url: "https://BreakingBourbon.com/review/ezra-brooks-99-bourbon" }

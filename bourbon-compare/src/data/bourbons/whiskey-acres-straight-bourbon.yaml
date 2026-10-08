@@ -1,0 +1,48 @@
+name: Whiskey Acres Straight Bourbon
+brand: Whiskey Acres
+distillery: Whiskey Acres Distilling Co. (DeKalb, Illinois)
+bottler: Whiskey Acres Distilling Co.
+category: bourbon
+producerType: modern-craft
+style: wheated
+mashbill:
+  provenance: published
+  corn: 75
+  rye: 0
+  wheat: 15
+  maltedBarley: 10
+  note: Estate distillery; the grain is grown on the family farm around the still.
+age:
+  years: 4
+  stated: true
+  note: Aged at least four years.
+proof: 87
+price: { low: 40, high: 45, asOf: "2026-10" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: null
+flavor:
+  sweetness: 6
+  spice: 2
+  oak: 4
+  fruit: 4
+  heat: 3
+  nuttiness: 3
+notes:
+  nose: [sweet corn, caramel, vanilla]
+  palate: [caramel, toasted wheat, light honey]
+  finish: [short, soft, vanilla]
+blurb: >
+  A farm-to-bottle wheater from northern Illinois. Soft red winter wheat keeps it gentle and
+  bready, with caramel and vanilla up front and very little bite at 87 proof.
+verdict: >
+  a soft, easygoing wheated bourbon made start to finish on one Midwest farm
+bestFor: [rocks, highball, cocktails]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Whiskey Acres: spirits", url: "https://www.whiskeyacres.com/spirits" }
+  - { label: "Seelbach's: Whiskey Acres Straight Bourbon", url: "https://seelbachs.com/products/whiskey-acres-straight-bourbon-whiskey" }

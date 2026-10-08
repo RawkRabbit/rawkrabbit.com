@@ -1,0 +1,43 @@
+name: David Nicholson 1843
+brand: David Nicholson
+distillery: Undisclosed Kentucky distillery
+bottler: Lux Row Distillers
+category: bourbon
+producerType: sourced
+style: wheated
+mashbill:
+  provenance: unknown
+  note: Wheated recipe; percentages are not published.
+age:
+  years: null
+  stated: false
+  note: No age statement.
+proof: 100
+price: { low: 25, high: 35, asOf: "2026-10" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: false
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 7
+  spice: 3
+  oak: 4
+  fruit: 4
+  heat: 5
+  nuttiness: 3
+notes:
+  nose: [vanilla, caramel, light oak]
+  palate: [vanilla, caramel, soft bread, a little spice]
+  finish: [medium, sweet oak]
+blurb: >
+  A long-running wheated label at 100 proof. Smooth vanilla and caramel with a soft, bready body
+  and a touch more spice than you would expect from a wheater.
+verdict: >
+  a smooth, 100-proof wheater with a long history
+bestFor: [rocks, old-fashioned, cocktails]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "BevNET: David Nicholson 1843 and Reserve", url: "https://www.bevnet.com/spirits/2016/david-nicholson-1843-launches-new-variant-updates-packaging" }

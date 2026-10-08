@@ -1,0 +1,46 @@
+name: Penelope Barrel Strength 7 Year
+brand: Penelope
+distillery: MGP of Indiana
+bottler: Penelope Bourbon
+category: bourbon
+producerType: sourced
+style: high-rye
+mashbill:
+  provenance: published
+  corn: 70
+  rye: 25
+  wheat: 0
+  maltedBarley: 5
+  note: Rye figure includes 2% malted rye. Blend of four 7-year straight bourbon mash bills.
+age:
+  years: 7
+  stated: true
+proof: 115.2
+price: { low: 60, high: 65, asOf: "2026-10" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: true
+  bottledInBond: false
+  chillFiltered: false
+flavor:
+  sweetness: 7
+  spice: 7
+  oak: 7
+  fruit: 5
+  heat: 8
+  nuttiness: 3
+notes:
+  nose: [caramel, baking spice, oak]
+  palate: [brown sugar, rye spice, vanilla, toasted oak]
+  finish: [long, warm, spicy]
+blurb: >
+  Penelope's uncut flagship, now with a seven-year age statement. It is richer and spicier than
+  the Four Grain, with caramel and rye spice carried by a lot of proof.
+verdict: >
+  a well-priced, seven-year, uncut blend with real depth and spice
+bestFor: [neat, old-fashioned]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Fred Minnick: Penelope releases 7-Year Barrel Strength", url: "https://www.fredminnick.com/2026/02/18/penelope-releases-7-year-barrel-strength-bourbon/" }

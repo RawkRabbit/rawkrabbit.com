@@ -1,0 +1,46 @@
+name: Wild Turkey Longbranch
+brand: Wild Turkey
+distillery: Wild Turkey
+bottler: Wild Turkey
+category: bourbon
+producerType: heritage
+style: traditional
+mashbill:
+  provenance: reported
+  corn: 75
+  rye: 13
+  wheat: 0
+  maltedBarley: 12
+age:
+  years: 8
+  stated: false
+  note: No age statement on the label; described as a blend of 8-year Wild Turkey.
+proof: 86
+price: { low: 35, high: 45, asOf: "2026-10" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 7
+  spice: 4
+  oak: 5
+  fruit: 5
+  heat: 3
+  nuttiness: 2
+notes:
+  nose: [vanilla, spice, oak]
+  palate: [caramel, honey, orange, pear]
+  finish: [medium, light smoke, oak]
+blurb: >
+  Eight-year Wild Turkey filtered through American oak charcoal and then Texas mesquite charcoal.
+  It is softer and sweeter than the usual Turkey, with honey and orange and a faint smoke.
+verdict: >
+  a softer, sweeter Wild Turkey with a light mesquite smoke
+bestFor: [rocks, highball, old-fashioned]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Bourbon Banter review", url: "https://bourbonbanter.com/wild-turkey-longbranch-review" }

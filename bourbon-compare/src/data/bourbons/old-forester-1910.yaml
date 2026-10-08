@@ -1,0 +1,46 @@
+name: Old Forester 1910 Old Fine Whisky
+brand: Old Forester
+distillery: Brown-Forman
+bottler: Brown-Forman
+category: bourbon
+producerType: heritage
+style: high-rye
+mashbill:
+  provenance: published
+  corn: 72
+  rye: 18
+  wheat: 0
+  maltedBarley: 10
+age:
+  years: null
+  stated: false
+  note: Mature bourbon re-barreled at 100 proof into a second heavily charred barrel.
+proof: 93
+price: { low: 55, high: 60, asOf: "2026-10" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 8
+  spice: 5
+  oak: 8
+  fruit: 5
+  heat: 4
+  nuttiness: 3
+notes:
+  nose: [buttercream, sticky toffee, cedar, apricot]
+  palate: [oatmeal raisin cookie, milk chocolate, caramel corn]
+  finish: [charred oak, light spice]
+blurb: >
+  Old Forester given a second barrel, which loads it with dessert notes: toffee, buttercream and
+  milk chocolate over heavy char. Sweet and rich for 93 proof.
+verdict: >
+  a double-barreled, dessert-sweet bourbon with heavy char at a modest proof
+bestFor: [neat, old-fashioned]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Bourbon Banter review", url: "https://bourbonbanter.com/old-forester-1910-old-fine-whisky-review" }

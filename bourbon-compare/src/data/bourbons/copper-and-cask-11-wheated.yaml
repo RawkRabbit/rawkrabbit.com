@@ -1,0 +1,46 @@
+name: "Copper & Cask Small Batch Series #011 6 Year Wheated"
+brand: Copper & Cask
+distillery: MGP of Indiana (reported)
+bottler: Copper & Cask
+category: bourbon
+producerType: sourced
+style: wheated
+mashbill:
+  provenance: published
+  corn: 51
+  rye: 0
+  wheat: 45
+  maltedBarley: 4
+  note: Distilled and matured in Indiana. Wheat at 45% is one of the highest wheat shares in the list.
+age:
+  years: 6
+  stated: true
+proof: 111.2
+price: { low: 60, high: 65, asOf: "2026-10" }
+availability: limited
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: true
+  bottledInBond: false
+  chillFiltered: null
+flavor:
+  sweetness: 8
+  spice: 3
+  oak: 5
+  fruit: 7
+  heat: 7
+  nuttiness: 3
+notes:
+  nose: [caramel, candied grapefruit peel]
+  palate: [raw honey, rock candy, roasted cherry, orange zest]
+  finish: [long, toffee, clove, leather]
+blurb: >
+  A very high-wheat bourbon bottled at cask strength. Nearly half the grain is wheat, so it is
+  honeyed and candy-sweet with bright citrus and cherry rather than rye spice.
+verdict: >
+  an extremely wheat-heavy, cask-strength pour that is all honey, candy and citrus
+bestFor: [neat]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Copper & Cask: Small Batch Series #011", url: "https://copperandcaskspirits.com/products/small-batch-series-011-6-year-wheated-bourbon" }

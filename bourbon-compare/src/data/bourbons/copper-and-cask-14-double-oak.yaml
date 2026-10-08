@@ -1,0 +1,49 @@
+name: "Copper & Cask Small Batch Series #014 8 Year Double Oak"
+brand: Copper & Cask
+distillery: MGP of Indiana
+bottler: Copper & Cask
+category: bourbon
+producerType: sourced
+style: high-rye
+mashbill:
+  provenance: estimated
+  corn: 72
+  rye: 24
+  wheat: 0
+  maltedBarley: 4
+  note: >-
+    Blend of 19 MGP barrels, four at 60% corn, 36% rye and fifteen at 75% corn, 21% rye (both
+    4% malted barley). The combined figures are calculated from that split.
+age:
+  years: 8
+  stated: true
+  note: Ten more months in toasted Wave Stave barrels after blending.
+proof: 120.2
+price: { low: 70, high: 80, asOf: "2026-10" }
+availability: limited
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: true
+  bottledInBond: false
+  chillFiltered: null
+flavor:
+  sweetness: 8
+  spice: 6
+  oak: 9
+  fruit: 5
+  heat: 8
+  nuttiness: 4
+notes:
+  nose: [blackstrap molasses, dark chocolate, toffee, toasted coconut]
+  palate: [sugar cream pie, root beer, cold brew coffee, raisin]
+  finish: [brown sugar, brown butter, cherrywood]
+blurb: >
+  Eight-year MGP bourbon given a second stint in toasted barrels. It is dense and dessert-like,
+  with molasses, dark chocolate and coffee over heavy oak at well over 120 proof.
+verdict: >
+  a dense, double-oaked, dessert-like bourbon at high proof
+bestFor: [neat]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Drinkhacker review", url: "https://www.drinkhacker.com/2025/11/02/review-copper-and-cask-bourbon-small-batch-series-double-oak-and-cigar-blend/" }

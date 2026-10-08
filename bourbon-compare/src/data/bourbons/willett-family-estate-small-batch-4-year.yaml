@@ -1,0 +1,48 @@
+name: Willett Family Estate Small Batch 4 Year
+brand: Willett
+distillery: Willett Distillery
+bottler: Willett Distillery
+category: bourbon
+producerType: heritage
+style: traditional
+mashbill:
+  provenance: estimated
+  corn: 68
+  rye: 18
+  wheat: 0
+  maltedBarley: 14
+  note: >-
+    Blend of two Willett recipes, 80% at 72% corn, 13% rye, 15% malted barley and 20% at
+    52% corn, 38% rye, 10% malted barley. The combined figures are calculated from that split.
+age:
+  years: 4
+  stated: true
+proof: 125.2
+price: { low: 65, high: 75, asOf: "2026-10" }
+availability: limited
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: true
+  bottledInBond: false
+  chillFiltered: false
+flavor:
+  sweetness: 7
+  spice: 6
+  oak: 4
+  fruit: 6
+  heat: 9
+  nuttiness: 3
+notes:
+  nose: [buttered popcorn, vanilla, lemon meringue, toasted cinnamon]
+  palate: [caramel corn, orange peel, creme brulee, pastry]
+  finish: [honey, cantaloupe, black pepper, hot]
+blurb: >
+  Willett's own young distillate at full barrel proof. It is loud and sweet, all caramel corn,
+  pastry and citrus, with a lot of heat for a four-year bourbon. Proof varies by batch.
+verdict: >
+  a young, hot, barrel-proof pour that shows off Willett's own distillate
+bestFor: [neat]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Breaking Bourbon review (2026 release)", url: "https://breakingbourbon.com/review/willett-family-estate-small-batch-4-year-bourbon-2026" }

@@ -1,0 +1,46 @@
+name: Charles Goodnight Bourbon
+brand: Charles Goodnight
+distillery: Undisclosed Texas distillery
+bottler: Foley Family Wines & Spirits
+category: bourbon
+producerType: sourced
+style: high-rye
+mashbill:
+  provenance: published
+  corn: 60
+  rye: 36
+  wheat: 0
+  maltedBarley: 4
+  note: Texas-grown yellow corn.
+age:
+  years: 6
+  stated: true
+proof: 115
+price: { low: 75, high: 80, asOf: "2026-10" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: true
+  bottledInBond: false
+  chillFiltered: false
+flavor:
+  sweetness: 7
+  spice: 7
+  oak: 8
+  fruit: 6
+  heat: 8
+  nuttiness: 3
+notes:
+  nose: [deep oak, brown sugar, dark fruit]
+  palate: [caramel, apricot, rye spice, toasted nuts]
+  finish: [long, oaky, warming]
+blurb: >
+  A barrel-strength Texas bourbon. The hot Texas climate pulls a lot of oak in six years, giving
+  deep wood, brown sugar and dark fruit with plenty of rye spice.
+verdict: >
+  a bold, oak-heavy Texas bourbon at barrel strength
+bestFor: [neat, rocks]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Fred Minnick: Charles Goodnight Bourbon makes its return", url: "https://www.fredminnick.com/2023/09/14/charles-goodnight-bourbon-makes-its-return/" }

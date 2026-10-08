@@ -1,0 +1,43 @@
+name: Jefferson's Reserve Very Old
+brand: Jefferson's
+distillery: Undisclosed (sourced)
+bottler: McLain & Kyne
+category: bourbon
+producerType: sourced
+style: traditional
+mashbill:
+  provenance: unknown
+  note: Blended from sourced Kentucky bourbons; the recipes are not disclosed.
+age:
+  years: null
+  stated: false
+  note: No age statement; the "Very Old" label is usually described as older stock than Very Small Batch.
+proof: 90.2
+price: { low: 55, high: 65, asOf: "2026-10" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: null
+flavor:
+  sweetness: 6
+  spice: 5
+  oak: 7
+  fruit: 6
+  heat: 4
+  nuttiness: 3
+notes:
+  nose: [butterscotch, vanilla, raisin, peach]
+  palate: [buttery toffee, dry oak, fruitcake, orange zest]
+  finish: [long, cinnamon, ginger, pepper]
+blurb: >
+  The older, drier sibling of Jefferson's Very Small Batch. Buttery toffee and dried fruit sit on
+  a firm, slightly smoky oak backbone, and the finish turns peppery and long.
+verdict: >
+  a mature, oak-driven blend with dried fruit and a dry, peppery finish at an easy proof
+bestFor: [neat, rocks]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Difford's Guide: Jefferson's Reserve Very Old", url: "https://www.diffordsguide.com/en-au/beer-wine-spirits/1399/jeffersons-reserve-small-batch" }

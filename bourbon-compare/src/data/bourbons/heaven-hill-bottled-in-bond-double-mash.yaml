@@ -1,0 +1,50 @@
+name: Heaven Hill Bottled-in-Bond Double Mash
+brand: Heaven Hill
+distillery: Heaven Hill
+bottler: Heaven Hill
+category: bourbon
+producerType: heritage
+style: traditional
+mashbill:
+  provenance: estimated
+  corn: 75
+  rye: 7
+  wheat: 6
+  maltedBarley: 12
+  note: >-
+    Blend of two published Heaven Hill mash bills, about two-thirds traditional (78% corn, 10% rye,
+    12% malted barley) and one-third wheated (68% corn, 20% wheat, 12% malted barley). The combined
+    figures here are calculated from that split.
+age:
+  years: 9
+  stated: true
+proof: 100
+price: { low: 50, high: 55, asOf: "2026-10" }
+availability: limited
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: true
+  chillFiltered: null
+flavor:
+  sweetness: 7
+  spice: 5
+  oak: 7
+  fruit: 5
+  heat: 5
+  nuttiness: 6
+notes:
+  nose: [caramel, toasted oak, peanut brittle, soft bread]
+  palate: [brown sugar, vanilla, light rye spice, rounded wheat]
+  finish: [medium, oak, gentle spice]
+blurb: >
+  Nine-year Heaven Hill in two flavors at once: the classic rye recipe brings structure and
+  nutty oak, while a third of wheated bourbon rounds off the edges. It drinks fuller and softer
+  than the standard bonded bottle.
+verdict: >
+  a well-aged bonded bourbon that blends Heaven Hill's rye and wheat recipes into one balanced pour
+bestFor: [neat, rocks, old-fashioned]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Fred Minnick: Heaven Hill launches Double Mash Bottled in Bond", url: "https://www.fredminnick.com/2026/07/16/heaven-hill-launches-new-double-mash-bottled-in-bond-bourbon/" }

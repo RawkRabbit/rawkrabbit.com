@@ -1,0 +1,44 @@
+name: Zackariah Harris
+brand: Zackariah Harris
+distillery: Undisclosed Kentucky distillery
+bottler: Not disclosed
+category: bourbon
+producerType: sourced
+style: traditional
+mashbill:
+  provenance: unknown
+  note: Not disclosed.
+age:
+  years: null
+  stated: false
+  note: No age statement.
+proof: 80
+price: { low: 13, high: 22, asOf: "2026-10" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: false
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 5
+  spice: 3
+  oak: 3
+  fruit: 2
+  heat: 3
+  nuttiness: 2
+notes:
+  nose: [caramel, light oak]
+  palate: [caramel, corn, oak]
+  finish: [short, warm]
+blurb: >
+  A bottom-shelf Kentucky straight bourbon, mostly sold in liters and handles. Simple caramel and
+  oak with a short, warm finish.
+verdict: >
+  a simple Kentucky bourbon for mixing
+bestFor: [highball, cocktails]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Wooden Cork product listing", url: "https://woodencork.com/products/zackariah-harris-kentucky-straight-bourbon-whiskey" }
+  - { label: "Festival Foods product listing (80 proof)", url: "https://www.festfoods.com/shop/beer_wine_and_spirits/liquor/whiskey_and_bourbon/zachariah_harris_bourbon_kentucky/p/5988265" }
