@@ -24,3 +24,7 @@ The text below the `---` lines is the page body (What it does, What's next).
 ## Add a log entry
 
 One file in `src/content/log/`, named `YYYY-MM-DD-short-title.md`. Set `project:` to a project's file name (without `.md`) to link them.
+
+## BourbonCompare
+
+BourbonCompare lives in `bourbon-compare/` as its own small Astro project and is served at `rawkrabbit.com/bourbon/`. The main build (`npm run build`) builds it and copies it into `dist/bourbon/`. To add a bottle, add one YAML file in `bourbon-compare/src/data/bourbons/` (see `bourbon-compare/README.md`).

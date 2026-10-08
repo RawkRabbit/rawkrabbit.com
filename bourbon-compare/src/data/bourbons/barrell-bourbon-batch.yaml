@@ -1,0 +1,44 @@
+name: Barrell Bourbon (Batch Series)
+brand: Barrell Craft Spirits
+distillery: Undisclosed (blend of sourced)
+bottler: Barrell Craft Spirits
+category: bourbon
+producerType: sourced
+style: traditional
+mashbill:
+  provenance: unknown
+  note: Blended from sourced barrels across several states; component mash bills are not disclosed.
+age:
+  years: null
+  stated: false
+  note: Age varies by batch; component whiskeys are typically five to fifteen years.
+proof: 110
+price: { low: 80, high: 100, asOf: "2026-08" }
+availability: limited
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: true
+  bottledInBond: false
+  chillFiltered: false
+flavor:
+  sweetness: 7
+  spice: 7
+  oak: 8
+  fruit: 6
+  heat: 8
+  nuttiness: 4
+notes:
+  nose: [dark caramel, tropical fruit, oak, cinnamon]
+  palate: [toffee, mango, pepper, char]
+  finish: [very long, hot, complex]
+blurb: >
+  Barrell blends sourced barrels from multiple states and bottles at cask strength, and the
+  batches differ enormously. At their best they show a tropical fruit note that almost nothing
+  else in bourbon delivers.
+verdict: >
+  an adventurous, cask-strength blend and you accept that each batch is its own animal
+bestFor: [neat]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Barrell Craft Spirits official }

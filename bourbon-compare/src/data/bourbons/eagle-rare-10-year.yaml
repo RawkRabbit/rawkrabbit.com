@@ -1,0 +1,46 @@
+name: Eagle Rare 10 Year
+brand: Eagle Rare
+distillery: Buffalo Trace
+bottler: Buffalo Trace
+category: bourbon
+producerType: heritage
+style: traditional
+mashbill:
+  provenance: estimated
+  corn: 78
+  rye: 10
+  wheat: 0
+  maltedBarley: 12
+  note: "Same undisclosed Buffalo Trace Mash Bill #1 as Buffalo Trace and Stagg."
+age:
+  years: 10
+  stated: true
+proof: 90
+price: { low: 40, high: 65, asOf: "2026-08" }
+availability: allocated
+bottling:
+  singleBarrel: false
+  smallBatch: false
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 6
+  spice: 4
+  oak: 7
+  fruit: 5
+  heat: 3
+  nuttiness: 4
+notes:
+  nose: [toffee, orange peel, herbs, honey]
+  palate: [dark caramel, oak, leather, dried fruit]
+  finish: [long, dry, oak and cocoa]
+blurb: >
+  A 10-year age statement at a gentle 90 proof gives this a polished, dry-oak elegance rather than
+  power. Toffee and orange peel lead into leather and dried fruit, with a long, notably dry finish.
+verdict: >
+  an elegant, older, low-proof sipper where refinement matters more than intensity
+bestFor: [neat, rocks]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Eagle Rare official product page" }

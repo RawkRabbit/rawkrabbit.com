@@ -1,0 +1,126 @@
+---
+import Base from '../../layouts/Base.astro';
+import { loadCatalogue } from '../../lib/catalogue.ts';
+import { url } from '../../lib/url.ts';
+import { formatPrice, formatProof, priceTier, styleLabel } from '../../lib/derive.ts';
+
+const all = await loadCatalogue();
+const distilleries = [...new Set(all.map((b) => b.distillery))].sort();
+const styles = [...new Set(all.map((b) => b.style))].sort();
+
+/* Filtering is client-side over data attributes — no JSON bundle to ship and no
+   framework, since the whole catalogue is already in the HTML. */
+---
+<Base title="All Bourbons — BourbonCompare" current="bourbons">
+  <div class="stack">
+    <div>
+      <p class="eyebrow">Master list</p>
+      <h1>All Bourbons</h1>
+    </div>
+
+    <div class="panel">
+      <div class="filters">
+        <div class="field">
+          <label for="q">Search</label>
+          <input type="search" id="q" placeholder="Name, brand or distillery" autocomplete="off" />
+        </div>
+        <div class="field">
+          <label for="f-distillery">Distillery</label>
+          <select id="f-distillery"><option value="">Any</option>{distilleries.map((d) => <option>{d}</option>)}</select>
+        </div>
+        <div class="field">
+          <label for="f-style">Style</label>
+          <select id="f-style"><option value="">Any</option>{styles.map((s) => <option>{s}</option>)}</select>
+        </div>
+        <div class="field">
+          <label for="f-proof">Proof</label>
+          <select id="f-proof">
+            <option value="">Any</option>
+            <option value="0-95">Under 95</option>
+            <option value="95-110">95 – 110</option>
+            <option value="110-200">Over 110</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-price">Price</label>
+          <select id="f-price">
+            <option value="">Any</option>
+            <option value="value">Value (under $35)</option>
+            <option value="midshelf">Mid-shelf ($35 – $60)</option>
+            <option value="premium">Premium ($60 – $120)</option>
+            <option value="luxury">Luxury ($120+)</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-avail">Availability</label>
+          <select id="f-avail">
+            <option value="">Any</option>
+            <option value="shelf">Widely available</option>
+            <option value="limited">Limited</option>
+            <option value="allocated">Allocated</option>
+          </select>
+        </div>
+      </div>
+      <p class="footnote" style="margin:14px 0 0"><span id="count">{all.length}</span> of {all.length} shown</p>
+    </div>
+
+    <div class="card-grid" id="grid">
+      {all.map((b) => (
+        <a
+          class="card"
+          href={url(`/bourbons/${b.slug}/`)}
+          data-search={`${b.name} ${b.brand} ${b.distillery}`.toLowerCase()}
+          data-distillery={b.distillery}
+          data-style={b.style}
+          data-proof={b.proof}
+          data-price={priceTier(b)}
+          data-avail={b.availability}
+        >
+          <span class="card-name">{b.name}</span>
+          <span class="card-style">{styleLabel(b)}</span>
+          <span class="card-meta">{formatProof(b)} · {formatPrice(b)}</span>
+        </a>
+      ))}
+    </div>
+    <p class="empty" id="empty" hidden>No bourbons match those filters.</p>
+  </div>
+</Base>
+
+<script is:inline>
+  (() => {
+    const cards = [...document.querySelectorAll('#grid .card')];
+    const q = document.getElementById('q');
+    const selects = ['f-distillery', 'f-style', 'f-proof', 'f-price', 'f-avail'].map((id) =>
+      document.getElementById(id),
+    );
+    const [dist, style, proof, price, avail] = selects;
+    const count = document.getElementById('count');
+    const empty = document.getElementById('empty');
+
+    const apply = () => {
+      const term = q.value.trim().toLowerCase();
+      let shown = 0;
+      for (const card of cards) {
+        const d = card.dataset;
+        let ok = true;
+        if (term && !d.search.includes(term)) ok = false;
+        if (ok && dist.value && d.distillery !== dist.value) ok = false;
+        if (ok && style.value && d.style !== style.value) ok = false;
+        if (ok && price.value && d.price !== price.value) ok = false;
+        if (ok && avail.value && d.avail !== avail.value) ok = false;
+        if (ok && proof.value) {
+          const [lo, hi] = proof.value.split('-').map(Number);
+          const p = Number(d.proof);
+          if (p < lo || p >= hi) ok = false;
+        }
+        card.hidden = !ok;
+        if (ok) shown++;
+      }
+      count.textContent = String(shown);
+      empty.hidden = shown > 0;
+    };
+
+    q.addEventListener('input', apply);
+    for (const s of selects) s.addEventListener('change', apply);
+  })();
+</script>

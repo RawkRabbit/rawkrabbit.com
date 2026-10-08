@@ -1,0 +1,43 @@
+name: Very Old Barton Bottled-in-Bond
+brand: Very Old Barton
+distillery: Barton 1792
+bottler: Barton 1792
+category: bourbon
+producerType: heritage
+style: traditional
+mashbill:
+  provenance: unknown
+  note: Barton does not publish the Very Old Barton mash bill.
+age:
+  years: 4
+  stated: true
+proof: 100
+price: { low: 16, high: 22, asOf: "2026-08" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: false
+  barrelProof: false
+  bottledInBond: true
+  chillFiltered: true
+flavor:
+  sweetness: 6
+  spice: 5
+  oak: 5
+  fruit: 4
+  heat: 5
+  nuttiness: 4
+notes:
+  nose: [caramel, corn, light oak, vanilla]
+  palate: [brown sugar, mild spice, grain, oak]
+  finish: [medium, warm, straightforward]
+blurb: >
+  A bonded 100-proof bourbon at a price that barely seems possible, though distribution is
+  patchy outside Kentucky. Unremarkable in the best way: it does everything a bourbon should and
+  nothing extra.
+verdict: >
+  a bonded Kentucky bourbon for under twenty dollars, if you can find it in your state
+bestFor: [neat, rocks, old-fashioned, cocktails]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Barton 1792 Distillery official }

@@ -1,0 +1,44 @@
+name: Uncle Nearest 1856
+brand: Uncle Nearest
+distillery: Undisclosed (sourced)
+bottler: Uncle Nearest
+category: tennessee
+producerType: sourced
+style: traditional
+mashbill:
+  provenance: unknown
+  note: Sourced Tennessee whiskey; the mash bill and source distillery are not disclosed.
+age:
+  years: null
+  stated: false
+  note: No age statement; the premium bottling is generally reported at eight to fourteen years.
+proof: 100
+price: { low: 55, high: 70, asOf: "2026-08" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 7
+  spice: 5
+  oak: 7
+  fruit: 5
+  heat: 5
+  nuttiness: 4
+notes:
+  nose: [caramel, maple, toasted oak, light char]
+  palate: [brown sugar, vanilla, spice, soft smoke]
+  finish: [long, sweet, warm]
+blurb: >
+  Named for Nathan 'Nearest' Green, the enslaved distiller who taught Jack Daniel, and now
+  backed by the brand's own distillery in Shelbyville. Sweet and maple-leaning with the
+  charcoal-mellowed softness of the style.
+verdict: >
+  a sweet, maple-forward Tennessee whiskey with a story worth knowing behind it
+bestFor: [neat, rocks, old-fashioned]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Uncle Nearest official }

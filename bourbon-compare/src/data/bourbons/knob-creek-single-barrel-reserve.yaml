@@ -1,0 +1,47 @@
+name: Knob Creek Single Barrel Reserve
+brand: Knob Creek
+distillery: Jim Beam
+bottler: Jim Beam
+category: bourbon
+producerType: heritage
+style: high-rye
+mashbill:
+  provenance: reported
+  corn: 75
+  rye: 13
+  wheat: 0
+  maltedBarley: 12
+  note: Beam has never published an official mash bill; 75/13/12 is the long-standing reported figure.
+age:
+  years: 9
+  stated: true
+proof: 120
+price: { low: 45, high: 55, asOf: "2026-08" }
+availability: shelf
+bottling:
+  singleBarrel: true
+  smallBatch: false
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 6
+  spice: 7
+  oak: 8
+  fruit: 3
+  heat: 8
+  nuttiness: 7
+notes:
+  nose: [charred oak, caramel, nuts, black pepper]
+  palate: [rich toffee, peanut, pepper, char]
+  finish: [long, hot, drying]
+blurb: >
+  The same nine-year Knob Creek juice bottled from a single barrel at 120 proof, and the extra
+  strength suits it. Everything the standard bottling does, turned up — with the
+  barrel-to-barrel variation that comes with the format.
+verdict: >
+  the Beam profile at serious proof for well under what most barrel-strength bourbons cost
+bestFor: [neat, old-fashioned]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Jim Beam official product information }

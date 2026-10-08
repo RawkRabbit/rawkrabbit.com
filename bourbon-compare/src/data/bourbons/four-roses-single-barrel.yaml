@@ -1,0 +1,47 @@
+name: Four Roses Single Barrel
+brand: Four Roses
+distillery: Four Roses
+bottler: Four Roses
+category: bourbon
+producerType: heritage
+style: high-rye
+mashbill:
+  provenance: published
+  corn: 60
+  rye: 35
+  wheat: 0
+  maltedBarley: 5
+  note: "Uses the high-rye 'B' mash bill at 35% rye."
+age:
+  years: null
+  stated: false
+  note: No age statement; barrels are typically seven to nine years.
+proof: 100
+price: { low: 45, high: 55, asOf: "2026-08" }
+availability: shelf
+bottling:
+  singleBarrel: true
+  smallBatch: false
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 6
+  spice: 8
+  oak: 6
+  fruit: 7
+  heat: 6
+  nuttiness: 3
+notes:
+  nose: [ripe cherry, rye spice, floral, vanilla]
+  palate: [bright fruit, clove, cinnamon, soft oak]
+  finish: [long, spicy, fruit-driven]
+blurb: >
+  The OBSV recipe on its own at 100 proof — the highest-rye mash Four Roses uses, paired with
+  their most floral yeast. Cherry and clove in equal measure, and a genuinely distinctive glass.
+verdict: >
+  the most expressive, spice-and-fruit-forward single recipe in the Four Roses range
+bestFor: [neat, old-fashioned]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Four Roses Distillery official }

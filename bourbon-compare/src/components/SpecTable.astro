@@ -1,0 +1,57 @@
+---
+import type { BourbonEntry } from '../lib/schema.ts';
+import { specRows } from '../lib/compare.ts';
+
+interface Props { a: BourbonEntry; b: BourbonEntry }
+const { a, b } = Astro.props;
+
+const rows = specRows(a, b);
+// Footnotes are collected once and numbered, rather than repeated per row.
+const notes = [...new Set(rows.map((r) => r.note).filter(Boolean))] as string[];
+const noteIndex = (n?: string) => (n ? notes.indexOf(n) + 1 : null);
+---
+<div class="spec-scroll">
+  <table class="spec">
+    <thead>
+      <tr>
+        <th scope="col"><span class="sr-only">Feature</span></th>
+        <th scope="col" class="col-a">{a.name}</th>
+        <th scope="col" class="col-b">{b.name}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {rows.map((row) => (
+        <tr>
+          <th scope="row">
+            {row.label}
+            {row.note && <sup class="fn">{noteIndex(row.note)}</sup>}
+          </th>
+          <td>
+            {row.a}
+            {row.badge?.side === 'a' && <span class="badge">{row.badge.text}</span>}
+          </td>
+          <td>
+            {row.b}
+            {row.badge?.side === 'b' && <span class="badge">{row.badge.text}</span>}
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+{notes.length > 0 && (
+  <ol class="footnote fn-list">
+    {notes.map((n) => <li>{n}</li>)}
+  </ol>
+)}
+
+<style>
+  .fn { color: var(--text-muted); font-size: 0.66rem; margin-left: 2px; }
+  .fn-list { margin: 14px 0 0; padding-left: 18px; }
+  .fn-list li { margin-bottom: 3px; }
+  .sr-only {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+  }
+</style>

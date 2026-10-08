@@ -1,0 +1,48 @@
+name: Old Fitzgerald Bottled-in-Bond
+brand: Old Fitzgerald
+distillery: Heaven Hill
+bottler: Heaven Hill
+category: bourbon
+producerType: heritage
+style: wheated
+mashbill:
+  provenance: published
+  corn: 68
+  rye: 0
+  wheat: 20
+  maltedBarley: 12
+  note: Heaven Hill publishes its standard bourbon mash bill.
+age:
+  years: 9
+  stated: true
+  note: Age varies by release; nine years is a representative recent bottling.
+proof: 100
+price: { low: 110, high: 180, asOf: "2026-08" }
+availability: allocated
+bottling:
+  singleBarrel: false
+  smallBatch: false
+  barrelProof: false
+  bottledInBond: true
+  chillFiltered: true
+flavor:
+  sweetness: 8
+  spice: 2
+  oak: 7
+  fruit: 6
+  heat: 4
+  nuttiness: 3
+notes:
+  nose: [polished oak, honey, stewed apple, vanilla]
+  palate: [rich toffee, soft wheat, dark fruit, cocoa]
+  finish: [long, elegant, sweet oak]
+blurb: >
+  The decanter series, released twice a year at varying ages, and Heaven Hill's most serious
+  wheated statement. Age shows as polished oak and stewed fruit rather than tannin, but you pay
+  handsomely for the bottle.
+verdict: >
+  an aged, bonded wheater in a presentation bottle and the price is not the obstacle
+bestFor: [neat]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Heaven Hill Distillery official }

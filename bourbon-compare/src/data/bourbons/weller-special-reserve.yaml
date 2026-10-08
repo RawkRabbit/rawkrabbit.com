@@ -1,0 +1,44 @@
+name: W.L. Weller Special Reserve
+brand: Weller
+distillery: Buffalo Trace
+bottler: Buffalo Trace
+category: bourbon
+producerType: heritage
+style: wheated
+mashbill:
+  provenance: unknown
+  note: "Buffalo Trace does not disclose its wheated recipe beyond wheat replacing rye."
+age:
+  years: null
+  stated: false
+  note: No age statement; generally reported around 6 years.
+proof: 90
+price: { low: 30, high: 60, asOf: "2026-08" }
+availability: allocated
+bottling:
+  singleBarrel: false
+  smallBatch: false
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 7
+  spice: 2
+  oak: 4
+  fruit: 5
+  heat: 3
+  nuttiness: 3
+notes:
+  nose: [honey, vanilla, light red fruit]
+  palate: [soft caramel, bread dough, cinnamon sugar]
+  finish: [short, sweet, gentle]
+blurb: >
+  The entry point to the Weller line and an easy introduction to wheated bourbon. Soft honey and
+  vanilla with almost no rye bite, a bread-dough body, and a short, sweet finish that asks nothing
+  of you.
+verdict: >
+  the softest, sweetest, most approachable wheated pour of the group
+bestFor: [neat, rocks, highball]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Buffalo Trace — W.L. Weller" }

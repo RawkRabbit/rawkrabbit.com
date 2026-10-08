@@ -1,0 +1,77 @@
+---
+import Base from '../layouts/Base.astro';
+import BottlePicker from '../components/BottlePicker.astro';
+import { loadCatalogue, seededPairUrl } from '../lib/catalogue.ts';
+import { formatProof, formatPrice, styleLabel } from '../lib/derive.ts';
+import { url } from '../lib/url.ts';
+
+const all = await loadCatalogue();
+
+/* The landing pair. Deliberately a strong contrast so the first thing a visitor
+   sees demonstrates what the comparison actually does. */
+const DEFAULT_A = 'bardstown-origin-series-high-wheat';
+const DEFAULT_B = 'knob-creek-9-year';
+const a = all.find((x) => x.slug === DEFAULT_A) ?? all[0]!;
+const b = all.find((x) => x.slug === DEFAULT_B) ?? all[1]!;
+
+const suggestions: [string, string][] = [
+  ['makers-mark', 'elijah-craig-barrel-proof'],
+  ['wild-turkey-101', 'four-roses-small-batch'],
+  ['buffalo-trace', 'eagle-rare-10-year'],
+  ['weller-special-reserve', 'new-riff-bottled-in-bond'],
+];
+const featured = suggestions
+  .map(([x, y]) => [all.find((n) => n.slug === x), all.find((n) => n.slug === y)] as const)
+  .filter((p): p is [NonNullable<(typeof p)[0]>, NonNullable<(typeof p)[1]>] => Boolean(p[0] && p[1]));
+---
+<Base title="BourbonCompare — Side-by-side bourbon comparisons" current="compare">
+  <div class="stack">
+    <div>
+      <h1>Compare two bourbons, side by side.</h1>
+      <p class="lede" style="max-width:60ch">
+        Mash bill, age, proof, price and flavor profile — laid out next to each other,
+        with a plain-language read on which one suits what you're after.
+      </p>
+    </div>
+
+    <div class="panel">
+      <BottlePicker all={all} selectedA={a.slug} selectedB={b.slug} />
+      <p class="footnote" style="margin:16px 0 0">
+        Pick two bottles to jump straight to the comparison.
+        {all.length} bourbons in the list so far.
+      </p>
+    </div>
+
+    <section>
+      <h2>Start with one of these</h2>
+      <p style="margin:-4px 0 14px">
+        <a class="pill pill-action" href={seededPairUrl(all, 'home-surprise')} data-random rel="nofollow">
+          🎲 Surprise me
+        </a>
+      </p>
+      <div class="card-grid">
+        {featured.map(([x, y]) => (
+          <a class="card" href={url(`/compare/${x.slug}-vs-${y.slug}/`)}>
+            <span class="card-name">{x.name} <span style="color:var(--text-muted)">vs</span> {y.name}</span>
+            <span class="card-style">{styleLabel(x)} · {styleLabel(y)}</span>
+            <span class="card-meta">{x.proof} vs {y.proof} proof</span>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <section>
+      <h2>In the list</h2>
+      <div class="card-grid">
+        {all.slice(0, 6).map((x) => (
+          <a class="card" href={url(`/bourbons/${x.slug}/`)}>
+            <span class="card-name">{x.name}</span>
+            <span class="card-style">{styleLabel(x)}</span>
+            <span class="card-meta">{formatProof(x)} · {formatPrice(x)}</span>
+          </a>
+        ))}
+      </div>
+      <p style="margin-top:16px"><a class="pill" href={url('/bourbons/')}>See all {all.length} bourbons →</a></p>
+    </section>
+  </div>
+</Base>

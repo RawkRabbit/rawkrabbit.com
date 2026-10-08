@@ -1,0 +1,48 @@
+name: Old Grand-Dad 114
+brand: Old Grand-Dad
+distillery: Jim Beam
+bottler: Jim Beam
+category: bourbon
+producerType: heritage
+style: high-rye
+mashbill:
+  provenance: reported
+  corn: 63
+  rye: 27
+  wheat: 0
+  maltedBarley: 10
+  note: Shares the high-rye Old Grand-Dad mash bill; Beam does not publish exact figures.
+age:
+  years: null
+  stated: false
+  note: No age statement; generally reported between four and six years.
+proof: 114
+price: { low: 28, high: 35, asOf: "2026-08" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: false
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 6
+  spice: 9
+  oak: 6
+  fruit: 4
+  heat: 8
+  nuttiness: 5
+notes:
+  nose: [rye spice, caramel, orange peel, cinnamon]
+  palate: [peppery rye, brown sugar, clove, char]
+  finish: [long, spicy, hot]
+blurb: >
+  The best proof-per-dollar in American whiskey and it is not especially close. The 27% rye mash
+  at 114 proof is loud, peppery and completely unsubtle, which is exactly why it makes such a
+  good old-fashioned.
+verdict: >
+  maximum rye spice and proof for under thirty dollars
+bestFor: [neat, old-fashioned, cocktails]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Jim Beam official product information }

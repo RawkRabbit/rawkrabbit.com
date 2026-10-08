@@ -1,0 +1,47 @@
+name: Jack Daniel’s Bonded
+brand: Jack Daniel’s
+distillery: Jack Daniel’s
+bottler: Jack Daniel’s
+category: tennessee
+producerType: heritage
+style: traditional
+mashbill:
+  provenance: published
+  corn: 80
+  rye: 8
+  wheat: 0
+  maltedBarley: 12
+  note: Charcoal-mellowed before barrelling, which is what makes it Tennessee whiskey rather than bourbon by label.
+age:
+  years: 4
+  stated: true
+proof: 100
+price: { low: 30, high: 38, asOf: "2026-08" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: false
+  barrelProof: false
+  bottledInBond: true
+  chillFiltered: true
+flavor:
+  sweetness: 6
+  spice: 4
+  oak: 6
+  fruit: 4
+  heat: 5
+  nuttiness: 4
+notes:
+  nose: [banana, charcoal, vanilla, caramel]
+  palate: [sweet corn, toasted oak, light smoke, spice]
+  finish: [medium-long, soft, sweet]
+blurb: >
+  Bonded Jack at 100 proof, and far more serious than the black label most people picture. The
+  charcoal mellowing still rounds everything off, but there is real bourbon structure
+  underneath.
+verdict: >
+  the Tennessee charcoal-mellowed character with bonded proof and genuine structure
+bestFor: [neat, rocks, old-fashioned]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Jack Daniel's official }

@@ -1,0 +1,123 @@
+---
+import Base from '../../layouts/Base.astro';
+import { loadCatalogue } from '../../lib/catalogue.ts';
+import { url as withBase } from '../../lib/url.ts';
+import {
+  formatAge,
+  formatMashbill,
+  formatPrice,
+  formatProof,
+  nearestNeighbours,
+  styleLabel,
+} from '../../lib/derive.ts';
+
+export async function getStaticPaths() {
+  const all = await loadCatalogue();
+  return all.map((b) => ({ params: { slug: b.slug }, props: { b, all } }));
+}
+
+const { b, all } = Astro.props;
+const similar = nearestNeighbours(b, all);
+
+const AVAILABILITY = { shelf: 'Widely available', limited: 'Limited', allocated: 'Allocated' } as const;
+const PROVENANCE = {
+  published: 'Published by the distillery',
+  reported: 'Widely reported, never officially confirmed',
+  estimated: 'Estimated from secondary sources',
+  unknown: 'Not disclosed',
+} as const;
+
+const traits = [
+  b.bottling.bottledInBond && 'Bottled-in-Bond',
+  b.bottling.barrelProof && 'Barrel proof',
+  b.bottling.singleBarrel && 'Single barrel',
+  b.bottling.smallBatch && 'Small batch',
+  b.bottling.chillFiltered === false && 'Non-chill-filtered',
+].filter(Boolean) as string[];
+
+const specs = [
+  ['Type / Style', styleLabel(b)],
+  ['Distillery', b.distillery],
+  ['Bottler', b.bottler === b.distillery ? '—' : b.bottler],
+  ['Mash Bill', formatMashbill(b)],
+  ['Age', formatAge(b)],
+  ['Proof', formatProof(b)],
+  ['Approx. Price', `${formatPrice(b)} (as of ${b.price.asOf})`],
+  ['Availability', AVAILABILITY[b.availability]],
+].filter(([, v]) => v !== '—');
+---
+<Base
+  title={`${b.name} — BourbonCompare`}
+  description={`${b.name}: ${styleLabel(b)} at ${formatProof(b)}. Mash bill, age, price and tasting notes.`}
+  current="bourbons"
+>
+  <div class="stack">
+    <div>
+      <p class="eyebrow">{b.brand}</p>
+      <h1>{b.name}</h1>
+      {traits.length > 0 && (
+        <div class="pill-row" style="margin-top:12px">{traits.map((t) => <span class="pill">{t}</span>)}</div>
+      )}
+    </div>
+
+    <section class="panel">
+      <h2>Specifications</h2>
+      <div class="spec-scroll">
+        <table class="spec">
+          <tbody>
+            {specs.map(([k, v]) => (
+              <tr><th scope="row">{k}</th><td>{v}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <div class="footnote" style="margin-top:14px">
+        <p style="margin:0">Mash bill: {PROVENANCE[b.mashbill.provenance]}.{b.mashbill.note ? ` ${b.mashbill.note}` : ''}</p>
+        {b.age.note && <p style="margin:6px 0 0">Age: {b.age.note}</p>}
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Tasting Notes</h2>
+      <p style="color:var(--text-secondary)">{b.blurb}</p>
+      <div class="notes-grid" style="margin-top:20px">
+        <div><h3>Nose</h3><p style="color:var(--text-secondary);margin:0">{b.notes.nose.join(', ')}</p></div>
+        <div><h3>Palate</h3><p style="color:var(--text-secondary);margin:0">{b.notes.palate.join(', ')}</p></div>
+        <div><h3>Finish</h3><p style="color:var(--text-secondary);margin:0">{b.notes.finish.join(', ')}</p></div>
+      </div>
+      <p class="footnote" style="margin-top:20px">Best enjoyed {b.bestFor.join(', ')}.</p>
+    </section>
+
+    {b.personal.rating !== null && (
+      <section class="panel">
+        <h2>Your Notes</h2>
+        <p style="font-size:1.5rem;font-weight:640;margin:0 0 8px">{b.personal.rating} / 10</p>
+        {b.personal.notes && <p style="color:var(--text-secondary);margin:0">{b.personal.notes}</p>}
+        {b.personal.dateTried && <p class="footnote" style="margin:10px 0 0">Tried {b.personal.dateTried}</p>}
+      </section>
+    )}
+
+    <section>
+      <h2>Compare against</h2>
+      <p class="footnote" style="margin-bottom:14px">The closest bottles in this list by flavor profile.</p>
+      <div class="card-grid">
+        {similar.map((s) => (
+          <a class="card" href={withBase(`/compare/${b.slug}-vs-${s.slug}/`)}>
+            <span class="card-name">vs {s.name}</span>
+            <span class="card-style">{styleLabel(s)}</span>
+            <span class="card-meta">{formatProof(s)} · {formatPrice(s)}</span>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Sources</h2>
+      <ul style="margin:0;padding-left:18px;color:var(--text-secondary)">
+        {b.sources.map((s) => (
+          <li>{s.url ? <a href={s.url} rel="nofollow noopener">{s.label}</a> : s.label}</li>
+        ))}
+      </ul>
+    </section>
+  </div>
+</Base>

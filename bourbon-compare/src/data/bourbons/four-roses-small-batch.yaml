@@ -1,0 +1,47 @@
+name: Four Roses Small Batch
+brand: Four Roses
+distillery: Four Roses
+bottler: Four Roses
+category: bourbon
+producerType: heritage
+style: high-rye
+mashbill:
+  provenance: published
+  corn: 75
+  rye: 20
+  wheat: 0
+  maltedBarley: 5
+  note: A blend of four of Four Roses' ten recipes; this is their high-rye "B" mash bill.
+age:
+  years: null
+  stated: false
+  note: No age statement; component whiskeys generally 6-7 years.
+proof: 90
+price: { low: 32, high: 38, asOf: "2026-08" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 6
+  spice: 6
+  oak: 5
+  fruit: 7
+  heat: 4
+  nuttiness: 3
+notes:
+  nose: [red berry, floral, caramel, light spice]
+  palate: [ripe fruit, cinnamon, honey, soft oak]
+  finish: [medium, fruity, gently spiced]
+blurb: >
+  Four Roses' yeast strains push this toward fruit and florals rather than wood. Red berry and
+  cinnamon over a light body, with the rye showing up as brightness instead of bite.
+verdict: >
+  a fruit-and-floral profile that stands apart from the usual caramel-and-oak template
+bestFor: [neat, rocks, cocktails]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Four Roses official" }

@@ -1,0 +1,50 @@
+name: Blanton’s Single Barrel
+brand: Blanton’s
+distillery: Buffalo Trace
+bottler: Buffalo Trace
+category: bourbon
+producerType: heritage
+style: high-rye
+mashbill:
+  provenance: estimated
+  corn: 75
+  rye: 15
+  wheat: 0
+  maltedBarley: 10
+  note: "Buffalo Trace does not disclose Mash Bill #2; it is understood to carry noticeably more rye than Mash Bill #1."
+age:
+  years: null
+  stated: false
+  note: No age statement; generally reported between 6 and 8 years.
+proof: 93
+price: { low: 80, high: 150, asOf: "2026-08" }
+availability: allocated
+bottling:
+  singleBarrel: true
+  smallBatch: false
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 6
+  spice: 6
+  oak: 6
+  fruit: 6
+  heat: 4
+  nuttiness: 3
+notes:
+  nose: [vanilla, citrus, dried orange, light caramel]
+  palate: [honey, baking spice, nutmeg, soft oak]
+  finish: [medium, creamy, gently spiced]
+blurb: >
+  The bottle that invented the single-barrel category and still trades largely on its
+  horse-stopper cork and its scarcity. The whiskey itself is genuinely good — honeyed and
+  citrus-led with nutmeg spice — but at secondary prices you are paying for the bottle as much
+  as the pour.
+verdict: >
+  the original single-barrel presentation and a honeyed, citrus-led profile, and the hunt is
+  part of the appeal
+bestFor: [neat, rocks]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Buffalo Trace Distillery official }

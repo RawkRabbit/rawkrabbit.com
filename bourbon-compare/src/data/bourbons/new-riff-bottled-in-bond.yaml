@@ -1,0 +1,46 @@
+name: New Riff Bottled-in-Bond
+brand: New Riff
+distillery: New Riff
+bottler: New Riff
+category: bourbon
+producerType: modern-craft
+style: high-rye
+mashbill:
+  provenance: published
+  corn: 65
+  rye: 30
+  wheat: 0
+  maltedBarley: 5
+age:
+  years: 4
+  stated: true
+  note: Bottled-in-bond requires a minimum of four years; releases often run slightly older.
+proof: 100
+price: { low: 38, high: 45, asOf: "2026-08" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: true
+  chillFiltered: false
+flavor:
+  sweetness: 4
+  spice: 9
+  oak: 5
+  fruit: 5
+  heat: 6
+  nuttiness: 3
+notes:
+  nose: [rye spice, mint, green apple, cereal]
+  palate: [black pepper, clove, dill, young oak]
+  finish: [long, dry, peppery]
+blurb: >
+  At 30% rye this is about as spice-forward as bourbon gets before becoming rye whiskey. Peppery
+  and herbal with mint and dill, non-chill-filtered for texture, and noticeably dry rather than sweet.
+verdict: >
+  aggressive rye spice and a dry, herbal profile from a modern craft distillery
+bestFor: [neat, old-fashioned, cocktails]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "New Riff Distilling official" }

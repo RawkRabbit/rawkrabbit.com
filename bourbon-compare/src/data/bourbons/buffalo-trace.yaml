@@ -1,0 +1,48 @@
+name: Buffalo Trace
+brand: Buffalo Trace
+distillery: Buffalo Trace
+bottler: Buffalo Trace
+category: bourbon
+producerType: heritage
+style: traditional
+mashbill:
+  provenance: estimated
+  corn: 78
+  rye: 10
+  wheat: 0
+  maltedBarley: 12
+  note: "Buffalo Trace does not disclose Mash Bill #1; figures are a widely used estimate of a low-rye recipe."
+age:
+  years: null
+  stated: false
+  note: No age statement; generally reported around 8 years.
+proof: 90
+price: { low: 28, high: 35, asOf: "2026-08" }
+availability: limited
+bottling:
+  singleBarrel: false
+  smallBatch: false
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 6
+  spice: 5
+  oak: 6
+  fruit: 5
+  heat: 4
+  nuttiness: 4
+notes:
+  nose: [brown sugar, vanilla, mint, light oak]
+  palate: [caramel, toffee, candied fruit, gentle spice]
+  finish: [smooth, warm, moderate length]
+blurb: >
+  The reference-point Kentucky bourbon: balanced brown sugar and vanilla sweetness, a whisper of
+  mint, and just enough oak and spice to keep it interesting. Nothing is loud, which is exactly
+  the point at 90 proof.
+verdict: >
+  the balanced, everyday Kentucky benchmark that does nothing wrong at a fair price
+bestFor: [neat, rocks, old-fashioned, cocktails]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Buffalo Trace Distillery official" }

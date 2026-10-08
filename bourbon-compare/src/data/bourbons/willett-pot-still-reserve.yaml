@@ -1,0 +1,44 @@
+name: Willett Pot Still Reserve
+brand: Willett
+distillery: Willett Distillery
+bottler: Willett Distillery
+category: bourbon
+producerType: modern-craft
+style: traditional
+mashbill:
+  provenance: unknown
+  note: Willett does not disclose the mash bill or, for older stock, whether the contents are distilled in-house or sourced.
+age:
+  years: null
+  stated: false
+  note: No age statement; contents have shifted from sourced to in-house distillate over time.
+proof: 94
+price: { low: 45, high: 60, asOf: "2026-08" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 7
+  spice: 5
+  oak: 6
+  fruit: 6
+  heat: 4
+  nuttiness: 4
+notes:
+  nose: [caramel, vanilla, red fruit, light oak]
+  palate: [toffee, soft spice, cherry, cream]
+  finish: [medium, smooth, sweet]
+blurb: >
+  Famous first for the pot-still-shaped decanter and second for the whiskey, which is a fair
+  ordering. Pleasant, sweet and fruit-leaning, with a good deal of the price attached to the
+  glass.
+verdict: >
+  a distinctive bottle on the shelf and an easy, fruit-forward pour inside it
+bestFor: [neat, rocks]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Willett Distillery official }

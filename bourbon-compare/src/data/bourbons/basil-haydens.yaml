@@ -1,0 +1,48 @@
+name: Basil Hayden’s
+brand: Basil Hayden’s
+distillery: Jim Beam
+bottler: Jim Beam
+category: bourbon
+producerType: heritage
+style: high-rye
+mashbill:
+  provenance: reported
+  corn: 63
+  rye: 27
+  wheat: 0
+  maltedBarley: 10
+  note: Shares the high-rye Old Grand-Dad mash bill; Beam does not publish exact figures.
+age:
+  years: null
+  stated: false
+  note: No age statement; generally reported between six and eight years.
+proof: 80
+price: { low: 38, high: 45, asOf: "2026-08" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 5
+  spice: 6
+  oak: 3
+  fruit: 5
+  heat: 2
+  nuttiness: 3
+notes:
+  nose: [light honey, peppermint, dried herbs]
+  palate: [thin caramel, rye spice, tea, pepper]
+  finish: [short, dry, peppery]
+blurb: >
+  Built on the high-rye Old Grand-Dad mash but bottled at just 80 proof, which makes it the
+  lightest thing in the Beam range by a distance. Peppery and herbal, but very thin — the price
+  reflects the packaging more than the liquid.
+verdict: >
+  an unusually light, peppery, low-proof pour and you do not want any weight in the glass
+bestFor: [neat, rocks, highball]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Jim Beam official product information }

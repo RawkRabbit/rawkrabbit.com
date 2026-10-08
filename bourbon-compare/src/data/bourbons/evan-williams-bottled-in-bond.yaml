@@ -1,0 +1,47 @@
+name: Evan Williams Bottled-in-Bond
+brand: Evan Williams
+distillery: Heaven Hill
+bottler: Heaven Hill
+category: bourbon
+producerType: heritage
+style: traditional
+mashbill:
+  provenance: published
+  corn: 78
+  rye: 10
+  wheat: 0
+  maltedBarley: 12
+  note: Heaven Hill publishes its standard bourbon mash bill.
+age:
+  years: 4
+  stated: true
+proof: 100
+price: { low: 16, high: 22, asOf: "2026-08" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: false
+  barrelProof: false
+  bottledInBond: true
+  chillFiltered: true
+flavor:
+  sweetness: 6
+  spice: 5
+  oak: 6
+  fruit: 4
+  heat: 5
+  nuttiness: 4
+notes:
+  nose: [vanilla, corn sweetness, light oak, mint]
+  palate: [caramel, baking spice, toasted grain]
+  finish: [medium, warm, clean]
+blurb: >
+  Arguably the best value in all of bourbon: a bonded 100-proof Kentucky whiskey for under
+  twenty dollars. Straightforward vanilla and caramel with just enough oak, and nothing at all
+  to apologise for.
+verdict: >
+  a bonded, honest, full-proof Kentucky bourbon for the price of a cocktail
+bestFor: [neat, rocks, old-fashioned, cocktails]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Heaven Hill Distillery official }

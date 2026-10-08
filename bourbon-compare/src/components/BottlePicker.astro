@@ -1,0 +1,49 @@
+---
+import type { BourbonEntry } from '../lib/schema.ts';
+import { BASE } from '../lib/url.ts';
+
+interface Props { all: BourbonEntry[]; selectedA: string; selectedB: string }
+const { all, selectedA, selectedB } = Astro.props;
+---
+<form class="picker-bar" id="picker" data-base={BASE} data-slugs={JSON.stringify(all.map((b) => b.slug))}>
+  <div class="picker a">
+    <label for="pick-a">Bottle A</label>
+    <select id="pick-a" name="a">
+      {all.map((b) => <option value={b.slug} selected={b.slug === selectedA}>{b.name}</option>)}
+    </select>
+  </div>
+
+  <button class="swap" type="button" id="swap" aria-label="Swap bottle A and bottle B">⇄</button>
+
+  <div class="picker b">
+    <label for="pick-b">Bottle B</label>
+    <select id="pick-b" name="b">
+      {all.map((b) => <option value={b.slug} selected={b.slug === selectedB}>{b.name}</option>)}
+    </select>
+  </div>
+</form>
+
+<script is:inline>
+  (() => {
+    const form = document.getElementById('picker');
+    if (!form) return;
+    const a = document.getElementById('pick-a');
+    const b = document.getElementById('pick-b');
+
+    // Both orderings are real pages, so A/B order is preserved in the URL and
+    // Swap is an ordinary navigation.
+    const go = (x, y) => {
+      if (x === y) return;
+      location.href = `${form.dataset.base || ''}/compare/${x}-vs-${y}/`;
+    };
+
+    // Picking a bottle that's already in the other slot swaps rather than
+    // landing on a dead "compare X to itself" state.
+    a.addEventListener('change', () => go(a.value, a.value === b.value ? form.dataset.prevA : b.value));
+    b.addEventListener('change', () => go(b.value === a.value ? form.dataset.prevB : a.value, b.value));
+    document.getElementById('swap')?.addEventListener('click', () => go(b.value, a.value));
+
+    form.dataset.prevA = a.value;
+    form.dataset.prevB = b.value;
+  })();
+</script>

@@ -1,0 +1,47 @@
+name: Wilderness Trail Bottled-in-Bond
+brand: Wilderness Trail
+distillery: Wilderness Trail
+bottler: Wilderness Trail
+category: bourbon
+producerType: modern-craft
+style: wheated
+mashbill:
+  provenance: published
+  corn: 64
+  rye: 0
+  wheat: 24
+  maltedBarley: 12
+  note: Wilderness Trail publishes its mash bill and uses a sweet mash rather than the usual sour mash process.
+age:
+  years: 6
+  stated: true
+proof: 100
+price: { low: 45, high: 60, asOf: "2026-08" }
+availability: shelf
+bottling:
+  singleBarrel: true
+  smallBatch: false
+  barrelProof: false
+  bottledInBond: true
+  chillFiltered: false
+flavor:
+  sweetness: 7
+  spice: 3
+  oak: 5
+  fruit: 6
+  heat: 5
+  nuttiness: 4
+notes:
+  nose: [honey, baked apple, cereal, vanilla]
+  palate: [soft wheat, caramel, stone fruit, light oak]
+  finish: [medium-long, clean, sweet]
+blurb: >
+  A sweet-mash, bonded wheated bourbon from a distillery founded by two fermentation scientists,
+  and the technical care shows in how clean it tastes. One of the strongest craft arguments on
+  the shelf.
+verdict: >
+  a bonded, sweet-mash wheater from a modern distillery doing genuinely careful work
+bestFor: [neat, rocks]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Wilderness Trail Distillery official }

@@ -1,0 +1,48 @@
+name: E.H. Taylor Jr. Small Batch
+brand: E.H. Taylor Jr.
+distillery: Buffalo Trace
+bottler: Buffalo Trace
+category: bourbon
+producerType: heritage
+style: traditional
+mashbill:
+  provenance: estimated
+  corn: 78
+  rye: 10
+  wheat: 0
+  maltedBarley: 12
+  note: "Buffalo Trace does not disclose Mash Bill #1; figures are a widely used estimate of a low-rye recipe."
+age:
+  years: null
+  stated: false
+  note: Bottled-in-bond, so a minimum of four years.
+proof: 100
+price: { low: 45, high: 90, asOf: "2026-08" }
+availability: allocated
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: true
+  chillFiltered: true
+flavor:
+  sweetness: 6
+  spice: 5
+  oak: 7
+  fruit: 5
+  heat: 5
+  nuttiness: 4
+notes:
+  nose: [caramel, tobacco, sweet corn, oak]
+  palate: [butterscotch, pepper, dried fruit, char]
+  finish: [long, drying, oak and spice]
+blurb: >
+  Bottled-in-bond from the same low-rye Buffalo Trace recipe, and the extra 10 proof over
+  standard BT gives it noticeably more grip. Butterscotch and tobacco with a long, drying finish
+  that outlasts most bottles near its shelf price.
+verdict: >
+  the Buffalo Trace house profile with real structure and a bonded 100-proof backbone
+bestFor: [neat, rocks, old-fashioned]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Buffalo Trace Distillery official }

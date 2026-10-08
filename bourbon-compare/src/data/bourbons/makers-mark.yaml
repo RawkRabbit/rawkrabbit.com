@@ -1,0 +1,46 @@
+name: Maker's Mark
+brand: Maker's Mark
+distillery: Maker's Mark
+bottler: Maker's Mark
+category: bourbon
+producerType: heritage
+style: wheated
+mashbill:
+  provenance: published
+  corn: 70
+  rye: 0
+  wheat: 16
+  maltedBarley: 14
+age:
+  years: null
+  stated: false
+  note: No age statement; bottled to taste, typically around 6 years.
+proof: 90
+price: { low: 25, high: 32, asOf: "2026-08" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: false
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 8
+  spice: 2
+  oak: 4
+  fruit: 4
+  heat: 3
+  nuttiness: 3
+notes:
+  nose: [vanilla, caramel, baked bread, faint fruit]
+  palate: [sweet caramel, soft wheat, honey]
+  finish: [short, sweet, clean]
+blurb: >
+  The bottle that made wheated bourbon mainstream. Soft, sweet, and deliberately low on spice and
+  oak, with baked bread and honey doing most of the work. Consistency is its real feature.
+verdict: >
+  a reliably sweet, low-spice wheater that is easy to find and easy to drink
+bestFor: [neat, rocks, cocktails, highball]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Maker's Mark official" }

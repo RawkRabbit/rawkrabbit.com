@@ -1,0 +1,43 @@
+name: W.L. Weller Antique 107
+brand: Weller
+distillery: Buffalo Trace
+bottler: Buffalo Trace
+category: bourbon
+producerType: heritage
+style: wheated
+mashbill:
+  provenance: unknown
+  note: Buffalo Trace does not disclose its wheated recipe beyond wheat replacing rye.
+age:
+  years: null
+  stated: false
+  note: No age statement; generally reported around 7 years.
+proof: 107
+price: { low: 50, high: 110, asOf: "2026-08" }
+availability: allocated
+bottling:
+  singleBarrel: false
+  smallBatch: false
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 8
+  spice: 3
+  oak: 6
+  fruit: 5
+  heat: 7
+  nuttiness: 3
+notes:
+  nose: [caramel, cherry, vanilla, cinnamon]
+  palate: [thick toffee, soft wheat, red fruit, warm spice]
+  finish: [long, sweet, warming]
+blurb: >
+  The proof point where the Weller wheated recipe stops being polite. Thick toffee and cherry
+  with real warmth behind it, and enough body to stand up to an ice cube without collapsing.
+verdict: >
+  the sweetness of a wheater with the weight and warmth that only higher proof delivers
+bestFor: [neat, rocks]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Buffalo Trace Distillery official }

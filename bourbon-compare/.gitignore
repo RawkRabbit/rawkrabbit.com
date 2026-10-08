@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.astro/
+.DS_Store
+
+# Working files, not part of the site
+*.jpeg
+*.jpg
+*.pdf

@@ -1,0 +1,49 @@
+name: Bardstown Bourbon Company Origin Series High Wheat
+brand: Bardstown Bourbon Company
+distillery: Bardstown Bourbon Company
+bottler: Bardstown Bourbon Company
+category: bourbon
+producerType: modern-craft
+style: wheated
+mashbill:
+  provenance: published
+  corn: 53
+  rye: 0
+  wheat: 39
+  maltedBarley: 8
+  note: One of the highest wheat percentages of any widely available bourbon.
+age:
+  years: 6
+  stated: true
+proof: 106
+price: { low: 50, high: 55, asOf: "2026-08" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: null
+flavor:
+  sweetness: 7
+  spice: 3
+  oak: 5
+  fruit: 8
+  heat: 5
+  nuttiness: 2
+notes:
+  nose: [ripe apricot, lemon, pastry dough, light oak]
+  palate: [creme brulee, soft baking spice, oily butterscotch]
+  finish: [mild pepper, vanilla, gentle oak]
+blurb: >
+  Because wheat makes up a massive 39% of the mash bill, this pour trades the aggressive spice of
+  rye for a softer, oily mouthfeel. Expect bright fruit notes like ripe apricot and lemon on the
+  nose, transitioning to pastry dough, light oak, and a creamy creme brulee sweetness balanced by
+  a mild peppery backbone.
+verdict: >
+  a softer, fruit-forward, contemporary profile with a richer, oily texture and lower emphasis on
+  traditional oak
+bestFor: [neat, rocks]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Bardstown Bourbon Company — Origin Series" }

@@ -1,0 +1,47 @@
+name: Smooth Ambler Old Scout
+brand: Smooth Ambler
+distillery: MGP of Indiana
+bottler: Smooth Ambler
+category: bourbon
+producerType: sourced
+style: high-rye
+mashbill:
+  provenance: published
+  corn: 75
+  rye: 21
+  wheat: 0
+  maltedBarley: 4
+  note: MGP's widely published high-rye bourbon mash bill.
+age:
+  years: 5
+  stated: true
+proof: 99
+price: { low: 40, high: 50, asOf: "2026-08" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 5
+  spice: 7
+  oak: 6
+  fruit: 5
+  heat: 6
+  nuttiness: 3
+notes:
+  nose: [rye spice, caramel, dill, vanilla]
+  palate: [pepper, brown sugar, herbs, oak]
+  finish: [long, spicy, dry]
+blurb: >
+  Sourced MGP bourbon selected and bottled in West Virginia, and one of the more honest sourced
+  brands about exactly what it is. The characteristic MGP dill-and-pepper signature, cleanly
+  presented.
+verdict: >
+  the classic MGP high-rye profile from a bottler that has always been upfront about sourcing
+bestFor: [neat, old-fashioned, cocktails]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Smooth Ambler official }

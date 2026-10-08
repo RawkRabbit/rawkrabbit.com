@@ -1,0 +1,48 @@
+name: Booker’s
+brand: Booker’s
+distillery: Jim Beam
+bottler: Jim Beam
+category: bourbon
+producerType: heritage
+style: high-rye
+mashbill:
+  provenance: reported
+  corn: 75
+  rye: 13
+  wheat: 0
+  maltedBarley: 12
+  note: Beam has never published an official mash bill; 75/13/12 is the long-standing reported figure.
+age:
+  years: 7
+  stated: true
+  note: Age varies by batch; typically between six and eight years.
+proof: 125
+price: { low: 85, high: 110, asOf: "2026-08" }
+availability: limited
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: true
+  bottledInBond: false
+  chillFiltered: false
+flavor:
+  sweetness: 7
+  spice: 7
+  oak: 8
+  fruit: 4
+  heat: 10
+  nuttiness: 8
+notes:
+  nose: [charred oak, vanilla, roasted peanut, tobacco]
+  palate: [thick caramel, peanut, cinnamon, oak char]
+  finish: [enormous, hot, nutty and drying]
+blurb: >
+  Uncut, unfiltered Beam at batch strength, and the most concentrated expression of the house
+  peanut-and-oak character. Enormous and hot, with a finish that goes on well past where you
+  expect it to stop.
+verdict: >
+  the Beam house style at full power and you have water on the table
+bestFor: [neat]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Jim Beam official product information }

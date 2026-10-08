@@ -1,0 +1,47 @@
+name: Redemption Bourbon
+brand: Redemption
+distillery: MGP of Indiana
+bottler: Redemption
+category: bourbon
+producerType: sourced
+style: high-rye
+mashbill:
+  provenance: published
+  corn: 75
+  rye: 21
+  wheat: 0
+  maltedBarley: 4
+  note: MGP's widely published high-rye bourbon mash bill.
+age:
+  years: null
+  stated: false
+  note: No age statement; generally reported between two and four years.
+proof: 84
+price: { low: 25, high: 32, asOf: "2026-08" }
+availability: shelf
+bottling:
+  singleBarrel: false
+  smallBatch: false
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 5
+  spice: 7
+  oak: 4
+  fruit: 5
+  heat: 3
+  nuttiness: 3
+notes:
+  nose: [rye spice, dill, vanilla, citrus]
+  palate: [pepper, light caramel, herbs]
+  finish: [short, dry, spicy]
+blurb: >
+  Straightforward sourced MGP at a modest proof, and about as clear a reference sample of the
+  high-rye MGP profile as you can buy. Thin neat, but a reliable and inexpensive cocktail base.
+verdict: >
+  an inexpensive, unambiguous example of the MGP high-rye style for mixing
+bestFor: [old-fashioned, cocktails, highball]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: Redemption Whiskey official }
