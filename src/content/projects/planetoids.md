@@ -8,7 +8,7 @@ statusNote: Free to play in your browser. Best on a desktop keyboard.
 problem: Most retro arcade remakes are single player, or they bury the game under ads, accounts and pop-ups.
 forWho: Anyone who wants a quick round of classic vector-style arcade action, alone or with someone sitting next to them.
 price: Free
-started: 2026-10-01
+started: 2026-04-01
 updated: 2026-10-06
 order: 3
 links:
