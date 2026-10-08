@@ -32,7 +32,7 @@ Instructions for Claude (or any AI assistant) maintaining this site.
 Update `status`, `statusNote`, `updated`, and `links` in the project file, and add a log entry with `project:` set.
 
 ## BourbonCompare (`bourbon-compare/`)
-- A separate Astro project with its own `package.json`, served at `/bourbon/` (`base` in `bourbon-compare/astro.config.mjs`).
-- Root `npm run build` runs `build:bourbon`, which installs, builds and copies it into `dist/bourbon/`.
+- A separate Astro project with its own `package.json`, served at `/bourboncompare/` (`base` in `bourbon-compare/astro.config.mjs`).
+- Root `npm run build` runs `build:bourbon`, which installs, builds and copies it into `dist/bourboncompare/`.
 - Internal links must go through `url()` in `bourbon-compare/src/lib/url.ts` so the base path stays correct.
 - Run `npm test --prefix bourbon-compare` after data or engine changes.
