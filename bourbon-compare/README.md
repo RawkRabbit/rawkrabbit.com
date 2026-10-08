@@ -6,7 +6,7 @@ runtime API keys.
 
 ```bash
 npm install
-npm run dev      # http://localhost:4321/bourbon/
+npm run dev      # http://localhost:4321/bourboncompare/
 npm test         # validates the data and the comparison engine
 npm run build    # writes dist/
 ```

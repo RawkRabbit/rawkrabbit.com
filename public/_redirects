@@ -1,0 +1,3 @@
+# BourbonCompare moved from /bourbon/ to /bourboncompare/ on 2026-10-07.
+/bourbon /bourboncompare/ 301
+/bourbon/* /bourboncompare/:splat 301

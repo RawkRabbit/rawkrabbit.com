@@ -14,7 +14,7 @@ updated: 2026-10-07
 order: 2
 links:
   - label: Open BourbonCompare
-    url: /bourbon/
+    url: /bourboncompare/
     primary: true
 ---
 
