@@ -18,6 +18,15 @@ links:
     primary: true
 ---
 
+<img src="/projects/hop-to-it/icon.png" width="96" height="96" alt="Hop To It app icon: a house with rabbit ears and an orange door with a check mark" style="border:0">
+
+<div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:1.5rem 0">
+  <img src="/projects/hop-to-it/do-now.jpg" width="600" height="1304" loading="lazy" alt="Do Now screen: Quick Capture, a time slider set to 30 minutes, an energy picker and a Find a Task button" style="margin:0">
+  <img src="/projects/hop-to-it/suggestions.jpg" width="600" height="1304" loading="lazy" alt="Two suggested chores for 30 minutes at any energy, one marked high priority" style="margin:0">
+  <img src="/projects/hop-to-it/tasks.jpg" width="600" height="1304" loading="lazy" alt="Tasks list grouped by room, with time, energy and repeat details on each chore" style="margin:0">
+  <img src="/projects/hop-to-it/edit-task.jpg" width="600" height="1304" loading="lazy" alt="Edit Task screen with room, estimated time, priority, energy and a repeat setting of every month" style="margin:0">
+</div>
+
 ## What it does
 
 Write each chore down with the room it's in, roughly how long it takes and how much energy it needs. When you have a free stretch, tell the app how much time and energy you have, and it picks one or two chores that fit.
@@ -36,5 +45,4 @@ Hop To It isn't in the App Store yet. If you have a Mac with Xcode, download the
 
 ## What's next
 
-- **App icon and screenshots.**
 - **App Store or TestFlight**, once it has had more real-world use.
