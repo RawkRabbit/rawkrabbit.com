@@ -18,7 +18,7 @@ links:
     primary: true
 ---
 
-<img src="/projects/hop-to-it/icon.png" width="96" height="96" alt="Hop To It app icon: a house with rabbit ears and an orange door with a check mark" style="border:0">
+<img src="/projects/hop-to-it/icon.png" width="96" height="96" alt="Hop To It app icon: a house with rabbit ears and an orange door with a check mark" style="border-radius:22px">
 
 <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:1.5rem 0">
   <img src="/projects/hop-to-it/do-now.jpg" width="600" height="1304" loading="lazy" alt="Do Now screen: Quick Capture, a time slider set to 30 minutes, an energy picker and a Find a Task button" style="margin:0">
