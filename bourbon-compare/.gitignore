@@ -7,3 +7,4 @@ dist/
 *.jpeg
 *.jpg
 *.pdf
+out/
