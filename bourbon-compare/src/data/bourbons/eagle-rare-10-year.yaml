@@ -41,6 +41,6 @@ blurb: >
 verdict: >
   an elegant, older, low-proof sipper where refinement matters more than intensity
 bestFor: [neat, rocks]
-personal: { rating: null, notes: null, dateTried: null }
+personal: { rating: 5, notes: "TEMPORARY SAMPLE.", dateTried: null }
 sources:
   - { label: "Eagle Rare official product page" }
