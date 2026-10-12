@@ -1,0 +1,46 @@
+name: "Jack Daniel’s 12 Year"
+brand: "Jack Daniel’s"
+distillery: "Jack Daniel’s"
+bottler: "Jack Daniel’s"
+category: "tennessee"
+producerType: "heritage"
+style: "traditional"
+mashbill:
+  provenance: "published"
+  corn: 80
+  rye: 8
+  wheat: 0
+  maltedBarley: 12
+  note: "Charcoal-mellowed before barrelling, which is what makes it Tennessee whiskey rather than bourbon by label."
+age:
+  years: 12
+  stated: true
+proof: 107
+price: { low: 80, high: 120, asOf: "2026-10" }
+availability: limited
+bottling:
+  singleBarrel: false
+  smallBatch: false
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: null
+flavor:
+  sweetness: 8
+  spice: 5
+  oak: 8
+  fruit: 6
+  heat: 6
+  nuttiness: 4
+notes:
+  nose: [butterscotch, pipe tobacco, seasoned oak]
+  palate: [creamy caramel, butterscotch, tobacco, oak]
+  finish: [long, sweet oak, spice]
+blurb: >
+  Twelve-year Jack Daniel's at 107 proof. Sweet and creamy, with butterscotch, pipe tobacco and seasoned oak.
+verdict: >
+  a sweet, creamy, well-aged Jack Daniel's with pipe tobacco and oak
+bestFor: [neat, rocks]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Fred Minnick: Jack Daniel's 10 and 12 Year", url: "https://www.fredminnick.com/?p=13304" }
+  - { label: "Fred Minnick: Jack Daniel's 14 Year (with batch notes)", url: "https://www.fredminnick.com/2025/02/24/jack-daniels-releases-14-year-old-expression/" }

@@ -1,0 +1,42 @@
+name: "Joseph Magnus Cigar Blend"
+brand: "Joseph Magnus"
+distillery: "MGP of Indiana and Barton 1792 (sourced)"
+bottler: "Jos. A. Magnus & Co."
+category: "bourbon"
+producerType: "sourced"
+style: "high-rye"
+mashbill:
+  provenance: "unknown"
+  note: "Blend of an 11-year MGP bourbon (60% corn, 36% rye, 4% malted barley) and an 18-year Barton bourbon (75% corn, 15% rye, 10% malted barley); blend ratio not published."
+age:
+  years: null
+  stated: false
+  note: "Blend of 11 and 18 year old bourbons."
+proof: 101
+price: { low: 150, high: 180, asOf: "2026-10" }
+availability: limited
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: null
+flavor:
+  sweetness: 8
+  spice: 6
+  oak: 7
+  fruit: 9
+  heat: 5
+  nuttiness: 5
+notes:
+  nose: [strawberry, peach cobbler, fig, cigar leaf]
+  palate: [dried apricot, orange rind, plum, charred oak]
+  finish: [maple, dried fig, walnut, chocolate]
+blurb: >
+  Older sourced bourbon finished in sherry, Cognac and then Armagnac casks. Dense dried fruit, fig and orange over cigar leaf and charred oak.
+verdict: >
+  a fruit-packed, multi-cask-finished bourbon built to go with a cigar
+bestFor: [neat]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Breaking Bourbon review (batch 527)", url: "https://breakingbourbon.com/review/joseph-magnus-cigar-blend-bourbon-batch-527" }

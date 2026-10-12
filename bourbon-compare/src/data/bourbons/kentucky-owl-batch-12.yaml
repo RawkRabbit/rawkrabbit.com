@@ -1,0 +1,42 @@
+name: "Kentucky Owl Batch 12"
+brand: "Kentucky Owl"
+distillery: "Undisclosed Kentucky distilleries (sourced)"
+bottler: "Kentucky Owl"
+category: "bourbon"
+producerType: "sourced"
+style: "traditional"
+mashbill:
+  provenance: "unknown"
+  note: "Blend of sourced bourbons; recipes not disclosed."
+age:
+  years: null
+  stated: false
+  note: "Blend of 4-year and 7 to 14 year old bourbons."
+proof: 115.8
+price: { low: 300, high: 400, asOf: "2026-10" }
+availability: limited
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: true
+  bottledInBond: false
+  chillFiltered: false
+flavor:
+  sweetness: 6
+  spice: 7
+  oak: 8
+  fruit: 4
+  heat: 7
+  nuttiness: 3
+notes:
+  nose: [aged leather, smoky oak, caramel, white pepper]
+  palate: [rye spice, dry oak, peppercorn, caramel]
+  finish: [bold spice, leather, brown sugar]
+blurb: >
+  A high-end blend of young and older sourced Kentucky bourbons. Leather, smoky oak and caramel, with a peppery, spice-forward palate.
+verdict: >
+  a spicy, leathery, high-end blended bourbon
+bestFor: [neat]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Breaking Bourbon review", url: "https://breakingbourbon.com/review/kentucky-owl-bourbon-batch-12" }

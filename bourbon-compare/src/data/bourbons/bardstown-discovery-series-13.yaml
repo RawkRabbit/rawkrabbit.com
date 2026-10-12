@@ -1,0 +1,42 @@
+name: "Bardstown Bourbon Company Discovery Series #13"
+brand: "Bardstown Bourbon Company"
+distillery: "Undisclosed Kentucky distilleries (sourced)"
+bottler: "Bardstown Bourbon Company"
+category: "bourbon"
+producerType: "sourced"
+style: "traditional"
+mashbill:
+  provenance: "unknown"
+  note: "Blend of four sourced Kentucky bourbons (8, 9 and 15 years old); recipes not disclosed. Each Discovery Series release is a different blend."
+age:
+  years: 8
+  stated: true
+  note: "Youngest component is 8 years; the blend includes 9 and 15 year old bourbon."
+proof: 110.8
+price: { low: 130, high: 150, asOf: "2026-10" }
+availability: limited
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: false
+flavor:
+  sweetness: 8
+  spice: 6
+  oak: 7
+  fruit: 8
+  heat: 6
+  nuttiness: 3
+notes:
+  nose: [stewed dark fruit, cherry, apple fritter, vanilla custard]
+  palate: [creme brulee, toffee, dark fruit, clove]
+  finish: [baking spice, cherry pie, toasted oak]
+blurb: >
+  Bardstown's annual blend of older sourced bourbons. Rich and dessert-like, with creme brulee, toffee and dark fruit over peppery oak.
+verdict: >
+  a rich, dessert-like annual blend of older Kentucky bourbons
+bestFor: [neat]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Breaking Bourbon review", url: "https://breakingbourbon.com/review/bardstown-bourbon-company-discovery-series-13" }

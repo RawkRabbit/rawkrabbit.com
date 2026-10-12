@@ -1,0 +1,46 @@
+name: "Colonel E.H. Taylor Barrel Proof"
+brand: "E.H. Taylor"
+distillery: "Buffalo Trace"
+bottler: "Buffalo Trace"
+category: "bourbon"
+producerType: "heritage"
+style: "traditional"
+mashbill:
+  provenance: "estimated"
+  corn: 78
+  rye: 10
+  wheat: 0
+  maltedBarley: 12
+  note: "Buffalo Trace does not disclose Mash Bill #1; figures are a widely used estimate of a low-rye recipe."
+age:
+  years: null
+  stated: false
+  note: "No age statement; proof varies by batch."
+proof: 130.3
+price: { low: 75, high: 200, asOf: "2026-10" }
+availability: allocated
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: true
+  bottledInBond: false
+  chillFiltered: false
+flavor:
+  sweetness: 6
+  spice: 5
+  oak: 8
+  fruit: 4
+  heat: 9
+  nuttiness: 6
+notes:
+  nose: [toasted pecan, dark brown sugar, tobacco, oak]
+  palate: [brown sugar, dark fruit, vanilla bean, burnt caramel]
+  finish: [long, menthol, coffee bean, cinnamon]
+blurb: >
+  E.H. Taylor straight from the barrel. Very hot and nutty, with toasted pecan, dark sugar and heavy oak; the proof changes with each batch.
+verdict: >
+  a hot, nutty, barrel-proof Buffalo Trace bourbon
+bestFor: [neat]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Breaking Bourbon review (batch 9)", url: "https://breakingbourbon.com/review/e-h-taylor-jr-barrel-proof-bourbon-130-3-proof-batch-9" }

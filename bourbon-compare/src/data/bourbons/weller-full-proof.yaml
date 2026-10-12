@@ -1,0 +1,42 @@
+name: "W.L. Weller Full Proof"
+brand: "Weller"
+distillery: "Buffalo Trace"
+bottler: "Buffalo Trace"
+category: "bourbon"
+producerType: "heritage"
+style: "wheated"
+mashbill:
+  provenance: "unknown"
+  note: "Buffalo Trace does not disclose its wheated recipe beyond wheat replacing rye."
+age:
+  years: null
+  stated: false
+  note: "No age statement."
+proof: 114
+price: { low: 50, high: 120, asOf: "2026-10" }
+availability: allocated
+bottling:
+  singleBarrel: false
+  smallBatch: false
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: false
+flavor:
+  sweetness: 8
+  spice: 3
+  oak: 6
+  fruit: 4
+  heat: 7
+  nuttiness: 3
+notes:
+  nose: [coffee cake, caramel, seasoned oak, cinnamon]
+  palate: [caramel, vanilla, coffee cake, barrel char]
+  finish: [building heat, cinnamon, brown sugar]
+blurb: >
+  Weller's wheated bourbon bottled at its barrel-entry proof of 114, without chill filtering. Coffee cake, caramel and cinnamon with a bold, warming body.
+verdict: >
+  a bold, sweet wheater bottled at barrel-entry proof
+bestFor: [neat, rocks, old-fashioned]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Breaking Bourbon review (2022)", url: "https://breakingbourbon.com/review/weller-full-proof-2022" }
