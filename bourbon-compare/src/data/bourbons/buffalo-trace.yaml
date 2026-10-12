@@ -43,6 +43,6 @@ blurb: >
 verdict: >
   the balanced, everyday Kentucky benchmark that does nothing wrong at a fair price
 bestFor: [neat, rocks, old-fashioned, cocktails]
-personal: { rating: 3.5, notes: "TEMPORARY SAMPLE for preview only. Not a real rating.", dateTried: null }
+personal: { rating: null, notes: null, dateTried: null }
 sources:
   - { label: "Buffalo Trace Distillery official" }
