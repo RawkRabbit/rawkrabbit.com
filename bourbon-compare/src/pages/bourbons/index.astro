@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import { loadCatalogue } from '../../lib/catalogue.ts';
 import { url } from '../../lib/url.ts';
+import StarRating from '../../components/StarRating.astro';
 import { formatPrice, formatProof, priceTier, styleLabel } from '../../lib/derive.ts';
 
 const all = await loadCatalogue();
@@ -79,6 +80,7 @@ const styles = [...new Set(all.map((b) => b.style))].sort();
           <span class="card-name">{b.name}</span>
           <span class="card-style">{styleLabel(b)}</span>
           <span class="card-meta">{formatProof(b)} · {formatPrice(b)}</span>
+          {b.personal.rating !== null && <span class="card-rating"><StarRating rating={b.personal.rating} size="sm" /></span>}
         </a>
       ))}
     </div>

@@ -7,6 +7,8 @@ import { loadCatalogue, allOrderedPairs } from '../../lib/catalogue.ts';
 import { compare, pairSlug } from '../../lib/compare.ts';
 import { renderInline } from '../../lib/inline.ts';
 import { url } from '../../lib/url.ts';
+import StarRating from '../../components/StarRating.astro';
+import { AG_RATING, AG_NOTES } from '../../lib/ag.ts';
 
 /* Every ordered pair is pre-rendered — plain HTML, trivial to host, and each one
    is a linkable, indexable URL if the site goes public. */
@@ -45,6 +47,19 @@ const canonical = new URL(url(`/compare/${c.canonicalSlug}/`), Astro.site).href;
     <section class="panel">
       <h2>Key Specifications</h2>
       <SpecTable a={a} b={b} />
+    </section>
+
+    <section class="panel">
+      <h2>{AG_RATING} and {AG_NOTES}</h2>
+      <div class="ag-grid">
+        {[a, b].map((x, i) => (
+          <div class={`ag-col side-${i === 0 ? 'a' : 'b'}`}>
+            <h3>{x.name}</h3>
+            <StarRating rating={x.personal.rating} />
+            <p style="color:var(--text-secondary);margin:10px 0 0">{x.personal.notes ?? 'No notes yet.'}</p>
+          </div>
+        ))}
+      </div>
     </section>
 
     <section class="panel">

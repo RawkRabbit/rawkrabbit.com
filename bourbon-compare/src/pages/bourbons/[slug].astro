@@ -2,6 +2,8 @@
 import Base from '../../layouts/Base.astro';
 import { loadCatalogue } from '../../lib/catalogue.ts';
 import { url as withBase } from '../../lib/url.ts';
+import StarRating from '../../components/StarRating.astro';
+import { AG_RATING, AG_NOTES } from '../../lib/ag.ts';
 import {
   formatAge,
   formatMashbill,
@@ -88,14 +90,13 @@ const specs = [
       <p class="footnote" style="margin-top:20px">Best enjoyed {b.bestFor.join(', ')}.</p>
     </section>
 
-    {b.personal.rating !== null && (
-      <section class="panel">
-        <h2>Your Notes</h2>
-        <p style="font-size:1.5rem;font-weight:640;margin:0 0 8px">{b.personal.rating} / 10</p>
-        {b.personal.notes && <p style="color:var(--text-secondary);margin:0">{b.personal.notes}</p>}
-        {b.personal.dateTried && <p class="footnote" style="margin:10px 0 0">Tried {b.personal.dateTried}</p>}
-      </section>
-    )}
+    <section class="panel ag">
+      <h2>{AG_RATING}</h2>
+      <StarRating rating={b.personal.rating} />
+      <h3 style="margin-top:18px">{AG_NOTES}</h3>
+      <p style="color:var(--text-secondary);margin:0">{b.personal.notes ?? 'No notes yet.'}</p>
+      {b.personal.dateTried && <p class="footnote" style="margin:10px 0 0">Tried {b.personal.dateTried}</p>}
+    </section>
 
     <section>
       <h2>Compare against</h2>
