@@ -1,0 +1,23 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "npm run build:vercel",
+  "outputDirectory": "out",
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "https://rawkrabbit.com/bourboncompare/",
+      "permanent": true
+    },
+    {
+      "source": "/bourbons/:path*",
+      "destination": "https://rawkrabbit.com/bourboncompare/bourbons/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/compare/:path*",
+      "destination": "https://rawkrabbit.com/bourboncompare/compare/:path*",
+      "permanent": true
+    }
+  ]
+}

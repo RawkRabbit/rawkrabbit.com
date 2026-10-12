@@ -9,7 +9,8 @@
     "preview": "astro preview",
     "check": "astro check",
     "test": "node --test test/*.test.ts",
-    "spotcheck": "node test/spotcheck.ts"
+    "spotcheck": "node test/spotcheck.ts",
+    "build:vercel": "astro build && rm -rf out && mkdir -p out && cp -R dist out/bourboncompare && cp dist/404.html out/404.html"
   },
   "dependencies": {
     "astro": "^5.6.1",
