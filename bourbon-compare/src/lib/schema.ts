@@ -102,7 +102,8 @@ export const bourbonSchema = z
 
       personal: z
         .object({
-          rating: z.number().min(0).max(10).nullable(),
+          /** AG's rating: 0 to 5 stars in half steps. */
+          rating: z.number().min(0).max(5).multipleOf(0.5).nullable(),
           notes: z.string().nullable(),
           dateTried: z.string().nullable(),
         })

@@ -142,17 +142,6 @@ export function specRows(a: BourbonEntry, b: BourbonEntry): SpecRow[] {
     });
   }
 
-  if (a.personal.rating !== null || b.personal.rating !== null) {
-    const fmt = (x: BourbonEntry) => (x.personal.rating === null ? 'Not yet rated' : `${x.personal.rating} / 10`);
-    const [ra, rb] = [a.personal.rating, b.personal.rating];
-    rows.push({
-      label: 'Your Rating',
-      a: fmt(a),
-      b: fmt(b),
-      badge: ra !== null && rb !== null && ra !== rb ? { side: ra > rb ? 'a' : 'b', text: 'your pick' } : null,
-    });
-  }
-
   return rows;
 }
 

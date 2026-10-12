@@ -287,3 +287,10 @@ a.pill:hover { border-color: var(--border-strong); color: var(--text-primary); }
   border-top: 1px solid var(--border); padding: 24px 0 40px;
   font-size: 0.78rem; color: var(--text-muted);
 }
+
+/* AG's rating and notes (read-only; values come from the data files) */
+.ag-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+.ag-col h3 { margin: 0 0 8px; font-size: 0.95rem; }
+.ag-col.side-a h3 { color: var(--series-a); }
+.ag-col.side-b h3 { color: var(--series-b); }
+.card .card-rating { margin-top: 6px; display: block; }

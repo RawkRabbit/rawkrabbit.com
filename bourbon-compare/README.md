@@ -106,3 +106,14 @@ Prices are US shelf estimates with an `asOf` month and drift constantly, especia
 allocated bottles where secondary pricing bears no relation to MSRP. Ages for no-age-statement
 bottles are "generally reported" figures, not guarantees. Where sources genuinely conflict,
 the file says so in a `note` rather than picking a number silently.
+
+## AG's Rating and AG's Notes
+
+Each bottle's YAML has a `personal` block:
+
+```yaml
+personal: { rating: 3.5, notes: "Short tasting note.", dateTried: "2026-10" }
+```
+
+- `rating` is 0 to 5 in half steps (0, 0.5, 1 ... 5), or `null` for "Not rated yet". Anything else fails `npm test` and the build.
+- The site shows these read-only as "AG's Rating" and "AG's Notes" on bottle pages, comparison pages and the All Bourbons cards. There is no edit control on the site; changes go through a pull request.
