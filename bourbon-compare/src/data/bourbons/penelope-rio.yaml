@@ -1,0 +1,45 @@
+name: "Penelope Rio"
+brand: "Penelope"
+distillery: "MGP of Indiana"
+bottler: "Penelope Bourbon"
+category: "bourbon"
+producerType: "sourced"
+style: "four-grain"
+mashbill:
+  provenance: "published"
+  corn: 74
+  rye: 7
+  wheat: 16
+  maltedBarley: 3
+age:
+  years: null
+  stated: false
+  note: "No age statement; double finished in American honey barrels and Brazilian amburana barrels."
+proof: 98
+price: { low: 80, high: 100, asOf: "2026-10" }
+availability: limited
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: null
+flavor:
+  sweetness: 9
+  spice: 6
+  oak: 4
+  fruit: 6
+  heat: 5
+  nuttiness: 3
+notes:
+  nose: [honey, cinnamon roll]
+  palate: [gingerbread, honey nectar, sweet baking spice]
+  finish: [honey, spice]
+blurb: >
+  Penelope's four-grain blend finished in honey barrels and then amburana wood. It tastes like a cinnamon roll: honey, gingerbread and sweet baking spice.
+verdict: >
+  a honey-and-amburana-finished bourbon that tastes like a cinnamon roll
+bestFor: [neat, old-fashioned]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Beverage Information Group: Penelope Rio 2025", url: "https://bevinfogroup.com/2025/03/04/penelope-bourbon-rio-whiskey-2025/" }

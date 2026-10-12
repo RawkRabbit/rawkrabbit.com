@@ -1,0 +1,46 @@
+name: "George T. Stagg"
+brand: "George T. Stagg"
+distillery: "Buffalo Trace"
+bottler: "Buffalo Trace"
+category: "bourbon"
+producerType: "heritage"
+style: "traditional"
+mashbill:
+  provenance: "estimated"
+  corn: 78
+  rye: 10
+  wheat: 0
+  maltedBarley: 12
+  note: "Buffalo Trace does not disclose Mash Bill #1; figures are a widely used estimate of a low-rye recipe."
+age:
+  years: null
+  stated: false
+  note: "No age statement; the 2025 release was about 15 years and 4 months old."
+proof: 142.8
+price: { low: 150, high: 800, asOf: "2026-10" }
+availability: allocated
+bottling:
+  singleBarrel: false
+  smallBatch: false
+  barrelProof: true
+  bottledInBond: false
+  chillFiltered: false
+flavor:
+  sweetness: 7
+  spice: 6
+  oak: 9
+  fruit: 6
+  heat: 10
+  nuttiness: 3
+notes:
+  nose: [charred barrel, root beer, dark caramel, spiced apple]
+  palate: [oak, cinnamon stick, vanilla bean, rye spice]
+  finish: [very long, charred barrel, spiced caramel]
+blurb: >
+  The Buffalo Trace Antique Collection's barrel-proof bourbon, around 15 years old. Root beer, dark caramel and charred oak at an enormous proof that changes each year.
+verdict: >
+  the oldest, hottest, most concentrated Buffalo Trace bourbon you can find
+bestFor: [neat]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Breaking Bourbon review (2025)", url: "https://breakingbourbon.com/review/george-t-stagg-2025" }

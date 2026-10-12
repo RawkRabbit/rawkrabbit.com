@@ -1,0 +1,45 @@
+name: "Eagle Rare 12 Year"
+brand: "Eagle Rare"
+distillery: "Buffalo Trace"
+bottler: "Buffalo Trace"
+category: "bourbon"
+producerType: "heritage"
+style: "traditional"
+mashbill:
+  provenance: "estimated"
+  corn: 78
+  rye: 10
+  wheat: 0
+  maltedBarley: 12
+  note: "Buffalo Trace does not disclose Mash Bill #1; figures are a widely used estimate of a low-rye recipe."
+age:
+  years: 12
+  stated: true
+proof: 95
+price: { low: 50, high: 80, asOf: "2026-10" }
+availability: allocated
+bottling:
+  singleBarrel: false
+  smallBatch: false
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 7
+  spice: 5
+  oak: 7
+  fruit: 6
+  heat: 5
+  nuttiness: 4
+notes:
+  nose: [caramel, chestnut, seasoned oak, orange peel]
+  palate: [brown sugar, toffee, burnt caramel, black cherry]
+  finish: [medium, dry oak, leather, baking spice]
+blurb: >
+  Two more years and five more proof points than Eagle Rare 10. Brown sugar and toffee lead, with a drier, more astringent oak finish.
+verdict: >
+  an older, richer step up from Eagle Rare 10 with more brown sugar and oak
+bestFor: [neat, rocks]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Breaking Bourbon review", url: "https://breakingbourbon.com/review/eagle-rare-12-year" }

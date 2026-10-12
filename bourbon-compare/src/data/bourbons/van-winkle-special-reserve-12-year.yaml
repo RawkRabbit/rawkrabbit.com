@@ -1,0 +1,42 @@
+name: "Van Winkle Special Reserve 12 Year Lot B"
+brand: "Van Winkle"
+distillery: "Buffalo Trace"
+bottler: "Old Rip Van Winkle Distillery"
+category: "bourbon"
+producerType: "heritage"
+style: "wheated"
+mashbill:
+  provenance: "unknown"
+  note: "Buffalo Trace does not disclose its wheated recipe beyond wheat replacing rye."
+age:
+  years: 12
+  stated: true
+proof: 90.4
+price: { low: 170, high: 900, asOf: "2026-10" }
+availability: allocated
+bottling:
+  singleBarrel: false
+  smallBatch: false
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 8
+  spice: 3
+  oak: 6
+  fruit: 5
+  heat: 3
+  nuttiness: 3
+notes:
+  nose: [butterscotch, cinnamon, char, tobacco]
+  palate: [toffee, nutmeg, chewy caramel]
+  finish: [long, subtle, baking spice, dark cherry]
+blurb: >
+  Twelve-year wheated bourbon from the Van Winkle line. Soft and balanced, with butterscotch, toffee and caramel and a gentle, spiced finish.
+verdict: >
+  a soft, balanced, 12-year wheater from the Van Winkle line
+bestFor: [neat]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Drinkhacker review", url: "https://www.drinkhacker.com/2021/05/11/review-van-winkle-special-reserve-lot-b-bourbon-12-years-old/" }
+  - { label: "Fred Minnick: Van Winkle Collection 2025", url: "https://www.fredminnick.com/2025/09/11/van-winkle-collection-2025-released/" }

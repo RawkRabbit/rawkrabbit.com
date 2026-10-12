@@ -1,0 +1,42 @@
+name: "Pappy Van Winkle’s Family Reserve 15 Year"
+brand: "Van Winkle"
+distillery: "Buffalo Trace"
+bottler: "Old Rip Van Winkle Distillery"
+category: "bourbon"
+producerType: "heritage"
+style: "wheated"
+mashbill:
+  provenance: "unknown"
+  note: "Buffalo Trace does not disclose its wheated recipe beyond wheat replacing rye."
+age:
+  years: 15
+  stated: true
+proof: 107
+price: { low: 240, high: 2000, asOf: "2026-10" }
+availability: allocated
+bottling:
+  singleBarrel: false
+  smallBatch: false
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: true
+flavor:
+  sweetness: 8
+  spice: 3
+  oak: 8
+  fruit: 6
+  heat: 6
+  nuttiness: 4
+notes:
+  nose: [caramel, vanilla, dried apricot, light oak spice]
+  palate: [toffee, leather, dried cherry, baking spice]
+  finish: [long, spice, oak]
+blurb: >
+  Fifteen-year wheated bourbon from the Van Winkle line, made at Buffalo Trace. Rich toffee, leather and dried fruit with the oak well blended in.
+verdict: >
+  a famously hard-to-find, rich, 15-year wheater
+bestFor: [neat]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Wooden Cork product notes", url: "https://woodencork.com/collections/rare/products/pappy-van-winkle-15-year-bourbon" }
+  - { label: "Fred Minnick: Van Winkle Collection 2025", url: "https://www.fredminnick.com/2025/09/11/van-winkle-collection-2025-released/" }

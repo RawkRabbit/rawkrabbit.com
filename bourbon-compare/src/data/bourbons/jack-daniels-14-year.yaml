@@ -1,0 +1,45 @@
+name: "Jack Daniel’s 14 Year"
+brand: "Jack Daniel’s"
+distillery: "Jack Daniel’s"
+bottler: "Jack Daniel’s"
+category: "tennessee"
+producerType: "heritage"
+style: "traditional"
+mashbill:
+  provenance: "published"
+  corn: 80
+  rye: 8
+  wheat: 0
+  maltedBarley: 12
+  note: "Charcoal-mellowed before barrelling, which is what makes it Tennessee whiskey rather than bourbon by label."
+age:
+  years: 14
+  stated: true
+proof: 126.3
+price: { low: 150, high: 250, asOf: "2026-10" }
+availability: limited
+bottling:
+  singleBarrel: false
+  smallBatch: false
+  barrelProof: true
+  bottledInBond: false
+  chillFiltered: null
+flavor:
+  sweetness: 8
+  spice: 6
+  oak: 9
+  fruit: 6
+  heat: 9
+  nuttiness: 4
+notes:
+  nose: [bakery spice, cinnamon, butterscotch]
+  palate: [butterscotch, leather, aged oak, pipe tobacco]
+  finish: [very long, oak, spice]
+blurb: >
+  The oldest Jack Daniel's in over a century, bottled near barrel proof. Butterscotch and bakery spice over rich leather, old oak and pipe tobacco.
+verdict: >
+  the oldest, strongest Jack Daniel's on the shelf
+bestFor: [neat, rocks]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Fred Minnick: Jack Daniel's 14 Year (with batch notes)", url: "https://www.fredminnick.com/2025/02/24/jack-daniels-releases-14-year-old-expression/" }

@@ -1,0 +1,42 @@
+name: "Praedictum 15 Year"
+brand: "Praedictum"
+distillery: "Undisclosed Kentucky distillery (sourced)"
+bottler: "Goodnight Distillery (Foley Family Wines & Spirits)"
+category: "bourbon"
+producerType: "sourced"
+style: "traditional"
+mashbill:
+  provenance: "unknown"
+  note: "Not disclosed."
+age:
+  years: 15
+  stated: true
+proof: 112
+price: { low: 400, high: 550, asOf: "2026-10" }
+availability: limited
+bottling:
+  singleBarrel: false
+  smallBatch: true
+  barrelProof: true
+  bottledInBond: false
+  chillFiltered: null
+flavor:
+  sweetness: 7
+  spice: 5
+  oak: 7
+  fruit: 7
+  heat: 7
+  nuttiness: 4
+notes:
+  nose: [cherry, molasses, orange zest, green apple]
+  palate: [cinnamon, cashew, spearmint, maple]
+  finish: [root beer, mint, vanilla, stewed apple]
+blurb: >
+  A 15-year, barrel-proof Kentucky bourbon from the Foley family's spirits group, picked and blended by their master distiller. Cherry, maple and spice, finishing on root beer and mint.
+verdict: >
+  a 15-year, barrel-proof Kentucky bourbon with cherry, maple and mint
+bestFor: [neat]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Praedictum Whiskey", url: "https://www.praedictumwhiskey.com/" }
+  - { label: "Blackwell's product notes", url: "https://www.blackwellswines.com/products/praedictum-15-year-old-barrell-proof-kentucky-straight-bourbon-whiskey" }

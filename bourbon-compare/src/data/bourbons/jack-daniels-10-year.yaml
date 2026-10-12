@@ -1,0 +1,46 @@
+name: "Jack Daniel’s 10 Year"
+brand: "Jack Daniel’s"
+distillery: "Jack Daniel’s"
+bottler: "Jack Daniel’s"
+category: "tennessee"
+producerType: "heritage"
+style: "traditional"
+mashbill:
+  provenance: "published"
+  corn: 80
+  rye: 8
+  wheat: 0
+  maltedBarley: 12
+  note: "Charcoal-mellowed before barrelling, which is what makes it Tennessee whiskey rather than bourbon by label."
+age:
+  years: 10
+  stated: true
+proof: 97
+price: { low: 70, high: 90, asOf: "2026-10" }
+availability: limited
+bottling:
+  singleBarrel: false
+  smallBatch: false
+  barrelProof: false
+  bottledInBond: false
+  chillFiltered: null
+flavor:
+  sweetness: 7
+  spice: 5
+  oak: 7
+  fruit: 6
+  heat: 5
+  nuttiness: 4
+notes:
+  nose: [dark fruit, caramel, oak]
+  palate: [banana, cocoa, oak, dark fruit]
+  finish: [medium, bittersweet cocoa, oak]
+blurb: >
+  The return of an age-stated Jack Daniel's after more than a century. Ten years add dark fruit, cocoa and real oak to the familiar banana-and-caramel Lynchburg profile.
+verdict: >
+  an older, oak-forward Jack Daniel's with dark fruit and cocoa
+bestFor: [neat, rocks]
+personal: { rating: null, notes: null, dateTried: null }
+sources:
+  - { label: "Fred Minnick: Jack Daniel's 10 and 12 Year", url: "https://www.fredminnick.com/?p=13304" }
+  - { label: "Fred Minnick: Jack Daniel's 14 Year (with batch notes)", url: "https://www.fredminnick.com/2025/02/24/jack-daniels-releases-14-year-old-expression/" }
