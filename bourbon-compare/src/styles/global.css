@@ -294,3 +294,12 @@ a.pill:hover { border-color: var(--border-strong); color: var(--text-primary); }
 .ag-col.side-a h3 { color: var(--series-a); }
 .ag-col.side-b h3 { color: var(--series-b); }
 .card .card-rating { margin-top: 6px; display: block; }
+
+/* Glossary */
+dl.glossary { margin: 0; display: grid; gap: 18px; }
+.gloss-item dt { font-weight: 640; margin: 0 0 4px; }
+.gloss-item dd { margin: 0; color: var(--text-secondary); max-width: 70ch; }
+.gloss-item:target { outline: 2px solid var(--accent); outline-offset: 6px; border-radius: 4px; }
+section[id], .gloss-item { scroll-margin-top: 80px; }
+a.gloss-link { color: inherit; text-decoration: underline dotted; text-decoration-color: var(--text-muted); text-underline-offset: 3px; }
+a.gloss-link:hover { text-decoration-style: solid; text-decoration-color: var(--accent); }

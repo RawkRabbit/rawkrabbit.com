@@ -1,0 +1,35 @@
+---
+import Base from '../layouts/Base.astro';
+import { GLOSSARY } from '../lib/glossary.ts';
+---
+<Base
+  title="Glossary — BourbonCompare"
+  description="Plain-language definitions for the bourbon terms used on BourbonCompare: mash bill, proof, bottled-in-bond, barrel proof, limited and allocated, and more."
+  current="glossary"
+>
+  <div class="stack">
+    <div>
+      <p class="eyebrow">Reference</p>
+      <h1>Glossary</h1>
+      <p class="lede" style="max-width:60ch">What the terms on this site mean, in plain language.</p>
+    </div>
+
+    <nav class="pill-row" aria-label="Glossary sections">
+      {GLOSSARY.map((g) => <a class="pill" href={`#${g.id}`}>{g.title}</a>)}
+    </nav>
+
+    {GLOSSARY.map((g) => (
+      <section class="panel" id={g.id}>
+        <h2>{g.title}</h2>
+        <dl class="glossary">
+          {g.terms.map((t) => (
+            <div class="gloss-item" id={t.id}>
+              <dt>{t.term}</dt>
+              <dd>{t.def}</dd>
+            </div>
+          ))}
+        </dl>
+      </section>
+    ))}
+  </div>
+</Base>

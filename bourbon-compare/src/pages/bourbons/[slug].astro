@@ -4,6 +4,7 @@ import { loadCatalogue } from '../../lib/catalogue.ts';
 import { url as withBase } from '../../lib/url.ts';
 import StarRating from '../../components/StarRating.astro';
 import { AG_RATING, AG_NOTES } from '../../lib/ag.ts';
+import { LABEL_TO_TERM } from '../../lib/glossary.ts';
 import {
   formatAge,
   formatMashbill,
@@ -30,12 +31,12 @@ const PROVENANCE = {
 } as const;
 
 const traits = [
-  b.bottling.bottledInBond && 'Bottled-in-Bond',
-  b.bottling.barrelProof && 'Barrel proof',
-  b.bottling.singleBarrel && 'Single barrel',
-  b.bottling.smallBatch && 'Small batch',
-  b.bottling.chillFiltered === false && 'Non-chill-filtered',
-].filter(Boolean) as string[];
+  b.bottling.bottledInBond && ['Bottled-in-Bond', 'bottled-in-bond'],
+  b.bottling.barrelProof && ['Barrel proof', 'barrel-proof'],
+  b.bottling.singleBarrel && ['Single barrel', 'single-barrel'],
+  b.bottling.smallBatch && ['Small batch', 'small-batch'],
+  b.bottling.chillFiltered === false && ['Non-chill-filtered', 'non-chill-filtered'],
+].filter(Boolean) as [string, string][];
 
 const specs = [
   ['Type / Style', styleLabel(b)],
@@ -58,7 +59,7 @@ const specs = [
       <p class="eyebrow">{b.brand}</p>
       <h1>{b.name}</h1>
       {traits.length > 0 && (
-        <div class="pill-row" style="margin-top:12px">{traits.map((t) => <span class="pill">{t}</span>)}</div>
+        <div class="pill-row" style="margin-top:12px">{traits.map(([t, id]) => <a class="pill" href={withBase(`/glossary/#${id}`)}>{t}</a>)}</div>
       )}
     </div>
 
@@ -68,7 +69,7 @@ const specs = [
         <table class="spec">
           <tbody>
             {specs.map(([k, v]) => (
-              <tr><th scope="row">{k}</th><td>{v}</td></tr>
+              <tr><th scope="row">{LABEL_TO_TERM[k] ? <a class="gloss-link" href={withBase(`/glossary/#${LABEL_TO_TERM[k]}`)}>{k}</a> : k}</th><td>{v}</td></tr>
             ))}
           </tbody>
         </table>
@@ -91,7 +92,7 @@ const specs = [
     </section>
 
     <section class="panel ag">
-      <h2>{AG_RATING}</h2>
+      <h2><a class="gloss-link" href={withBase('/glossary/#ag-rating')}>{AG_RATING}</a></h2>
       <StarRating rating={b.personal.rating} />
       <h3 style="margin-top:18px">{AG_NOTES}</h3>
       <p style="color:var(--text-secondary);margin:0">{b.personal.notes ?? 'No notes yet.'}</p>

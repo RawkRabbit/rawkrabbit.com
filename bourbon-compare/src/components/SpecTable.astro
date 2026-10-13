@@ -1,6 +1,8 @@
 ---
 import type { BourbonEntry } from '../lib/schema.ts';
 import { specRows } from '../lib/compare.ts';
+import { LABEL_TO_TERM } from '../lib/glossary.ts';
+import { url } from '../lib/url.ts';
 
 interface Props { a: BourbonEntry; b: BourbonEntry }
 const { a, b } = Astro.props;
@@ -23,7 +25,7 @@ const noteIndex = (n?: string) => (n ? notes.indexOf(n) + 1 : null);
       {rows.map((row) => (
         <tr>
           <th scope="row">
-            {row.label}
+            {LABEL_TO_TERM[row.label] ? <a class="gloss-link" href={url(`/glossary/#${LABEL_TO_TERM[row.label]}`)}>{row.label}</a> : row.label}
             {row.note && <sup class="fn">{noteIndex(row.note)}</sup>}
           </th>
           <td>
