@@ -42,7 +42,7 @@ blurb: >
 verdict: >
   an organic, Midwest craft wheater with a round, caramel-forward body
 bestFor: [rocks, old-fashioned, cocktails]
-personal: { rating: null, notes: null, dateTried: null }
+personal: { rating: 1.5, notes: "Didn't care for this one.", dateTried: null }
 sources:
   - { label: "Journeyman Distillery: Featherbone Bourbon", url: "https://www.journeyman.com/spirits/featherbone-bourbon/" }
   - { label: "Paste Magazine review", url: "https://www.pastemagazine.com/drink/bourbon/journeyman-featherbone-bourbon-review" }

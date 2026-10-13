@@ -36,7 +36,7 @@ blurb: >
 verdict: >
   a 15-year, barrel-proof Kentucky bourbon with cherry, maple and mint
 bestFor: [neat]
-personal: { rating: null, notes: null, dateTried: null }
+personal: { rating: 3, notes: "Not my favorite, but I can see why people like it.", dateTried: null }
 sources:
   - { label: "Praedictum Whiskey", url: "https://www.praedictumwhiskey.com/" }
   - { label: "Blackwell's product notes", url: "https://www.blackwellswines.com/products/praedictum-15-year-old-barrell-proof-kentucky-straight-bourbon-whiskey" }

@@ -37,6 +37,6 @@ blurb: >
 verdict: >
   a smooth, polished pour with a premium feel and no rough edges
 bestFor: [neat, rocks]
-personal: { rating: null, notes: null, dateTried: null }
+personal: { rating: 4, notes: null, dateTried: null }
 sources:
   - { label: "Michter's official" }

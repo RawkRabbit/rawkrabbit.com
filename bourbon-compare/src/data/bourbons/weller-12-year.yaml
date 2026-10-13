@@ -38,6 +38,6 @@ blurb: >
 verdict: >
   age and elegance on a wheated mash, and you are willing to chase it
 bestFor: [neat]
-personal: { rating: null, notes: null, dateTried: null }
+personal: { rating: 4, notes: null, dateTried: null }
 sources:
   - { label: Buffalo Trace Distillery official }

@@ -42,7 +42,7 @@ blurb: >
 verdict: >
   a soft, easygoing wheated bourbon made start to finish on one Midwest farm
 bestFor: [rocks, highball, cocktails]
-personal: { rating: null, notes: null, dateTried: null }
+personal: { rating: 1.5, notes: "Didn't care for this one.", dateTried: null }
 sources:
   - { label: "Whiskey Acres: spirits", url: "https://www.whiskeyacres.com/spirits" }
   - { label: "Seelbach's: Whiskey Acres Straight Bourbon", url: "https://seelbachs.com/products/whiskey-acres-straight-bourbon-whiskey" }
