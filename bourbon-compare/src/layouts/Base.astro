@@ -6,7 +6,7 @@ import { BASE, url } from '../lib/url.ts';
 interface Props {
   title: string;
   description?: string;
-  current?: 'compare' | 'bourbons';
+  current?: 'compare' | 'bourbons' | 'glossary';
   /** Set on pages that exist under more than one URL (reversed pair orderings). */
   canonical?: string;
 }
@@ -50,6 +50,7 @@ const randomFallback = seededPairUrl(catalogue, Astro.url.pathname);
         <nav>
           <a href={url('/')} class="nav-home" aria-current={current === 'compare' ? 'page' : undefined}>Compare</a>
           <a href={url('/bourbons/')} aria-current={current === 'bourbons' ? 'page' : undefined}>All Bourbons</a>
+          <a href={url('/glossary/')} aria-current={current === 'glossary' ? 'page' : undefined}>Glossary</a>
           <a href={randomFallback} data-random rel="nofollow">Random</a>
         </nav>
         <button class="theme-toggle" type="button" aria-label="Toggle light and dark theme">◑</button>
