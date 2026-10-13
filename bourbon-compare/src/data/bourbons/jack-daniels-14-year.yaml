@@ -40,6 +40,6 @@ blurb: >
 verdict: >
   the oldest, strongest Jack Daniel's on the shelf
 bestFor: [neat, rocks]
-personal: { rating: null, notes: null, dateTried: null }
+personal: { rating: 4.5, notes: null, dateTried: null }
 sources:
   - { label: "Fred Minnick: Jack Daniel's 14 Year (with batch notes)", url: "https://www.fredminnick.com/2025/02/24/jack-daniels-releases-14-year-old-expression/" }

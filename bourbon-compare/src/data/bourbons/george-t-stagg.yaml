@@ -41,6 +41,6 @@ blurb: >
 verdict: >
   the oldest, hottest, most concentrated Buffalo Trace bourbon you can find
 bestFor: [neat]
-personal: { rating: null, notes: null, dateTried: null }
+personal: { rating: 5, notes: "Very complex, with the taste profile moving across the entire palate.", dateTried: null }
 sources:
   - { label: "Breaking Bourbon review (2025)", url: "https://breakingbourbon.com/review/george-t-stagg-2025" }

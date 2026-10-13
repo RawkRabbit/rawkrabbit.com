@@ -41,6 +41,6 @@ blurb: >
 verdict: >
   a hot, nutty, barrel-proof Buffalo Trace bourbon
 bestFor: [neat]
-personal: { rating: null, notes: null, dateTried: null }
+personal: { rating: 4.5, notes: "A top 5 bottle.", dateTried: null }
 sources:
   - { label: "Breaking Bourbon review (batch 9)", url: "https://breakingbourbon.com/review/e-h-taylor-jr-barrel-proof-bourbon-130-3-proof-batch-9" }

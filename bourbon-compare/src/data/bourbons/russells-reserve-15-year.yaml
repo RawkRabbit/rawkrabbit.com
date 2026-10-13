@@ -40,6 +40,6 @@ blurb: >
 verdict: >
   a very old, oak-heavy Wild Turkey for slow sipping
 bestFor: [neat]
-personal: { rating: null, notes: null, dateTried: null }
+personal: { rating: 4.5, notes: "One of my favorites.", dateTried: null }
 sources:
   - { label: "GoBourbon: Russell's Reserve 15 Year", url: "https://www.gobourbon.com/?p=34037" }

@@ -40,6 +40,6 @@ blurb: >
 verdict: >
   an older, richer step up from Eagle Rare 10 with more brown sugar and oak
 bestFor: [neat, rocks]
-personal: { rating: null, notes: null, dateTried: null }
+personal: { rating: 4.5, notes: "Top 3, behind George T. Stagg and Jack Daniel's 14.", dateTried: null }
 sources:
   - { label: "Breaking Bourbon review", url: "https://breakingbourbon.com/review/eagle-rare-12-year" }

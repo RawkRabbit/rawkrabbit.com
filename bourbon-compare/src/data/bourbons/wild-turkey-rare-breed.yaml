@@ -42,6 +42,6 @@ blurb: >
 verdict: >
   barrel-proof spice and oak with a reputation to match, at half what comparable bottles cost
 bestFor: [neat, old-fashioned]
-personal: { rating: null, notes: null, dateTried: null }
+personal: { rating: 4, notes: "Good flavor.", dateTried: null }
 sources:
   - { label: Wild Turkey official }

@@ -45,6 +45,6 @@ blurb: >
 verdict: >
   a well-aged bonded bourbon that blends Heaven Hill's rye and wheat recipes into one balanced pour
 bestFor: [neat, rocks, old-fashioned]
-personal: { rating: null, notes: null, dateTried: null }
+personal: { rating: 4, notes: "Very good. Flavorful without being too powerful.", dateTried: null }
 sources:
   - { label: "Fred Minnick: Heaven Hill launches Double Mash Bottled in Bond", url: "https://www.fredminnick.com/2026/07/16/heaven-hill-launches-new-double-mash-bottled-in-bond-bourbon/" }
